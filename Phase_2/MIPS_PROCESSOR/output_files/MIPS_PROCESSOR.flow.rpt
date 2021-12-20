@@ -1,5 +1,5 @@
 Flow report for MIPS_PROCESSOR
-Thu Dec 16 17:42:14 2021
+Fri Dec 17 14:25:38 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,24 +41,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Thu Dec 16 17:42:14 2021      ;
+; Flow Status                        ; Successful - Fri Dec 17 14:25:38 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 1 / 49,760 ( < 1 % )                        ;
+;     Total combinational functions  ; 1 / 49,760 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                          ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 1 / 360 ( < 1 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/16/2021 17:42:02 ;
+; Start date & time ; 12/17/2021 14:25:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_PROCESSOR      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 192123327304435.163969812210408        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 192123327304435.163977270307880        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TESTBENCH                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -113,8 +113,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4765 MB             ; 00:00:30                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:30                           ;
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4789 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:08     ; 1.0                     ; 5368 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4688 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4794 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:50                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -124,6 +128,10 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-DBBOOVU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-DBBOOVU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-DBBOOVU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-DBBOOVU  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-DBBOOVU  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -131,6 +139,10 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
+quartus_fit --read_settings_files=off --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
+quartus_asm --read_settings_files=off --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
+quartus_sta MIPS_PROCESSOR -c MIPS_PROCESSOR
+quartus_eda --read_settings_files=off --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 
 
 
