@@ -7,7 +7,7 @@ ENTITY ALU IS
 	GENERIC(
 		SIZE : INTEGER := 32
 	);
-	PORT ( S : IN STD_LOGIC_VECTOR(2 DOWNTO 0) ;
+	PORT ( S : IN STD_LOGIC_VECTOR(3 DOWNTO 0) ;
 			A, B : IN STD_LOGIC_VECTOR(SIZE-1 DOWNTO 0) ;
 			F : BUFFER STD_LOGIC_VECTOR(SIZE-1 DOWNTO 0) ;
 			COMPARE: OUT STD_LOGIC ) ;
@@ -18,29 +18,23 @@ ARCHITECTURE BEHAVIOR OF ALU IS
 	PROCESS ( S, A, B )
 	BEGIN
 		CASE S IS
-			WHEN "000" =>
-			F <= x"00000000" ;
-			WHEN "001" =>
-			F <= B - A ;
-			WHEN "010" =>
+			WHEN "0110" =>
 			F <= A - B ;
-			WHEN "011" =>
+			WHEN "0010" =>
 			F <= A + B ;
-			WHEN "100" =>
-			F <= A XOR B ;
-			WHEN "101" =>
+			WHEN "0001" =>
 			F <= A OR B ;
-			WHEN "110" =>
+			WHEN "0000" =>
 			F <= A AND B ;
 			WHEN OTHERS =>
-			F <= x"11111111" ;
+			F <= x"00000000" ;
 			--COMPARE <= '0';
 		END CASE ;
 	END PROCESS ;
 
 	PROCESS(F,s)
 	BEGIN
-		IF (F = x"00000000" AND S = "100") THEN
+		IF (F = x"00000000") THEN
 			COMPARE <= '1';
 		ELSE
 			COMPARE <= '0';
