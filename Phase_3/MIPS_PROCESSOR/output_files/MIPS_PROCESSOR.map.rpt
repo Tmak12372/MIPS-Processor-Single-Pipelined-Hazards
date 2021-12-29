@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PROCESSOR
-Thu Dec 23 12:46:00 2021
+Mon Dec 27 21:09:59 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -25,13 +25,17 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  17. Parameter Settings for User Entity Instance: SIGN_EXTEND:U6
  18. Parameter Settings for User Entity Instance: MUX:U7
  19. Parameter Settings for User Entity Instance: ALU:U8
- 20. altsyncram Parameter Settings by Entity Instance
- 21. Port Connectivity Checks: "ALU:U8"
- 22. Port Connectivity Checks: "MUX:U7"
- 23. Port Connectivity Checks: "IP_MEMORY:U4"
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+ 20. Parameter Settings for User Entity Instance: MUX:U11
+ 21. Parameter Settings for User Entity Instance: LEFT_SHIFTER:U12
+ 22. Parameter Settings for User Entity Instance: ADDER_ALU:U13
+ 23. Parameter Settings for User Entity Instance: MUX:U14
+ 24. Parameter Settings for User Entity Instance: DATA_MEMORY:U16
+ 25. Parameter Settings for User Entity Instance: MUX:U17
+ 26. altsyncram Parameter Settings by Entity Instance
+ 27. Port Connectivity Checks: "IP_MEMORY:U4"
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
@@ -58,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 23 12:46:00 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 27 21:09:59 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
@@ -184,15 +188,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                    ; Library ;
 +----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; ALU_CONTROLLER.vhd               ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU_CONTROLLER.vhd     ;         ;
-; MIPS_PROCESSOR.vhd               ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd     ;         ;
-; PROGRAM_COUNTER.vhd              ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd    ;         ;
-; ADDER.vhd                        ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ADDER.vhd              ;         ;
-; IP_MEMORY.vhd                    ; yes             ; User Wizard-Generated File             ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd          ;         ;
-; ALU.vhd                          ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU.vhd                ;         ;
-; MUX.vhd                          ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MUX.vhd                ;         ;
-; SIGN_EXTEND.vhd                  ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/SIGN_EXTEND.vhd        ;         ;
-; REGISTERS.vhd                    ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd          ;         ;
+; LEFT_SHIFTER.vhd                 ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/LEFT_SHIFTER.vhd       ;         ;
+; DATA_MEMORY.vhd                  ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd        ;         ;
+; CONTROLLER.vhd                   ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/CONTROLLER.vhd         ;         ;
+; AND_GATE.vhd                     ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/AND_GATE.vhd           ;         ;
+; ADDER_ALU.vhd                    ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ADDER_ALU.vhd          ;         ;
+; ALU_CONTROLLER.vhd               ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ALU_CONTROLLER.vhd     ;         ;
+; MIPS_PROCESSOR.vhd               ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd     ;         ;
+; PROGRAM_COUNTER.vhd              ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd    ;         ;
+; ADDER.vhd                        ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ADDER.vhd              ;         ;
+; IP_MEMORY.vhd                    ; yes             ; User Wizard-Generated File             ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/IP_MEMORY.vhd          ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ALU.vhd                ;         ;
+; MUX.vhd                          ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MUX.vhd                ;         ;
+; SIGN_EXTEND.vhd                  ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/SIGN_EXTEND.vhd        ;         ;
+; REGISTERS.vhd                    ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/REGISTERS.vhd          ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                           ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                    ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                              ;         ;
@@ -202,8 +211,8 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                               ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                               ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                             ;         ;
-; db/altsyncram_ctq3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf ;         ;
-; assembly.mif                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/assembly.mif           ;         ;
+; db/altsyncram_ctq3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf ;         ;
+; assembly.mif                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/assembly.mif           ;         ;
 +----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -422,6 +431,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:U11 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; size           ; 5     ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LEFT_SHIFTER:U12 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; size           ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ADDER_ALU:U13 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; size           ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:U14 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; size           ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATA_MEMORY:U16 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; size           ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:U17 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; size           ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                         ;
 +-------------------------------------------+----------------------------------------------+
@@ -440,24 +509,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
 +-------------------------------------------+----------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:U8"                                                                                ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; compare ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------+
-; Port Connectivity Checks: "MUX:U7"     ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; sel  ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
 
 
 +------------------------------------------+
@@ -497,50 +548,65 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 23 12:45:46 2021
+    Info: Processing started: Mon Dec 27 21:09:44 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file left_shifter.vhd
+    Info (12022): Found design unit 1: LEFT_SHIFTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/LEFT_SHIFTER.vhd Line: 16
+    Info (12023): Found entity 1: LEFT_SHIFTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/LEFT_SHIFTER.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file data_memory.vhd
+    Info (12022): Found design unit 1: DATA_MEMORY-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 19
+    Info (12023): Found entity 1: DATA_MEMORY File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file controller.vhd
+    Info (12022): Found design unit 1: CONTROLLER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/CONTROLLER.vhd Line: 23
+    Info (12023): Found entity 1: CONTROLLER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/CONTROLLER.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file and_gate.vhd
+    Info (12022): Found design unit 1: AND_GATE-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/AND_GATE.vhd Line: 15
+    Info (12023): Found entity 1: AND_GATE File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/AND_GATE.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file adder_alu.vhd
+    Info (12022): Found design unit 1: ADDER_ALU-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ADDER_ALU.vhd Line: 19
+    Info (12023): Found entity 1: ADDER_ALU File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ADDER_ALU.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file alu_controller.vhd
-    Info (12022): Found design unit 1: ALU_CONTROLLER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 14
-    Info (12023): Found entity 1: ALU_CONTROLLER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 5
+    Info (12022): Found design unit 1: ALU_CONTROLLER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 13
+    Info (12023): Found entity 1: ALU_CONTROLLER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mips_processor.vhd
-    Info (12022): Found design unit 1: MIPS_PROCESSOR-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 16
-    Info (12023): Found entity 1: MIPS_PROCESSOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 6
+    Info (12022): Found design unit 1: MIPS_PROCESSOR-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 20
+    Info (12023): Found entity 1: MIPS_PROCESSOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file program_counter.vhd
-    Info (12022): Found design unit 1: PROGRAM_COUNTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 17
-    Info (12023): Found entity 1: PROGRAM_COUNTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 6
+    Info (12022): Found design unit 1: PROGRAM_COUNTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 17
+    Info (12023): Found entity 1: PROGRAM_COUNTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file adder.vhd
-    Info (12022): Found design unit 1: ADDER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ADDER.vhd Line: 18
-    Info (12023): Found entity 1: ADDER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ADDER.vhd Line: 8
+    Info (12022): Found design unit 1: ADDER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ADDER.vhd Line: 18
+    Info (12023): Found entity 1: ADDER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ADDER.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file instruction_register.vhd
-    Info (12022): Found design unit 1: INSTRUCTION_REGISTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 21
-    Info (12023): Found entity 1: INSTRUCTION_REGISTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 5
+    Info (12022): Found design unit 1: INSTRUCTION_REGISTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 21
+    Info (12023): Found entity 1: INSTRUCTION_REGISTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ip_memory.vhd
-    Info (12022): Found design unit 1: ip_memory-SYN File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 55
-    Info (12023): Found entity 1: IP_MEMORY File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 43
+    Info (12022): Found design unit 1: ip_memory-SYN File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 55
+    Info (12023): Found entity 1: IP_MEMORY File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: ALU-BEHAVIOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU.vhd Line: 16
-    Info (12023): Found entity 1: ALU File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU.vhd Line: 6
+    Info (12022): Found design unit 1: ALU-BEHAVIOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ALU.vhd Line: 16
+    Info (12023): Found entity 1: ALU File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/ALU.vhd Line: 6
 Warning (12019): Can't analyze file -- file 2_TO_1_MUX.vhd is missing
-Warning (12090): Entity "MUX" obtained from "MUX.vhd" instead of from Quartus Prime megafunction library File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MUX.vhd Line: 4
+Warning (12090): Entity "MUX" obtained from "MUX.vhd" instead of from Quartus Prime megafunction library File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MUX.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: MUX-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MUX.vhd Line: 18
-    Info (12023): Found entity 1: MUX File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MUX.vhd Line: 4
+    Info (12022): Found design unit 1: MUX-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MUX.vhd Line: 18
+    Info (12023): Found entity 1: MUX File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MUX.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sign_extend.vhd
-    Info (12022): Found design unit 1: SIGN_EXTEND-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/SIGN_EXTEND.vhd Line: 14
-    Info (12023): Found entity 1: SIGN_EXTEND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/SIGN_EXTEND.vhd Line: 4
+    Info (12022): Found design unit 1: SIGN_EXTEND-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/SIGN_EXTEND.vhd Line: 14
+    Info (12023): Found entity 1: SIGN_EXTEND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/SIGN_EXTEND.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registers.vhd
-    Info (12022): Found design unit 1: REGISTERS-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd Line: 18
-    Info (12023): Found entity 1: REGISTERS File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd Line: 5
+    Info (12022): Found design unit 1: REGISTERS-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/REGISTERS.vhd Line: 18
+    Info (12023): Found entity 1: REGISTERS File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/REGISTERS.vhd Line: 5
 Info (12127): Elaborating entity "MIPS_PROCESSOR" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MIPS_PROCESSOR.vhd(129): object "ALU_ZERO" assigned a value but never read File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 129
-Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 136
-Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 137
-Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U4" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 138
-Info (12128): Elaborating entity "altsyncram" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
-Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
-Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
+Warning (10036): Verilog HDL or VHDL warning at MIPS_PROCESSOR.vhd(206): object "INVERTED" assigned a value but never read File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 206
+Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 211
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 212
+Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U4" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 213
+Info (12128): Elaborating entity "altsyncram" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
+Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
+Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -592,59 +658,68 @@ Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_comp
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ctq3.tdf
-    Info (12023): Found entity 1: altsyncram_ctq3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_ctq3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_ctq3" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:U5" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 139
-Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:U6" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 140
-Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U7" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 141
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U8" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 142
-Info (12128): Elaborating entity "ALU_CONTROLLER" for hierarchy "ALU_CONTROLLER:U9" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 143
+Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:U5" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 214
+Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:U6" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 215
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U7" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 216
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U8" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 217
+Info (12128): Elaborating entity "ALU_CONTROLLER" for hierarchy "ALU_CONTROLLER:U9" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 218
+Info (12128): Elaborating entity "CONTROLLER" for hierarchy "CONTROLLER:U10" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 219
+Warning (10492): VHDL Process Statement warning at CONTROLLER.vhd(80): signal "BRANCH_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/CONTROLLER.vhd Line: 80
+Warning (10492): VHDL Process Statement warning at CONTROLLER.vhd(83): signal "BUFF" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/CONTROLLER.vhd Line: 83
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U11" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 220
+Info (12128): Elaborating entity "LEFT_SHIFTER" for hierarchy "LEFT_SHIFTER:U12" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 221
+Info (12128): Elaborating entity "ADDER_ALU" for hierarchy "ADDER_ALU:U13" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 222
+Info (12128): Elaborating entity "AND_GATE" for hierarchy "AND_GATE:U15" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 224
+Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DATA_MEMORY:U16" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 225
+Warning (10492): VHDL Process Statement warning at DATA_MEMORY.vhd(37): signal "Registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 37
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[0]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 37
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[1]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 62
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[2]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 87
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[3]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 112
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[4]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 137
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[5]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 162
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[6]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 187
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[7]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 212
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[8]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 237
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[9]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 262
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[10]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 287
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[11]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 312
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[12]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 337
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[13]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 362
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[14]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 387
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[15]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 412
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[16]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 437
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[17]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 462
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[18]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 487
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[19]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 512
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[20]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 537
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[21]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 562
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[22]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 587
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[23]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 612
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[24]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 637
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[25]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 662
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[26]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 687
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[27]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 712
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[28]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 737
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[29]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 762
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[30]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 787
-        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[31]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 812
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[0]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 37
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[1]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 62
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[2]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 87
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[3]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 112
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[4]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 137
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[5]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 162
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[6]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 187
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[7]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 212
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[8]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 237
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[9]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 262
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[10]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 287
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[11]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 312
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[12]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 337
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[13]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 362
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[14]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 387
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[15]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 412
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[16]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 437
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[17]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 462
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[18]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 487
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[19]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 512
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[20]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 537
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[21]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 562
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[22]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 587
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[23]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 612
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[24]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 637
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[25]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 662
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[26]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 687
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[27]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 712
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[28]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 737
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[29]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 762
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[30]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 787
+        Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[31]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 812
 Info (17049): 32 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLK" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 11
+    Warning (15610): No output dependent on input pin "CLK" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 15
 Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 4797 megabytes
-    Info: Processing ended: Thu Dec 23 12:46:00 2021
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:30
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
+    Info: Peak virtual memory: 4800 megabytes
+    Info: Processing ended: Mon Dec 27 21:09:59 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:32
 
 

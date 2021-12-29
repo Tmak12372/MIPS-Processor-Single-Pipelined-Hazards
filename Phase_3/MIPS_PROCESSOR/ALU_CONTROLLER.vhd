@@ -14,26 +14,21 @@ ARCHITECTURE RTL OF ALU_CONTROLLER IS
 BEGIN   
     PROC : PROCESS(ALU_OP,ALU_FU) 
     BEGIN 
-        ALU_SEL(3) <= '0'; --SINCE TOP BIT IS ALWAYS 0
-        
-        IF ((ALU_OP = "01") OR (ALU_OP = "10" AND ((ALU_FU = "101010") OR (ALU_FU = "100010")))) THEN
-            ALU_SEL(2) <= '1';
-        ELSE 
-            ALU_SEL(2) <= '0';
-        END IF;
-        
-        IF ((ALU_OP(1) = '0') OR (ALU_FU(2) = '0')) THEN
-            ALU_SEL(1) <= '1';
-        ELSE 
-            ALU_SEL(1) <= '0';
-        END IF;
-
-        IF ((ALU_OP = "10") AND ((ALU_FU = "101010") OR (ALU_FU = "100101"))) THEN --CHECKING FOR LOWEST BIT
-            ALU_SEL(0) <= '1';
-        ELSE 
-            ALU_SEL(0) <= '0';
-        END IF;
-
+		
+		CASE ALU_OP IS
+			WHEN "00" => ALU_SEL <= "0010";
+			WHEN "01" => ALU_SEL <= "0110";
+			WHEN "10" =>
+				CASE ALU_FU IS
+					WHEN "100000" => ALU_SEL <= "0010"; --ADD
+					WHEN "100100" => ALU_SEL <= "0000"; --AND 
+					WHEN "100101" => ALU_SEL <= "0001"; --OR
+					WHEN "100010" => ALU_SEL <= "0110"; --SUBTRACT
+					WHEN OTHERS   => ALU_SEL <= "0000";
+				END CASE;
+			WHEN OTHERS => ALU_SEL <= "0000";
+		END CASE;
+		
     END PROCESS;
 END RTL;
 

@@ -260,131 +260,131 @@
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[0]",
+					"name" : "PC_INPUT[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[1]",
+					"name" : "PC_INPUT[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[2]",
+					"name" : "PC_INPUT[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[3]",
+					"name" : "PC_INPUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[4]",
+					"name" : "PC_INPUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[5]",
+					"name" : "PC_INPUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[6]",
+					"name" : "PC_INPUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[7]",
+					"name" : "PC_INPUT[7]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[8]",
+					"name" : "PC_INPUT[8]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[9]",
+					"name" : "PC_INPUT[9]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[10]",
+					"name" : "PC_INPUT[10]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[11]",
+					"name" : "PC_INPUT[11]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[12]",
+					"name" : "PC_INPUT[12]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[13]",
+					"name" : "PC_INPUT[13]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[14]",
+					"name" : "PC_INPUT[14]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[15]",
+					"name" : "PC_INPUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[16]",
+					"name" : "PC_INPUT[16]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[17]",
+					"name" : "PC_INPUT[17]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[18]",
+					"name" : "PC_INPUT[18]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[19]",
+					"name" : "PC_INPUT[19]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[20]",
+					"name" : "PC_INPUT[20]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[21]",
+					"name" : "PC_INPUT[21]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[22]",
+					"name" : "PC_INPUT[22]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[23]",
+					"name" : "PC_INPUT[23]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[24]",
+					"name" : "PC_INPUT[24]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[25]",
+					"name" : "PC_INPUT[25]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[26]",
+					"name" : "PC_INPUT[26]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[27]",
+					"name" : "PC_INPUT[27]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[28]",
+					"name" : "PC_INPUT[28]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[29]",
+					"name" : "PC_INPUT[29]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[30]",
+					"name" : "PC_INPUT[30]",
 					"strict" : false
 				},
 				{
-					"name" : "ADDER_OUTPUT[31]",
+					"name" : "PC_INPUT[31]",
 					"strict" : false
 				},
 				{

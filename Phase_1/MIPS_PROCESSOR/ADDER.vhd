@@ -10,8 +10,9 @@ ENTITY ADDER IS
 		SIZE : INTEGER := 32
 		);
 	PORT (
-		ADDRESS_IN  : IN STD_LOGIC_VECTOR(SIZE-1 DOWNTO 0) := (OTHERS <= '0');
-		ADDRESS_OUT : OUT STD_LOGIC_VECTOR(SIZE-1 DOWNTO 0) := (OTHERS <= '0')
+		ADDRESS_IN  : IN STD_LOGIC_VECTOR(SIZE-1 DOWNTO 0) := (OTHERS => '0');
+		NUM : IN STD_LOGIC;
+		ADDRESS_OUT : OUT STD_LOGIC_VECTOR(SIZE-1 DOWNTO 0) := (OTHERS => '0')
 		);
 END ADDER;
 
@@ -19,6 +20,6 @@ ARCHITECTURE RTL OF ADDER IS
 BEGIN
 	PROC : PROCESS (ADDRESS_IN) 
 	BEGIN
-		ADDRESS_OUT <= ADDRESS_IN + 1; --Increment the Program counter by 1 I chose 1 since my .mif file is incremented address by 1
+		ADDRESS_OUT <= ADDRESS_IN + NUM; --Increment the Program counter by 1 I chose 1 since my .mif file is incremented address by 1
 	END PROCESS;
 END RTL;
