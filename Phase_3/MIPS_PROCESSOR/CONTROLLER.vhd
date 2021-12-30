@@ -58,7 +58,7 @@ BEGIN
         ELSIF (OPCODE = "000100") THEN --BEQ FROM FIGURE 4.22 IN BOOK
             REGDST <= 'X';
             BRANCH <= '1';
-            MEMTOREG <= 'X';
+            MEMTOREG <= '0';
             ALUOP <= "01";
             ALUSRC <= '0';
             MEMREAD <= '0';

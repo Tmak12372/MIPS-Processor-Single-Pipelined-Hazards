@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PROCESSOR
-Mon Dec 27 21:09:59 2021
+Wed Dec 29 19:15:59 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 27 21:09:59 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 29 19:15:59 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
@@ -548,7 +548,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Dec 27 21:09:44 2021
+    Info: Processing started: Wed Dec 29 19:15:45 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -600,10 +600,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file registe
     Info (12022): Found design unit 1: REGISTERS-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/REGISTERS.vhd Line: 18
     Info (12023): Found entity 1: REGISTERS File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/REGISTERS.vhd Line: 5
 Info (12127): Elaborating entity "MIPS_PROCESSOR" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MIPS_PROCESSOR.vhd(206): object "INVERTED" assigned a value but never read File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 206
-Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 211
-Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 212
-Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U4" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 213
+Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 207
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 208
+Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U4" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 209
 Info (12128): Elaborating entity "altsyncram" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
 Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
 Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
@@ -660,20 +659,53 @@ Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ctq3.tdf
     Info (12023): Found entity 1: altsyncram_ctq3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_ctq3" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:U5" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 214
-Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:U6" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 215
-Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U7" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 216
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U8" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 217
-Info (12128): Elaborating entity "ALU_CONTROLLER" for hierarchy "ALU_CONTROLLER:U9" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 218
-Info (12128): Elaborating entity "CONTROLLER" for hierarchy "CONTROLLER:U10" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 219
+Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:U5" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 210
+Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:U6" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 211
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U7" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 212
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U8" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 213
+Info (12128): Elaborating entity "ALU_CONTROLLER" for hierarchy "ALU_CONTROLLER:U9" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 214
+Info (12128): Elaborating entity "CONTROLLER" for hierarchy "CONTROLLER:U10" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 215
 Warning (10492): VHDL Process Statement warning at CONTROLLER.vhd(80): signal "BRANCH_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/CONTROLLER.vhd Line: 80
 Warning (10492): VHDL Process Statement warning at CONTROLLER.vhd(83): signal "BUFF" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/CONTROLLER.vhd Line: 83
-Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U11" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 220
-Info (12128): Elaborating entity "LEFT_SHIFTER" for hierarchy "LEFT_SHIFTER:U12" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 221
-Info (12128): Elaborating entity "ADDER_ALU" for hierarchy "ADDER_ALU:U13" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 222
-Info (12128): Elaborating entity "AND_GATE" for hierarchy "AND_GATE:U15" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 224
-Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DATA_MEMORY:U16" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 225
-Warning (10492): VHDL Process Statement warning at DATA_MEMORY.vhd(37): signal "Registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 37
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U11" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 216
+Info (12128): Elaborating entity "LEFT_SHIFTER" for hierarchy "LEFT_SHIFTER:U12" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 217
+Info (12128): Elaborating entity "ADDER_ALU" for hierarchy "ADDER_ALU:U13" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 218
+Info (12128): Elaborating entity "AND_GATE" for hierarchy "AND_GATE:U15" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 220
+Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DATA_MEMORY:U16" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 221
+Warning (10492): VHDL Process Statement warning at DATA_MEMORY.vhd(38): signal "Registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at DATA_MEMORY.vhd(35): inferring latch(es) for signal or variable "READ_DATA", which holds its previous value in one or more paths through the process File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[0]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[1]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[2]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[3]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[4]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[5]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[6]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[7]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[8]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[9]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[10]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[11]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[12]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[13]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[14]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[15]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[16]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[17]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[18]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[19]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[20]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[21]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[22]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[23]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[24]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[25]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[26]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[27]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[28]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[29]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[30]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[31]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|q_a[0]" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 37
@@ -717,9 +749,9 @@ Info (21057): Implemented 1 device resources after synthesis - the final resourc
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Mon Dec 27 21:09:59 2021
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 4799 megabytes
+    Info: Processing ended: Wed Dec 29 19:15:59 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
 
 

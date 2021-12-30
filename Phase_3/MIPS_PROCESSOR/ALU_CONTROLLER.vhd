@@ -24,9 +24,9 @@ BEGIN
 					WHEN "100100" => ALU_SEL <= "0000"; --AND 
 					WHEN "100101" => ALU_SEL <= "0001"; --OR
 					WHEN "100010" => ALU_SEL <= "0110"; --SUBTRACT
-					WHEN OTHERS   => ALU_SEL <= "0000";
+					WHEN OTHERS   => ALU_SEL <= "UUUU";
 				END CASE;
-			WHEN OTHERS => ALU_SEL <= "0000";
+			WHEN OTHERS => ALU_SEL <= "UUUU";
 		END CASE;
 		
     END PROCESS;
