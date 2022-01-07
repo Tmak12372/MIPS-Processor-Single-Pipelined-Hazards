@@ -33,7 +33,7 @@ BEGIN
                     ALU_SEL <= "000";
                     REG_WRITE <= '0';
             END CASE;
-		  ELSE
+		  ELSE --WILL CHANGE ONCE OTHER INSTRUCTIONS TYPES ARE NEEDED
 				ALU_SEL <= "000";
 				REG_WRITE <= '0';
         END IF;

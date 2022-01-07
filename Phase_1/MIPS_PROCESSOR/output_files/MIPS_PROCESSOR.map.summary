@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Tue Dec 28 18:47:06 2021
+Analysis & Synthesis Status : Successful - Mon Jan 03 16:28:15 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : MIPS_PROCESSOR
 Top-level Entity Name : MIPS_PROCESSOR
 Family : MAX 10
-Total logic elements : 73
-    Total combinational functions : 34
-    Dedicated logic registers : 71
-Total registers : 71
-Total pins : 138
+Total logic elements : 49
+    Total combinational functions : 10
+    Dedicated logic registers : 47
+Total registers : 47
+Total pins : 82
 Total virtual pins : 0
 Total memory bits : 8,192
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1
 UFM blocks : 0
 ADC blocks : 0

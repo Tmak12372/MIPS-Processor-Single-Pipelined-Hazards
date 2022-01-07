@@ -46,9 +46,9 @@ BEGIN
 				BUFF <= '0';
             REGWRITE <= '1'; --NEED A DELAY
         ELSIF (OPCODE = "101011") THEN --SW FROM FIGURE 4.22 IN BOOK
-            REGDST <= 'X';
+            REGDST <= '-';
             BRANCH <= '0';
-            MEMTOREG <= 'X';
+            MEMTOREG <= '-';
             ALUOP <= "00";
             ALUSRC <= '1';
             MEMREAD <= '0';
@@ -56,9 +56,9 @@ BEGIN
 				BUFF <= '0';
             REGWRITE <= '0'; --NEED A DELAY
         ELSIF (OPCODE = "000100") THEN --BEQ FROM FIGURE 4.22 IN BOOK
-            REGDST <= 'X';
+            REGDST <= '-';
             BRANCH <= '1';
-            MEMTOREG <= '0';
+            MEMTOREG <= '-';
             ALUOP <= "01";
             ALUSRC <= '0';
             MEMREAD <= '0';

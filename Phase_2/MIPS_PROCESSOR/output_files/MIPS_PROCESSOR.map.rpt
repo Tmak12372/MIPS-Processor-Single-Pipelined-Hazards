@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PROCESSOR
-Tue Dec 28 18:56:58 2021
+Mon Jan 03 15:58:49 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 28 18:56:58 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 03 15:58:49 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
@@ -497,7 +497,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 28 18:56:44 2021
+    Info: Processing started: Mon Jan 03 15:58:32 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -522,7 +522,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file ip_memo
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
     Info (12022): Found design unit 1: ALU-BEHAVIOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU.vhd Line: 16
     Info (12023): Found entity 1: ALU File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU.vhd Line: 6
-Warning (12019): Can't analyze file -- file 2_TO_1_MUX.vhd is missing
 Warning (12090): Entity "MUX" obtained from "MUX.vhd" instead of from Quartus Prime megafunction library File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MUX.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
     Info (12022): Found design unit 1: MUX-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MUX.vhd Line: 18
@@ -641,10 +640,10 @@ Warning (21074): Design contains 1 input pin(s) that do not drive logic
 Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Tue Dec 28 18:56:58 2021
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:31
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
+    Info: Peak virtual memory: 4793 megabytes
+    Info: Processing ended: Mon Jan 03 15:58:49 2022
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:37
 
 
