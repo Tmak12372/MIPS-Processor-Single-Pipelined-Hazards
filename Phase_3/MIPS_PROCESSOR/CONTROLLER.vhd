@@ -77,11 +77,11 @@ BEGIN
             REGWRITE <= '0'; --NEED A DELAY
         END IF;
 		  
-		  if(BRANCH_B = '1') then
-				REGWRITE <= '0';
-		  else
-				REGWRITE <= BUFF;
-		  end if;
+--		  if(BRANCH_B = '1') then
+--				REGWRITE <= '0';
+--		  else
+--				REGWRITE <= BUFF;
+--		  end if;
 		  
 	END PROCESS;
 END RTL;

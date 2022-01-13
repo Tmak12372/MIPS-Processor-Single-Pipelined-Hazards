@@ -12,17 +12,17 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Tyler\ McCormick/Desktop/ECE\ 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/db {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/db/pll_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:19:23 on Dec 30,2021
+# Start time: 15:31:16 on Jan 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/db" C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/db/pll_altpll.v 
 # -- Compiling module PLL_altpll
 # 
 # Top level modules:
 # 	PLL_altpll
-# End time: 17:19:23 on Dec 30,2021, Elapsed time: 0:00:00
+# End time: 15:31:17 on Jan 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:19:24 on Dec 30,2021
+# Start time: 15:31:17 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -30,11 +30,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity MIPS_PROCESSOR
 # -- Compiling architecture RTL of MIPS_PROCESSOR
-# End time: 17:19:24 on Dec 30,2021, Elapsed time: 0:00:00
+# End time: 15:31:17 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:19:24 on Dec 30,2021
+# Start time: 15:31:17 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,11 +42,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PROGRAM_COUNTER
 # -- Compiling architecture RTL of PROGRAM_COUNTER
-# End time: 17:19:24 on Dec 30,2021, Elapsed time: 0:00:00
+# End time: 15:31:17 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/ADDER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:19:24 on Dec 30,2021
+# Start time: 15:31:17 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/ADDER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -56,11 +56,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ADDER
 # -- Compiling architecture RTL of ADDER
-# End time: 17:19:24 on Dec 30,2021, Elapsed time: 0:00:00
+# End time: 15:31:17 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:19:24 on Dec 30,2021
+# Start time: 15:31:17 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -68,11 +68,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity INSTRUCTION_REGISTER
 # -- Compiling architecture RTL of INSTRUCTION_REGISTER
-# End time: 17:19:24 on Dec 30,2021, Elapsed time: 0:00:00
+# End time: 15:31:18 on Jan 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:19:25 on Dec 30,2021
+# Start time: 15:31:18 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -80,23 +80,23 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity IP_MEMORY
 # -- Compiling architecture SYN of ip_memory
-# End time: 17:19:25 on Dec 30,2021, Elapsed time: 0:00:00
+# End time: 15:31:18 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/PLL.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:19:25 on Dec 30,2021
+# Start time: 15:31:18 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/PLL.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PLL
 # -- Compiling architecture SYN of pll
-# End time: 17:19:25 on Dec 30,2021, Elapsed time: 0:00:00
+# End time: 15:31:18 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:19:25 on Dec 30,2021
+# Start time: 15:31:18 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -106,13 +106,13 @@
 # -- Compiling architecture RTL of TESTBENCH
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd(39): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd(40): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 17:19:25 on Dec 30,2021, Elapsed time: 0:00:00
+# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd(50): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 15:31:18 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 3
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TESTBENCH
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TESTBENCH 
-# Start time: 17:19:25 on Dec 30,2021
+# Start time: 15:31:18 on Jan 12,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -142,11 +142,23 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U4/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U4/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U4/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U4/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U4/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U4/altsyncram_component
 # ** Note: MAX 10 PLL locked to incoming clock
 #    Time: 90 ns  Iteration: 3  Instance: /testbench/UUT/U5/altpll_component/CYCLONEIII_ALTPLL/M5
 # ** Note: MAX 10 PLL lost lock due to loss of input clock or the input clock is not detected within the allowed time frame.
 #    Time: 190 ns  Iteration: 3  Instance: /testbench/UUT/U5/altpll_component/CYCLONEIII_ALTPLL/M5
 # ** Note: Please run timing simulation to check whether the input clock is operating within the supported VCO range or not.
 #    Time: 190 ns  Iteration: 3  Instance: /testbench/UUT/U5/altpll_component/CYCLONEIII_ALTPLL/M5
-# End time: 17:20:48 on Dec 30,2021, Elapsed time: 0:01:23
-# Errors: 0, Warnings: 0
+# End time: 15:32:28 on Jan 12,2022, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 6

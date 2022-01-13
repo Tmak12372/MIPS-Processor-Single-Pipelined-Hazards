@@ -1,5 +1,5 @@
 Flow report for MIPS_PROCESSOR
-Mon Jan 03 15:59:09 2022
+Wed Jan 12 16:30:01 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,20 +41,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jan 03 15:59:09 2022       ;
+; Flow Status                        ; Successful - Wed Jan 12 16:30:01 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1 / 49,760 ( < 1 % )                        ;
-;     Total combinational functions  ; 1 / 49,760 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                          ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 1 / 360 ( < 1 % )                           ;
+; Total logic elements               ; 1,816 / 49,760 ( 4 % )                      ;
+;     Total combinational functions  ; 1,668 / 49,760 ( 3 % )                      ;
+;     Dedicated logic registers      ; 1,054 / 49,760 ( 2 % )                      ;
+; Total registers                    ; 1054                                        ;
+; Total pins                         ; 113 / 360 ( 31 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
+; Total memory bits                  ; 8,192 / 1,677,312 ( < 1 % )                 ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/03/2022 15:58:33 ;
+; Start date & time ; 01/12/2022 16:28:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_PROCESSOR      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 192123327304435.164124711205600        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 192123327304435.164202653307880        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TESTBENCH                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -113,12 +113,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4793 MB             ; 00:00:36                           ;
-; Fitter               ; 00:00:08     ; 1.0                     ; 5372 MB             ; 00:00:11                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4691 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4794 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
-; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:55                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4805 MB             ; 00:00:33                           ;
+; Fitter               ; 00:00:34     ; 1.1                     ; 5406 MB             ; 00:00:43                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4697 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.4                     ; 4817 MB             ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4664 MB             ; 00:00:01                           ;
+; Total                ; 00:01:03     ; --                      ; --                  ; 00:01:30                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

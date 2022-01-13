@@ -260,14 +260,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "PC_INPUT[0]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_INPUT[1]",
-					"strict" : false
-				},
-				{
 					"name" : "PC_INPUT[2]",
 					"strict" : false
 				},
@@ -276,27 +268,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "PC_OUTPUT[0]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_OUTPUT[1]",
-					"strict" : false
-				},
-				{
 					"name" : "PC_OUTPUT[2]",
 					"strict" : false
 				},
 				{
 					"name" : "PC_OUTPUT[3]",
-					"strict" : false
-				},
-				{
-					"name" : "IR_ADDR_OUTPUT[0]",
-					"strict" : false
-				},
-				{
-					"name" : "IR_ADDR_OUTPUT[1]",
 					"strict" : false
 				},
 				{
@@ -321,6 +297,10 @@
 				},
 				{
 					"name" : "IR_ADDR_OUTPUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
 					"strict" : false
 				}
 			]

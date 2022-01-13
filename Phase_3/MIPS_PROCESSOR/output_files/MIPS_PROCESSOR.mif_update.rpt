@@ -1,5 +1,5 @@
 MIF/HEX Update report for MIPS_PROCESSOR
-Thu Dec 16 16:23:25 2021
+Wed Jan 12 19:28:15 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -33,24 +33,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------+
-; MIF/HEX Update Summary                                        ;
-+-----------------------+---------------------------------------+
-; MIF/HEX Update Status ; Successful - Thu Dec 16 16:23:25 2021 ;
-; Revision Name         ; MIPS_PROCESSOR                        ;
-; Top-level Entity Name ; MIPS_PROCESSOR                        ;
-; Family                ; MAX 10                                ;
-; Device                ; 10M50DAF484C7G                        ;
-+-----------------------+---------------------------------------+
++-----------------------------------------------------------+
+; MIF/HEX Update Summary                                    ;
++-----------------------+-----------------------------------+
+; MIF/HEX Update Status ; Failed - Wed Jan 12 19:28:15 2022 ;
+; Revision Name         ; MIPS_PROCESSOR                    ;
+; Top-level Entity Name ; MIPS_PROCESSOR                    ;
+; Family                ; MAX 10                            ;
+; Device                ; 10M50DAF484C7G                    ;
++-----------------------+-----------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; MIF/HEX Update Processed Files                                                                ;
-+-----------------------------------------------------------------------------------------------+
-; File Name                                                                                     ;
-+-----------------------------------------------------------------------------------------------+
-; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/assembly.mif ;
-+-----------------------------------------------------------------------------------------------+
++--------------------------------+
+; MIF/HEX Update Processed Files ;
++--------------------------------+
+; File Name                      ;
++--------------------------------+
 
 
 +-------------------------+
@@ -59,24 +57,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime MIF/HEX Update
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 16 16:23:24 2021
+    Info: Processing started: Wed Jan 12 19:28:14 2022
 Info: Command: quartus_cdb MIPS_PROCESSOR -c MIPS_PROCESSOR --update_mif
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (113031): 8 out of 256 addresses are reinitialized. The latest initialized data will replace the existing data. There are 8 warnings found, and 8 warnings are reported. File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/assembly.mif Line: 1
-    Warning (113030): Memory Initialization File address 0 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/ Line: 10
-    Warning (113030): Memory Initialization File address 1 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/ Line: 11
-    Warning (113030): Memory Initialization File address 2 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/ Line: 12
-    Warning (113030): Memory Initialization File address 3 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/ Line: 13
-    Warning (113030): Memory Initialization File address 4 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/ Line: 14
-    Warning (113030): Memory Initialization File address 5 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/ Line: 15
-    Warning (113030): Memory Initialization File address 6 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/ Line: 16
-    Warning (113030): Memory Initialization File address 7 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/ Line: 17
-Info (39024): Processed the following Memory Initialization File(s)
-    Info (39025): Processed Memory Initialization File C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/assembly.mif File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/MIPS_PROCESSOR/assembly.mif Line: 0
-Info: Quartus Prime MIF/HEX Update was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4722 megabytes
-    Info: Processing ended: Thu Dec 16 16:23:25 2021
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Error (39022): Found no valid Memory Initialization File to process
+Error: Quartus Prime MIF/HEX Update was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 4721 megabytes
+    Error: Processing ended: Wed Jan 12 19:28:15 2022
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:01
 
 

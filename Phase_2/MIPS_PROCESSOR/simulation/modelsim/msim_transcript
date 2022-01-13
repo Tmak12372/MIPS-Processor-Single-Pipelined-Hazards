@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU_CONTROLLER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:25 on Dec 31,2021
+# Start time: 16:30:55 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU_CONTROLLER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,11 +20,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_CONTROLLER
 # -- Compiling architecture RTL of ALU_CONTROLLER
-# End time: 00:00:25 on Dec 31,2021, Elapsed time: 0:00:00
+# End time: 16:30:55 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:26 on Dec 31,2021
+# Start time: 16:30:55 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,11 +32,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity MIPS_PROCESSOR
 # -- Compiling architecture RTL of MIPS_PROCESSOR
-# End time: 00:00:26 on Dec 31,2021, Elapsed time: 0:00:00
+# End time: 16:30:55 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:26 on Dec 31,2021
+# Start time: 16:30:55 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -44,11 +44,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PROGRAM_COUNTER
 # -- Compiling architecture RTL of PROGRAM_COUNTER
-# End time: 00:00:26 on Dec 31,2021, Elapsed time: 0:00:00
+# End time: 16:30:56 on Jan 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ADDER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:26 on Dec 31,2021
+# Start time: 16:30:56 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ADDER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -58,11 +58,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ADDER
 # -- Compiling architecture RTL of ADDER
-# End time: 00:00:26 on Dec 31,2021, Elapsed time: 0:00:00
+# End time: 16:30:56 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:26 on Dec 31,2021
+# Start time: 16:30:56 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -70,11 +70,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity IP_MEMORY
 # -- Compiling architecture SYN of ip_memory
-# End time: 00:00:26 on Dec 31,2021, Elapsed time: 0:00:00
+# End time: 16:30:56 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:26 on Dec 31,2021
+# Start time: 16:30:56 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -84,33 +84,33 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture BEHAVIOR of ALU
-# End time: 00:00:26 on Dec 31,2021, Elapsed time: 0:00:00
+# End time: 16:30:56 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MUX.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:26 on Dec 31,2021
+# Start time: 16:30:56 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MUX.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MUX
 # -- Compiling architecture RTL of MUX
-# End time: 00:00:27 on Dec 31,2021, Elapsed time: 0:00:01
+# End time: 16:30:56 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/SIGN_EXTEND.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:27 on Dec 31,2021
+# Start time: 16:30:56 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/SIGN_EXTEND.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SIGN_EXTEND
 # -- Compiling architecture RTL of SIGN_EXTEND
-# End time: 00:00:27 on Dec 31,2021, Elapsed time: 0:00:00
+# End time: 16:30:56 on Jan 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:27 on Dec 31,2021
+# Start time: 16:30:56 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -118,13 +118,13 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity REGISTERS
 # -- Compiling architecture RTL of REGISTERS
-# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd(85): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-# End time: 00:00:27 on Dec 31,2021, Elapsed time: 0:00:00
+# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd(54): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# End time: 16:30:57 on Jan 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # 
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:00:27 on Dec 31,2021
+# Start time: 16:30:57 on Jan 12,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -132,108 +132,51 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity TESTBENCH
 # -- Compiling architecture RTL of TESTBENCH
-# ** Error: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(28): Signal "INSTRUCTION_OUT_TB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(28): (vcom-1035) Formal port "ALU_SRC" has OPEN or no actual associated with it.
-# ** Error: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(28): (vcom-1035) Formal port "ALU_OP" has OPEN or no actual associated with it.
-# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(47): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Note: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(56): VHDL Compiler exiting
-# End time: 00:00:27 on Dec 31,2021, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 5
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./MIPS_PROCESSOR_run_msim_rtl_vhdl.do line 18
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd}"
-vsim -gui -l msim_transcript rtl_work.mips_processor
-# vsim -gui -l msim_transcript rtl_work.mips_processor 
-# Start time: 00:00:41 on Dec 31,2021
+# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/TESTBENCH.vhd(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:30:57 on Jan 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TESTBENCH
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TESTBENCH 
+# Start time: 16:30:57 on Jan 12,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading rtl_work.mips_processor(rtl)
-# Loading rtl_work.program_counter(rtl)
+# Loading work.testbench(rtl)
+# Loading work.mips_processor(rtl)
+# Loading work.program_counter(rtl)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading rtl_work.adder(rtl)
+# Loading work.adder(rtl)
 # Loading altera_mf.altera_mf_components
-# Loading rtl_work.ip_memory(syn)
+# Loading work.ip_memory(syn)
 # Loading altera_mf.altera_common_conversion(body)
 # Loading altera_mf.altera_device_families(body)
 # Loading altera_mf.altsyncram(translated)
-# Loading rtl_work.registers(rtl)
-# Loading rtl_work.sign_extend(rtl)
-# Loading rtl_work.mux(rtl)
-# Loading rtl_work.alu(behavior)
-# Loading rtl_work.alu_controller(rtl)
-add wave -position insertpoint  \
-sim:/mips_processor/SIZE \
-sim:/mips_processor/SIGN_EXTENDED_VALUE \
-sim:/mips_processor/reg_zero \
-sim:/mips_processor/REG_WRITE \
-sim:/mips_processor/reg_v1 \
-sim:/mips_processor/reg_v0 \
-sim:/mips_processor/reg_t9 \
-sim:/mips_processor/reg_t8 \
-sim:/mips_processor/reg_t7 \
-sim:/mips_processor/reg_t6 \
-sim:/mips_processor/reg_t5 \
-sim:/mips_processor/reg_t4 \
-sim:/mips_processor/reg_t3 \
-sim:/mips_processor/reg_t2 \
-sim:/mips_processor/reg_t1 \
-sim:/mips_processor/reg_t0 \
-sim:/mips_processor/reg_sp \
-sim:/mips_processor/reg_s7 \
-sim:/mips_processor/reg_s6 \
-sim:/mips_processor/reg_s5 \
-sim:/mips_processor/reg_s4 \
-sim:/mips_processor/reg_s3 \
-sim:/mips_processor/reg_s2 \
-sim:/mips_processor/reg_s1 \
-sim:/mips_processor/reg_s0 \
-sim:/mips_processor/reg_ra \
-sim:/mips_processor/reg_k1 \
-sim:/mips_processor/reg_k0 \
-sim:/mips_processor/reg_gp \
-sim:/mips_processor/reg_fp \
-sim:/mips_processor/reg_at \
-sim:/mips_processor/reg_a3 \
-sim:/mips_processor/reg_a2 \
-sim:/mips_processor/reg_a1 \
-sim:/mips_processor/reg_a0 \
-sim:/mips_processor/READ_DATA_2 \
-sim:/mips_processor/READ_DATA_1 \
-sim:/mips_processor/PC_ADDR_OUTPUT \
-sim:/mips_processor/PC_ADDR_INPUT \
-sim:/mips_processor/o_SIGN_EXTENDED_VALUE \
-sim:/mips_processor/o_PC_ADDR_OUTPUT \
-sim:/mips_processor/o_PC_ADDR_INPUT \
-sim:/mips_processor/o_MUX_OUTPUT \
-sim:/mips_processor/o_INSTRUCTION_OUT \
-sim:/mips_processor/o_ALU_ZERO \
-sim:/mips_processor/o_ALU_OUTPUT \
-sim:/mips_processor/MUX_OUTPUT \
-sim:/mips_processor/IP_TO_INST \
-sim:/mips_processor/IP_Q \
-sim:/mips_processor/INSTRUCTION_OUT \
-sim:/mips_processor/CLK \
-sim:/mips_processor/ALU_ZERO \
-sim:/mips_processor/ALU_SRC \
-sim:/mips_processor/ALU_RESULT \
-sim:/mips_processor/ALU_OUTPUT \
-sim:/mips_processor/ALU_OPERATION
-force -freeze sim:/mips_processor/CLK 1 0, 0 {50 ps} -r 100
-run
+# Loading work.registers(rtl)
+# Loading work.sign_extend(rtl)
+# Loading work.mux(rtl)
+# Loading work.alu(behavior)
+# Loading work.alu_controller(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT1
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U8
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U8
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U5
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U5
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U5
-# End time: 17:13:56 on Dec 31,2021, Elapsed time: 17:13:15
-# Errors: 0, Warnings: 3
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U5
+# End time: 16:33:14 on Jan 12,2022, Elapsed time: 0:02:17
+# Errors: 0, Warnings: 5
