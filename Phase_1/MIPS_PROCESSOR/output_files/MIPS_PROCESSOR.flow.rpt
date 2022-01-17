@@ -1,5 +1,5 @@
 Flow report for MIPS_PROCESSOR
-Wed Jan 12 15:30:39 2022
+Thu Jan 13 12:48:13 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Jan 12 15:30:39 2022       ;
+; Flow Status                        ; Successful - Thu Jan 13 12:48:13 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 46 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 8 / 49,760 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 43 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 43                                          ;
+; Total logic elements               ; 290 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 233 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 194 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 194                                         ;
 ; Total pins                         ; 81 / 360 ( 23 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192 / 1,677,312 ( < 1 % )                 ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/12/2022 15:29:52 ;
+; Start date & time ; 01/13/2022 12:46:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_PROCESSOR      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                              ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +----------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                        ; 192123327304435.164202299203776        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                        ; 192123327304435.164209961501740        ; --            ; --          ; --                                ;
 ; CYCLONEII_OPTIMIZATION_TECHNIQUE             ; Speed                                  ; Balanced      ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME                     ; NA                                     ; --            ; --          ; TESTBENCH                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
@@ -122,12 +122,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4861 MB             ; 00:00:32                           ;
-; Fitter               ; 00:00:19     ; 1.0                     ; 5381 MB             ; 00:00:22                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4691 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4801 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4654 MB             ; 00:00:01                           ;
-; Total                ; 00:00:43     ; --                      ; --                  ; 00:01:03                           ;
+; Analysis & Synthesis ; 00:00:38     ; 1.0                     ; 4872 MB             ; 00:01:09                           ;
+; Fitter               ; 00:00:21     ; 1.0                     ; 5378 MB             ; 00:00:22                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4691 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 4805 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4655 MB             ; 00:00:02                           ;
+; Total                ; 00:01:09     ; --                      ; --                  ; 00:01:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
