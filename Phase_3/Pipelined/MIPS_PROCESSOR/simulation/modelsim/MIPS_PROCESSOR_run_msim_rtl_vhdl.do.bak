@@ -5,9 +5,30 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
-vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd}
-vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/MIPS_PROCESSOR/ADDER.vhd}
-vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd}
-vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/MIPS_PROCESSOR/IP_MEMORY.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/LEFT_SHIFTER.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/CONTROLLER.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/AND_GATE.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ADDER_ALU.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ALU_CONTROLLER.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ADDER.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IP_MEMORY.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ALU.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MUX.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/SIGN_EXTEND.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/REGISTERS.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IF_ID.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ID_EX.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/EX_MEM.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MEM_WB.vhd}
 
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/TESTBENCH.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TESTBENCH
+
+add wave *
+view structure
+view signals
+run -all
