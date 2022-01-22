@@ -83,7 +83,6 @@ set_global_assignment -name QII_AUTO_PACKED_REGISTERS NORMAL
 set_global_assignment -name SMART_RECOMPILE OFF
 set_global_assignment -name EDA_TEST_BENCH_FILE TESTBENCH.vhd -section_id TESTBENCH
 set_global_assignment -name VHDL_FILE TESTBENCH.vhd
-set_global_assignment -name SOURCE_FILE IP_MEMORY.cmp
 set_global_assignment -name VHDL_FILE MIPS_PROCESSOR.vhd
 set_global_assignment -name VHDL_FILE PROGRAM_COUNTER.vhd
 set_global_assignment -name VHDL_FILE ADDER.vhd

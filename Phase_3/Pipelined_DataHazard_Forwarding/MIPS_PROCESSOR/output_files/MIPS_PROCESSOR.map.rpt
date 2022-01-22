@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PROCESSOR
-Tue Jan 18 12:57:42 2022
+Fri Jan 21 19:10:39 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,15 +43,19 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  35. Parameter Settings for User Entity Instance: ID_EX:U19
  36. Parameter Settings for User Entity Instance: EX_MEM:U20
  37. Parameter Settings for User Entity Instance: MEM_WB:U21
- 38. Parameter Settings for Inferred Entity Instance: REGISTERS:U5|altsyncram:Registers_rtl_0
- 39. Parameter Settings for Inferred Entity Instance: REGISTERS:U5|altsyncram:Registers_rtl_1
- 40. altsyncram Parameter Settings by Entity Instance
- 41. Port Connectivity Checks: "IP_MEMORY:U4"
- 42. In-System Memory Content Editor Settings
- 43. Post-Synthesis Netlist Statistics for Top Partition
- 44. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 45. Elapsed Time Per Partition
- 46. Analysis & Synthesis Messages
+ 38. Parameter Settings for User Entity Instance: FORWARDING:U22
+ 39. Parameter Settings for User Entity Instance: MUX_3_1:U23
+ 40. Parameter Settings for User Entity Instance: MUX_3_1:U24
+ 41. Parameter Settings for User Entity Instance: HAZARD_UNIT:U25
+ 42. Parameter Settings for User Entity Instance: HAZARD_MUX:U26
+ 43. Parameter Settings for Inferred Entity Instance: REGISTERS:U5|altsyncram:Registers_rtl_0
+ 44. Parameter Settings for Inferred Entity Instance: REGISTERS:U5|altsyncram:Registers_rtl_1
+ 45. altsyncram Parameter Settings by Entity Instance
+ 46. Port Connectivity Checks: "IP_MEMORY:U4"
+ 47. In-System Memory Content Editor Settings
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
 
 
 
@@ -78,15 +82,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 18 12:57:42 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 21 19:10:39 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 2,391                                       ;
-;     Total combinational functions  ; 1,202                                       ;
-;     Dedicated logic registers      ; 1,401                                       ;
-; Total registers                    ; 1401                                        ;
+; Total logic elements               ; 2,528                                       ;
+;     Total combinational functions  ; 1,366                                       ;
+;     Dedicated logic registers      ; 1,406                                       ;
+; Total registers                    ; 1406                                        ;
 ; Total pins                         ; 1                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 10,240                                      ;
@@ -200,56 +204,60 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                                             ;
-+--------------------------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                                                          ; Library     ;
-+--------------------------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; LEFT_SHIFTER.vhd                                                   ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/LEFT_SHIFTER.vhd                                                   ;             ;
-; DATA_MEMORY.vhd                                                    ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd                                                    ;             ;
-; CONTROLLER.vhd                                                     ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/CONTROLLER.vhd                                                     ;             ;
-; AND_GATE.vhd                                                       ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/AND_GATE.vhd                                                       ;             ;
-; ADDER_ALU.vhd                                                      ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ADDER_ALU.vhd                                                      ;             ;
-; ALU_CONTROLLER.vhd                                                 ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ALU_CONTROLLER.vhd                                                 ;             ;
-; MIPS_PROCESSOR.vhd                                                 ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd                                                 ;             ;
-; PROGRAM_COUNTER.vhd                                                ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd                                                ;             ;
-; ADDER.vhd                                                          ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ADDER.vhd                                                          ;             ;
-; IP_MEMORY.vhd                                                      ; yes             ; User Wizard-Generated File                            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IP_MEMORY.vhd                                                      ;             ;
-; ALU.vhd                                                            ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ALU.vhd                                                            ;             ;
-; MUX.vhd                                                            ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MUX.vhd                                                            ;             ;
-; SIGN_EXTEND.vhd                                                    ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/SIGN_EXTEND.vhd                                                    ;             ;
-; REGISTERS.vhd                                                      ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/REGISTERS.vhd                                                      ;             ;
-; IF_ID.vhd                                                          ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IF_ID.vhd                                                          ;             ;
-; ID_EX.vhd                                                          ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ID_EX.vhd                                                          ;             ;
-; EX_MEM.vhd                                                         ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/EX_MEM.vhd                                                         ;             ;
-; MEM_WB.vhd                                                         ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MEM_WB.vhd                                                         ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                 ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                          ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                    ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                 ;             ;
-; aglobal201.inc                                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                                                                 ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                  ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                                                                     ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                                                     ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                                                   ;             ;
-; db/altsyncram_6us3.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_6us3.tdf                                             ;             ;
-; db/altsyncram_kaq2.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_kaq2.tdf                                             ;             ;
-; Assembly.mif                                                       ; yes             ; Auto-Found Memory Initialization File                 ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/Assembly.mif                                                       ;             ;
-; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                                                            ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                                                  ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                                              ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                                                 ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                                                    ; altera_sld  ;
-; db/ip/sld47796209/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File                 ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File                 ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                                               ;             ;
-; db/altsyncram_mpl1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_mpl1.tdf                                             ;             ;
-; db/MIPS_PROCESSOR.ram0_REGISTERS_7706e59f.hdl.mif                  ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/MIPS_PROCESSOR.ram0_REGISTERS_7706e59f.hdl.mif                  ;             ;
-+--------------------------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                                                                   ;
++--------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                                                                                ; Library     ;
++--------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; HAZARD_UNIT.vhd                                                    ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd                                                    ;             ;
+; FORWARDING.vhd                                                     ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/FORWARDING.vhd                                                     ;             ;
+; LEFT_SHIFTER.vhd                                                   ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/LEFT_SHIFTER.vhd                                                   ;             ;
+; DATA_MEMORY.vhd                                                    ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd                                                    ;             ;
+; CONTROLLER.vhd                                                     ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd                                                     ;             ;
+; AND_GATE.vhd                                                       ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd                                                       ;             ;
+; ADDER_ALU.vhd                                                      ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd                                                      ;             ;
+; ALU_CONTROLLER.vhd                                                 ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd                                                 ;             ;
+; MIPS_PROCESSOR.vhd                                                 ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd                                                 ;             ;
+; PROGRAM_COUNTER.vhd                                                ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd                                                ;             ;
+; ADDER.vhd                                                          ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd                                                          ;             ;
+; IP_MEMORY.vhd                                                      ; yes             ; User Wizard-Generated File                            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd                                                      ;             ;
+; ALU.vhd                                                            ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU.vhd                                                            ;             ;
+; MUX.vhd                                                            ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd                                                            ;             ;
+; SIGN_EXTEND.vhd                                                    ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/SIGN_EXTEND.vhd                                                    ;             ;
+; REGISTERS.vhd                                                      ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd                                                      ;             ;
+; IF_ID.vhd                                                          ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IF_ID.vhd                                                          ;             ;
+; ID_EX.vhd                                                          ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ID_EX.vhd                                                          ;             ;
+; EX_MEM.vhd                                                         ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/EX_MEM.vhd                                                         ;             ;
+; MEM_WB.vhd                                                         ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd                                                         ;             ;
+; MUX_3_1.vhd                                                        ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd                                                        ;             ;
+; HAZARD_MUX.vhd                                                     ; yes             ; User VHDL File                                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd                                                     ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                                       ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                                                ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                                          ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                                       ;             ;
+; aglobal201.inc                                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                                                                                       ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                                        ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                                                                                           ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                                                                           ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                                                                         ;             ;
+; db/altsyncram_6us3.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_6us3.tdf                                             ;             ;
+; db/altsyncram_kaq2.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_kaq2.tdf                                             ;             ;
+; Assembly.mif                                                       ; yes             ; Auto-Found Memory Initialization File                 ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/Assembly.mif                                                       ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                                                                                  ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                                                                        ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                                                                    ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                                                                       ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                                                                          ; altera_sld  ;
+; db/ip/sld47796209/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File                 ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File                 ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File                        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                                ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                                                                     ;             ;
+; db/altsyncram_mpl1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_mpl1.tdf                                             ;             ;
+; db/MIPS_PROCESSOR.ram0_REGISTERS_7706e59f.hdl.mif                  ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/MIPS_PROCESSOR.ram0_REGISTERS_7706e59f.hdl.mif                  ;             ;
++--------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +---------------------------------------------------------+
@@ -257,20 +265,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 2,391     ;
+; Estimated Total logic elements              ; 2,528     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1202      ;
+; Total combinational functions               ; 1366      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 824       ;
-;     -- 3 input functions                    ; 309       ;
-;     -- <=2 input functions                  ; 69        ;
+;     -- 4 input functions                    ; 922       ;
+;     -- 3 input functions                    ; 373       ;
+;     -- <=2 input functions                  ; 71        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1140      ;
+;     -- normal mode                          ; 1304      ;
 ;     -- arithmetic mode                      ; 62        ;
 ;                                             ;           ;
-; Total registers                             ; 1401      ;
-;     -- Dedicated logic registers            ; 1401      ;
+; Total registers                             ; 1406      ;
+;     -- Dedicated logic registers            ; 1406      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 1         ;
@@ -279,9 +287,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 1348      ;
-; Total fan-out                               ; 9824      ;
-; Average fan-out                             ; 3.63      ;
+; Maximum fan-out                             ; 1353      ;
+; Total fan-out                               ; 10466     ;
+; Average fan-out                             ; 3.64      ;
 +---------------------------------------------+-----------+
 
 
@@ -290,26 +298,30 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                        ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |MIPS_PROCESSOR                                                                                                                         ; 1202 (1)            ; 1401 (0)                  ; 10240       ; 0          ; 0            ; 0       ; 0         ; 1    ; 0            ; 0          ; |MIPS_PROCESSOR                                                                                                                                                                                                                                                                                                                                            ; MIPS_PROCESSOR                    ; work         ;
+; |MIPS_PROCESSOR                                                                                                                         ; 1366 (1)            ; 1406 (0)                  ; 10240       ; 0          ; 0            ; 0       ; 0         ; 1    ; 0            ; 0          ; |MIPS_PROCESSOR                                                                                                                                                                                                                                                                                                                                            ; MIPS_PROCESSOR                    ; work         ;
 ;    |ADDER:U2|                                                                                                                           ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ADDER:U2                                                                                                                                                                                                                                                                                                                                   ; ADDER                             ; work         ;
-;    |ALU:U8|                                                                                                                             ; 143 (143)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU:U8                                                                                                                                                                                                                                                                                                                                     ; ALU                               ; work         ;
+;    |ALU:U8|                                                                                                                             ; 178 (178)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU:U8                                                                                                                                                                                                                                                                                                                                     ; ALU                               ; work         ;
 ;    |ALU_CONTROLLER:U9|                                                                                                                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU_CONTROLLER:U9                                                                                                                                                                                                                                                                                                                          ; ALU_CONTROLLER                    ; work         ;
-;    |CONTROLLER:U10|                                                                                                                     ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|CONTROLLER:U10                                                                                                                                                                                                                                                                                                                             ; CONTROLLER                        ; work         ;
+;    |CONTROLLER:U10|                                                                                                                     ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|CONTROLLER:U10                                                                                                                                                                                                                                                                                                                             ; CONTROLLER                        ; work         ;
 ;    |DATA_MEMORY:U16|                                                                                                                    ; 752 (752)           ; 1024 (1024)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|DATA_MEMORY:U16                                                                                                                                                                                                                                                                                                                            ; DATA_MEMORY                       ; work         ;
 ;    |EX_MEM:U20|                                                                                                                         ; 6 (6)               ; 80 (80)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|EX_MEM:U20                                                                                                                                                                                                                                                                                                                                 ; EX_MEM                            ; work         ;
-;    |ID_EX:U19|                                                                                                                          ; 0 (0)               ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ID_EX:U19                                                                                                                                                                                                                                                                                                                                  ; ID_EX                             ; work         ;
+;    |FORWARDING:U22|                                                                                                                     ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|FORWARDING:U22                                                                                                                                                                                                                                                                                                                             ; FORWARDING                        ; work         ;
+;    |HAZARD_MUX:U26|                                                                                                                     ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|HAZARD_MUX:U26                                                                                                                                                                                                                                                                                                                             ; HAZARD_MUX                        ; work         ;
+;    |HAZARD_UNIT:U25|                                                                                                                    ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|HAZARD_UNIT:U25                                                                                                                                                                                                                                                                                                                            ; HAZARD_UNIT                       ; work         ;
+;    |ID_EX:U19|                                                                                                                          ; 0 (0)               ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ID_EX:U19                                                                                                                                                                                                                                                                                                                                  ; ID_EX                             ; work         ;
 ;    |IF_ID:U18|                                                                                                                          ; 0 (0)               ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IF_ID:U18                                                                                                                                                                                                                                                                                                                                  ; IF_ID                             ; work         ;
-;    |IP_MEMORY:U4|                                                                                                                       ; 86 (0)              ; 63 (0)                    ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4                                                                                                                                                                                                                                                                                                                               ; IP_MEMORY                         ; work         ;
-;       |altsyncram:altsyncram_component|                                                                                                 ; 86 (0)              ; 63 (0)                    ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                               ; altsyncram                        ; work         ;
-;          |altsyncram_6us3:auto_generated|                                                                                               ; 86 (0)              ; 63 (0)                    ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated                                                                                                                                                                                                                                                                ; altsyncram_6us3                   ; work         ;
+;    |IP_MEMORY:U4|                                                                                                                       ; 87 (0)              ; 63 (0)                    ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4                                                                                                                                                                                                                                                                                                                               ; IP_MEMORY                         ; work         ;
+;       |altsyncram:altsyncram_component|                                                                                                 ; 87 (0)              ; 63 (0)                    ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                               ; altsyncram                        ; work         ;
+;          |altsyncram_6us3:auto_generated|                                                                                               ; 87 (0)              ; 63 (0)                    ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated                                                                                                                                                                                                                                                                ; altsyncram_6us3                   ; work         ;
 ;             |altsyncram_kaq2:altsyncram1|                                                                                               ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|altsyncram_kaq2:altsyncram1                                                                                                                                                                                                                                    ; altsyncram_kaq2                   ; work         ;
-;             |sld_mod_ram_rom:mgl_prim2|                                                                                                 ; 86 (70)             ; 63 (55)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                                                                                                                                                      ; sld_mod_ram_rom                   ; work         ;
+;             |sld_mod_ram_rom:mgl_prim2|                                                                                                 ; 87 (71)             ; 63 (55)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                                                                                                                                                      ; sld_mod_ram_rom                   ; work         ;
 ;                |sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|                                                                  ; 16 (16)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr                                                                                                                                                                                ; sld_rom_sr                        ; work         ;
 ;    |MEM_WB:U21|                                                                                                                         ; 0 (0)               ; 71 (71)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MEM_WB:U21                                                                                                                                                                                                                                                                                                                                 ; MEM_WB                            ; work         ;
 ;    |MUX:U11|                                                                                                                            ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U11                                                                                                                                                                                                                                                                                                                                    ; MUX                               ; work         ;
 ;    |MUX:U14|                                                                                                                            ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U14                                                                                                                                                                                                                                                                                                                                    ; MUX                               ; work         ;
 ;    |MUX:U17|                                                                                                                            ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U17                                                                                                                                                                                                                                                                                                                                    ; MUX                               ; work         ;
-;    |MUX:U7|                                                                                                                             ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U7                                                                                                                                                                                                                                                                                                                                     ; MUX                               ; work         ;
+;    |MUX_3_1:U23|                                                                                                                        ; 64 (64)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX_3_1:U23                                                                                                                                                                                                                                                                                                                                ; MUX_3_1                           ; work         ;
+;    |MUX_3_1:U24|                                                                                                                        ; 64 (64)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX_3_1:U24                                                                                                                                                                                                                                                                                                                                ; MUX_3_1                           ; work         ;
 ;    |PROGRAM_COUNTER:U1|                                                                                                                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|PROGRAM_COUNTER:U1                                                                                                                                                                                                                                                                                                                         ; PROGRAM_COUNTER                   ; work         ;
 ;    |REGISTERS:U5|                                                                                                                       ; 0 (0)               ; 0 (0)                     ; 2048        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5                                                                                                                                                                                                                                                                                                                               ; REGISTERS                         ; work         ;
 ;       |altsyncram:Registers_rtl_0|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 1024        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|altsyncram:Registers_rtl_0                                                                                                                                                                                                                                                                                                    ; altsyncram                        ; work         ;
@@ -405,14 +417,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; ID_EX:U19|SIGN_EXTEND_OUT[13]           ; Merged with ID_EX:U19|INST1511_OUT[2]      ;
 ; ID_EX:U19|SIGN_EXTEND_OUT[14]           ; Merged with ID_EX:U19|INST1511_OUT[3]      ;
 ; ID_EX:U19|SIGN_EXTEND_OUT[15..31]       ; Merged with ID_EX:U19|INST1511_OUT[4]      ;
-; ID_EX:U19|EX_OUT[3]                     ; Merged with ID_EX:U19|EX_OUT[2]            ;
 ; PROGRAM_COUNTER:U1|ADDR_OUT[1]          ; Merged with PROGRAM_COUNTER:U1|ADDR_OUT[0] ;
 ; EX_MEM:U20|ADD_RESULT_OUT[1]            ; Merged with EX_MEM:U20|ADD_RESULT_OUT[0]   ;
+; ID_EX:U19|WB_OUT[0]                     ; Merged with ID_EX:U19|M_OUT[1]             ;
 ; ID_EX:U19|PC_OUT[1]                     ; Merged with ID_EX:U19|PC_OUT[0]            ;
+; ID_EX:U19|EX_OUT[3]                     ; Merged with ID_EX:U19|EX_OUT[2]            ;
 ; ID_EX:U19|M_OUT[2]                      ; Merged with ID_EX:U19|EX_OUT[1]            ;
 ; IF_ID:U18|ADD_OUT[1]                    ; Merged with IF_ID:U18|ADD_OUT[0]           ;
 ; EX_MEM:U20|WB_OUT[0]                    ; Merged with EX_MEM:U20|M_OUT[1]            ;
-; ID_EX:U19|WB_OUT[0]                     ; Merged with ID_EX:U19|M_OUT[1]             ;
 ; PROGRAM_COUNTER:U1|ADDR_OUT[0]          ; Stuck at GND due to stuck port data_in     ;
 ; IF_ID:U18|ADD_OUT[0]                    ; Stuck at GND due to stuck port data_in     ;
 ; ID_EX:U19|PC_OUT[0]                     ; Stuck at GND due to stuck port data_in     ;
@@ -471,12 +483,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1401  ;
+; Total registers                              ; 1406  ;
 ; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 18    ;
 ; Number of registers using Asynchronous Clear ; 56    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1137  ;
+; Number of registers using Clock Enable       ; 1181  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -502,26 +514,23 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------+------------------------------+------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                                                                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[5]                                                                                                                                                                                                                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                                                                                                                                                                                                ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[5]                                                                                                                                                                                                                                ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |MIPS_PROCESSOR|ID_EX:U19|EX_OUT[0]                                                                                                                                                                                                                                                                                                                                      ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|word_counter[0]                                                                                                                                                                              ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[2]                                                                                                                                                                                   ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[1]                                                                                                                                                                                   ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 96 LEs               ; 64 LEs                 ; No         ; |MIPS_PROCESSOR|ALU:U8|Mux23                                                                                                                                                                                                                                                                                                                                             ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |MIPS_PROCESSOR|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[2]                             ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MIPS_PROCESSOR|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[0]                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |MIPS_PROCESSOR|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[1] ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |MIPS_PROCESSOR|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]              ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 60 LEs               ; 28 LEs                 ; Yes        ; |MIPS_PROCESSOR|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]                      ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 32 LEs               ; 20 LEs                 ; Yes        ; |MIPS_PROCESSOR|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[5]                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[3]                                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[2]                                                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |MIPS_PROCESSOR|ID_EX:U19|WB_OUT[1]                                                                                                                                                         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|word_counter[1] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |MIPS_PROCESSOR|ID_EX:U19|M_OUT[0]                                                                                                                                                          ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[3]      ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[0]      ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|MUX_3_1:U24|OUTPUT[23]                                                                                                                                                      ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|MUX_3_1:U23|OUTPUT[13]                                                                                                                                                      ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 96 LEs               ; 64 LEs                 ; No         ; |MIPS_PROCESSOR|ALU:U8|Mux0                                                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------+
@@ -782,6 +791,56 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FORWARDING:U22 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; size           ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX_3_1:U23 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; size           ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX_3_1:U24 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; size           ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: HAZARD_UNIT:U25 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; size           ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: HAZARD_MUX:U26 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; size           ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: REGISTERS:U5|altsyncram:Registers_rtl_0                ;
 +------------------------------------+---------------------------------------------------+----------------+
@@ -971,67 +1030,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 28                          ;
-; cycloneiii_ff         ; 1315                        ;
+; cycloneiii_ff         ; 1320                        ;
 ;     CLR               ; 8                           ;
-;     ENA               ; 1064                        ;
+;     ENA               ; 1108                        ;
 ;     ENA CLR           ; 7                           ;
 ;     ENA CLR SLD       ; 8                           ;
-;     plain             ; 228                         ;
-; cycloneiii_lcell_comb ; 1079                        ;
+;     plain             ; 189                         ;
+; cycloneiii_lcell_comb ; 1243                        ;
 ;     arith             ; 54                          ;
 ;         2 data inputs ; 17                          ;
 ;         3 data inputs ; 37                          ;
-;     normal            ; 1025                        ;
+;     normal            ; 1189                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 241                         ;
-;         4 data inputs ; 771                         ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 305                         ;
+;         4 data inputs ; 869                         ;
 ; cycloneiii_ram_block  ; 96                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.50                       ;
-; Average LUT depth     ; 4.76                        ;
+; Max LUT depth         ; 15.70                       ;
+; Average LUT depth     ; 6.14                        ;
 +-----------------------+-----------------------------+
 
 
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; boundary_port         ; 103                                      ;
-; cycloneiii_ff         ; 86                                       ;
-;     CLR               ; 5                                        ;
-;     ENA               ; 16                                       ;
-;     ENA CLR           ; 27                                       ;
-;     ENA CLR SLD       ; 1                                        ;
-;     ENA SCLR          ; 5                                        ;
-;     ENA SLD           ; 9                                        ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 16                                       ;
-; cycloneiii_lcell_comb ; 123                                      ;
-;     arith             ; 8                                        ;
-;         2 data inputs ; 8                                        ;
-;     normal            ; 115                                      ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 6                                        ;
-;         2 data inputs ; 24                                       ;
-;         3 data inputs ; 31                                       ;
-;         4 data inputs ; 53                                       ;
-;                       ;                                          ;
-; Max LUT depth         ; 4.00                                     ;
-; Average LUT depth     ; 1.87                                     ;
-+-----------------------+------------------------------------------+
-
-
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:03     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -1040,76 +1068,89 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jan 18 12:57:07 2022
+    Info: Processing started: Fri Jan 21 19:10:07 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file hazard_unit.vhd
+    Info (12022): Found design unit 1: HAZARD_UNIT-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd Line: 22
+    Info (12023): Found entity 1: HAZARD_UNIT File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file forwarding.vhd
+    Info (12022): Found design unit 1: FORWARDING-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/FORWARDING.vhd Line: 22
+    Info (12023): Found entity 1: FORWARDING File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/FORWARDING.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file left_shifter.vhd
-    Info (12022): Found design unit 1: LEFT_SHIFTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/LEFT_SHIFTER.vhd Line: 16
-    Info (12023): Found entity 1: LEFT_SHIFTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/LEFT_SHIFTER.vhd Line: 5
+    Info (12022): Found design unit 1: LEFT_SHIFTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/LEFT_SHIFTER.vhd Line: 16
+    Info (12023): Found entity 1: LEFT_SHIFTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/LEFT_SHIFTER.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file data_memory.vhd
-    Info (12022): Found design unit 1: DATA_MEMORY-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 19
-    Info (12023): Found entity 1: DATA_MEMORY File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 5
+    Info (12022): Found design unit 1: DATA_MEMORY-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 19
+    Info (12023): Found entity 1: DATA_MEMORY File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file controller.vhd
-    Info (12022): Found design unit 1: CONTROLLER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/CONTROLLER.vhd Line: 23
-    Info (12023): Found entity 1: CONTROLLER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/CONTROLLER.vhd Line: 8
+    Info (12022): Found design unit 1: CONTROLLER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd Line: 23
+    Info (12023): Found entity 1: CONTROLLER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file and_gate.vhd
-    Info (12022): Found design unit 1: AND_GATE-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/AND_GATE.vhd Line: 15
-    Info (12023): Found entity 1: AND_GATE File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/AND_GATE.vhd Line: 8
+    Info (12022): Found design unit 1: AND_GATE-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd Line: 15
+    Info (12023): Found entity 1: AND_GATE File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file adder_alu.vhd
-    Info (12022): Found design unit 1: ADDER_ALU-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ADDER_ALU.vhd Line: 19
-    Info (12023): Found entity 1: ADDER_ALU File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ADDER_ALU.vhd Line: 7
+    Info (12022): Found design unit 1: ADDER_ALU-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd Line: 19
+    Info (12023): Found entity 1: ADDER_ALU File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file alu_controller.vhd
-    Info (12022): Found design unit 1: ALU_CONTROLLER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 13
-    Info (12023): Found entity 1: ALU_CONTROLLER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 5
+    Info (12022): Found design unit 1: ALU_CONTROLLER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 13
+    Info (12023): Found entity 1: ALU_CONTROLLER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mips_processor.vhd
-    Info (12022): Found design unit 1: MIPS_PROCESSOR-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 20
-    Info (12023): Found entity 1: MIPS_PROCESSOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 10
+    Info (12022): Found design unit 1: MIPS_PROCESSOR-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 20
+    Info (12023): Found entity 1: MIPS_PROCESSOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file program_counter.vhd
-    Info (12022): Found design unit 1: PROGRAM_COUNTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 17
-    Info (12023): Found entity 1: PROGRAM_COUNTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 6
+    Info (12022): Found design unit 1: PROGRAM_COUNTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 18
+    Info (12023): Found entity 1: PROGRAM_COUNTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file adder.vhd
-    Info (12022): Found design unit 1: ADDER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ADDER.vhd Line: 18
-    Info (12023): Found entity 1: ADDER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ADDER.vhd Line: 8
+    Info (12022): Found design unit 1: ADDER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd Line: 18
+    Info (12023): Found entity 1: ADDER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file instruction_register.vhd
-    Info (12022): Found design unit 1: INSTRUCTION_REGISTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 21
-    Info (12023): Found entity 1: INSTRUCTION_REGISTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 5
+    Info (12022): Found design unit 1: INSTRUCTION_REGISTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 21
+    Info (12023): Found entity 1: INSTRUCTION_REGISTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ip_memory.vhd
-    Info (12022): Found design unit 1: ip_memory-SYN File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 55
-    Info (12023): Found entity 1: IP_MEMORY File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 43
+    Info (12022): Found design unit 1: ip_memory-SYN File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 55
+    Info (12023): Found entity 1: IP_MEMORY File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: ALU-BEHAVIOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ALU.vhd Line: 16
-    Info (12023): Found entity 1: ALU File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ALU.vhd Line: 6
+    Info (12022): Found design unit 1: ALU-BEHAVIOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU.vhd Line: 16
+    Info (12023): Found entity 1: ALU File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU.vhd Line: 6
 Warning (12019): Can't analyze file -- file 2_TO_1_MUX.vhd is missing
-Warning (12090): Entity "MUX" obtained from "MUX.vhd" instead of from Quartus Prime megafunction library File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MUX.vhd Line: 4
+Warning (12090): Entity "MUX" obtained from "MUX.vhd" instead of from Quartus Prime megafunction library File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: MUX-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MUX.vhd Line: 18
-    Info (12023): Found entity 1: MUX File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MUX.vhd Line: 4
+    Info (12022): Found design unit 1: MUX-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd Line: 18
+    Info (12023): Found entity 1: MUX File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sign_extend.vhd
-    Info (12022): Found design unit 1: SIGN_EXTEND-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/SIGN_EXTEND.vhd Line: 14
-    Info (12023): Found entity 1: SIGN_EXTEND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/SIGN_EXTEND.vhd Line: 4
+    Info (12022): Found design unit 1: SIGN_EXTEND-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/SIGN_EXTEND.vhd Line: 14
+    Info (12023): Found entity 1: SIGN_EXTEND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/SIGN_EXTEND.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registers.vhd
-    Info (12022): Found design unit 1: REGISTERS-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/REGISTERS.vhd Line: 18
-    Info (12023): Found entity 1: REGISTERS File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/REGISTERS.vhd Line: 5
+    Info (12022): Found design unit 1: REGISTERS-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd Line: 18
+    Info (12023): Found entity 1: REGISTERS File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file if_id.vhd
-    Info (12022): Found design unit 1: IF_ID-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IF_ID.vhd Line: 20
-    Info (12023): Found entity 1: IF_ID File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IF_ID.vhd Line: 6
+    Info (12022): Found design unit 1: IF_ID-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IF_ID.vhd Line: 21
+    Info (12023): Found entity 1: IF_ID File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IF_ID.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file id_ex.vhd
-    Info (12022): Found design unit 1: ID_EX-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ID_EX.vhd Line: 33
-    Info (12023): Found entity 1: ID_EX File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ID_EX.vhd Line: 6
+    Info (12022): Found design unit 1: ID_EX-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ID_EX.vhd Line: 35
+    Info (12023): Found entity 1: ID_EX File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ID_EX.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ex_mem.vhd
-    Info (12022): Found design unit 1: EX_MEM-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/EX_MEM.vhd Line: 29
-    Info (12023): Found entity 1: EX_MEM File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/EX_MEM.vhd Line: 6
+    Info (12022): Found design unit 1: EX_MEM-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/EX_MEM.vhd Line: 29
+    Info (12023): Found entity 1: EX_MEM File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/EX_MEM.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mem_wb.vhd
-    Info (12022): Found design unit 1: MEM_WB-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MEM_WB.vhd Line: 23
-    Info (12023): Found entity 1: MEM_WB File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MEM_WB.vhd Line: 6
+    Info (12022): Found design unit 1: MEM_WB-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd Line: 23
+    Info (12023): Found entity 1: MEM_WB File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux_3_1.vhd
+    Info (12022): Found design unit 1: MUX_3_1-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd Line: 17
+    Info (12023): Found entity 1: MUX_3_1 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file hazard_mux.vhd
+    Info (12022): Found design unit 1: HAZARD_MUX-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd Line: 26
+    Info (12023): Found entity 1: HAZARD_MUX File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd Line: 6
 Info (12127): Elaborating entity "MIPS_PROCESSOR" for the top level hierarchy
-Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 320
-Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 321
-Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U4" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 322
-Info (12128): Elaborating entity "altsyncram" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
-Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
-Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
+Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 393
+Warning (10492): VHDL Process Statement warning at PROGRAM_COUNTER.vhd(24): signal "EN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 24
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 394
+Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U4" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 395
+Info (12128): Elaborating entity "altsyncram" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
+Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
+Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -1161,24 +1202,24 @@ Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_comp
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=NONE"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6us3.tdf
-    Info (12023): Found entity 1: altsyncram_6us3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_6us3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_6us3" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kaq2.tdf
-    Info (12023): Found entity 1: altsyncram_kaq2 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_kaq2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_kaq2" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|altsyncram_kaq2:altsyncram1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 37
-Warning (113031): 9 out of 256 addresses are reinitialized. The latest initialized data will replace the existing data. There are 9 warnings found, and 9 warnings are reported. File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/Assembly.mif Line: 1
-    Warning (113030): Memory Initialization File address 0 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ Line: 10
-    Warning (113030): Memory Initialization File address 4 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ Line: 11
-    Warning (113030): Memory Initialization File address 8 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ Line: 12
-    Warning (113030): Memory Initialization File address 12 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ Line: 13
-    Warning (113030): Memory Initialization File address 16 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ Line: 14
-    Warning (113030): Memory Initialization File address 20 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ Line: 15
-    Warning (113030): Memory Initialization File address 24 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ Line: 16
-    Warning (113030): Memory Initialization File address 28 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ Line: 17
-    Warning (113030): Memory Initialization File address 32 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/ Line: 18
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 38
-Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 38
-Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 38
+    Info (12023): Found entity 1: altsyncram_kaq2 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_kaq2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_kaq2" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|altsyncram_kaq2:altsyncram1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 37
+Warning (113031): 9 out of 256 addresses are reinitialized. The latest initialized data will replace the existing data. There are 9 warnings found, and 9 warnings are reported. File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/Assembly.mif Line: 1
+    Warning (113030): Memory Initialization File address 0 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ Line: 10
+    Warning (113030): Memory Initialization File address 4 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ Line: 11
+    Warning (113030): Memory Initialization File address 8 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ Line: 12
+    Warning (113030): Memory Initialization File address 12 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ Line: 13
+    Warning (113030): Memory Initialization File address 16 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ Line: 14
+    Warning (113030): Memory Initialization File address 20 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ Line: 15
+    Warning (113030): Memory Initialization File address 24 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ Line: 16
+    Warning (113030): Memory Initialization File address 28 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ Line: 17
+    Warning (113030): Memory Initialization File address 32 is reinitialized File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ Line: 18
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 38
+Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 38
+Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_6us3.tdf Line: 38
     Info (12134): Parameter "CVALUE" = "00000000000000000000000000000000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
     Info (12134): Parameter "IS_READABLE" = "1"
@@ -1190,58 +1231,64 @@ Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_comp
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_6us3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 799
-Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:U5" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 323
-Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:U6" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 324
-Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U7" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 325
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U8" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 326
-Info (12128): Elaborating entity "ALU_CONTROLLER" for hierarchy "ALU_CONTROLLER:U9" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 327
-Info (12128): Elaborating entity "CONTROLLER" for hierarchy "CONTROLLER:U10" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 328
-Warning (10036): Verilog HDL or VHDL warning at CONTROLLER.vhd(24): object "BUFF" assigned a value but never read File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/CONTROLLER.vhd Line: 24
-Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U11" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 329
-Info (12128): Elaborating entity "LEFT_SHIFTER" for hierarchy "LEFT_SHIFTER:U12" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 330
-Info (12128): Elaborating entity "ADDER_ALU" for hierarchy "ADDER_ALU:U13" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 331
-Info (12128): Elaborating entity "AND_GATE" for hierarchy "AND_GATE:U15" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 333
-Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DATA_MEMORY:U16" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 334
-Warning (10492): VHDL Process Statement warning at DATA_MEMORY.vhd(38): signal "Registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 38
-Warning (10631): VHDL Process Statement warning at DATA_MEMORY.vhd(35): inferring latch(es) for signal or variable "READ_DATA", which holds its previous value in one or more paths through the process File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[0]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[1]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[2]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[3]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[4]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[5]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[6]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[7]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[8]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[9]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[10]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[11]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[12]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[13]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[14]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[15]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[16]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[17]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[18]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[19]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[20]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[21]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[22]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[23]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[24]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[25]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[26]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[27]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[28]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[29]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[30]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[31]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (12128): Elaborating entity "IF_ID" for hierarchy "IF_ID:U18" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 339
-Info (12128): Elaborating entity "ID_EX" for hierarchy "ID_EX:U19" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 340
-Info (12128): Elaborating entity "EX_MEM" for hierarchy "EX_MEM:U20" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 341
-Info (12128): Elaborating entity "MEM_WB" for hierarchy "MEM_WB:U21" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 342
+Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:U5" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 396
+Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:U6" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 397
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U7" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 398
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U8" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 399
+Info (12128): Elaborating entity "ALU_CONTROLLER" for hierarchy "ALU_CONTROLLER:U9" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 400
+Info (12128): Elaborating entity "CONTROLLER" for hierarchy "CONTROLLER:U10" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 401
+Warning (10036): Verilog HDL or VHDL warning at CONTROLLER.vhd(24): object "BUFF" assigned a value but never read File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd Line: 24
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U11" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 402
+Info (12128): Elaborating entity "LEFT_SHIFTER" for hierarchy "LEFT_SHIFTER:U12" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 403
+Info (12128): Elaborating entity "ADDER_ALU" for hierarchy "ADDER_ALU:U13" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 404
+Info (12128): Elaborating entity "AND_GATE" for hierarchy "AND_GATE:U15" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 406
+Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DATA_MEMORY:U16" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 407
+Warning (10492): VHDL Process Statement warning at DATA_MEMORY.vhd(38): signal "Registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at DATA_MEMORY.vhd(35): inferring latch(es) for signal or variable "READ_DATA", which holds its previous value in one or more paths through the process File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[0]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[1]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[2]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[3]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[4]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[5]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[6]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[7]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[8]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[9]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[10]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[11]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[12]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[13]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[14]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[15]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[16]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[17]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[18]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[19]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[20]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[21]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[22]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[23]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[24]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[25]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[26]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[27]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[28]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[29]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[30]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (10041): Inferred latch for "READ_DATA[31]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
+Info (12128): Elaborating entity "IF_ID" for hierarchy "IF_ID:U18" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 412
+Info (12128): Elaborating entity "ID_EX" for hierarchy "ID_EX:U19" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 413
+Info (12128): Elaborating entity "EX_MEM" for hierarchy "EX_MEM:U20" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 414
+Info (12128): Elaborating entity "MEM_WB" for hierarchy "MEM_WB:U21" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 415
+Info (12128): Elaborating entity "FORWARDING" for hierarchy "FORWARDING:U22" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 419
+Info (12128): Elaborating entity "MUX_3_1" for hierarchy "MUX_3_1:U23" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 420
+Info (12128): Elaborating entity "HAZARD_UNIT" for hierarchy "HAZARD_UNIT:U25" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 424
+Warning (10492): VHDL Process Statement warning at HAZARD_UNIT.vhd(26): signal "IF_ID_REGISTER_RS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at HAZARD_UNIT.vhd(26): signal "IF_ID_REGISTER_RT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd Line: 26
+Info (12128): Elaborating entity "HAZARD_MUX" for hierarchy "HAZARD_MUX:U26" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 425
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2022.01.18.12:57:27 Progress: Loading sld47796209/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2022.01.21.19:10:26 Progress: Loading sld47796209/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1252,20 +1299,20 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld47796209/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/ip/sld47796209/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "DATA_MEMORY:U16|Registers" is uninferred due to asynchronous read logic File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 22
+    Info (276007): RAM logic "DATA_MEMORY:U16|Registers" is uninferred due to asynchronous read logic File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 22
 Info (19000): Inferred 2 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "REGISTERS:U5|Registers_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1320,23 +1367,20 @@ Info (12133): Instantiated megafunction "REGISTERS:U5|altsyncram:Registers_rtl_0
     Info (12134): Parameter "INIT_FILE" = "db/MIPS_PROCESSOR.ram0_REGISTERS_7706e59f.hdl.mif"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mpl1.tdf
-    Info (12023): Found entity 1: altsyncram_mpl1 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined/MIPS_PROCESSOR/db/altsyncram_mpl1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_mpl1 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/db/altsyncram_mpl1.tdf Line: 28
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 72 registers lost all their fanouts during netlist optimizations.
-Info (13000): Registers with preset signals will power-up high File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd Line: 386
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2567 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2735 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 2465 logic cells
+    Info (21061): Implemented 2633 logic cells
     Info (21064): Implemented 96 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4816 megabytes
-    Info: Processing ended: Tue Jan 18 12:57:42 2022
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:01:06
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4821 megabytes
+    Info: Processing ended: Fri Jan 21 19:10:39 2022
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:01:03
 
 
