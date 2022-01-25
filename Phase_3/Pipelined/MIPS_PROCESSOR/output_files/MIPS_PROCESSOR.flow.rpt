@@ -1,5 +1,5 @@
 Flow report for MIPS_PROCESSOR
-Tue Jan 18 12:58:16 2022
+Tue Jan 25 12:48:57 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jan 18 12:58:16 2022       ;
+; Flow Status                        ; Successful - Tue Jan 25 12:48:57 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/18/2022 12:57:08 ;
+; Start date & time ; 01/25/2022 12:47:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_PROCESSOR      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 192123327304435.164253222704404        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 192123327304435.164313645503020        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TESTBENCH                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -113,12 +113,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 4816 MB             ; 00:01:05                           ;
-; Fitter               ; 00:00:17     ; 1.2                     ; 5387 MB             ; 00:00:23                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4696 MB             ; 00:00:04                           ;
+; Analysis & Synthesis ; 00:00:43     ; 1.0                     ; 4822 MB             ; 00:01:07                           ;
+; Fitter               ; 00:00:20     ; 1.2                     ; 5392 MB             ; 00:00:23                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4696 MB             ; 00:00:06                           ;
 ; Timing Analyzer      ; 00:00:05     ; 1.4                     ; 4812 MB             ; 00:00:06                           ;
 ; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4664 MB             ; 00:00:02                           ;
-; Total                ; 00:01:02     ; --                      ; --                  ; 00:01:40                           ;
+; Total                ; 00:01:17     ; --                      ; --                  ; 00:01:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

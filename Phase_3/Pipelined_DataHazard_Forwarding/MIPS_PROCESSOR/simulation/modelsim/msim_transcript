@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:20 on Jan 21,2022
+# Start time: 14:33:37 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,11 +20,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity HAZARD_UNIT
 # -- Compiling architecture RTL of HAZARD_UNIT
-# End time: 19:12:20 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:37 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/FORWARDING.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:21 on Jan 21,2022
+# Start time: 14:33:37 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/FORWARDING.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,11 +32,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity FORWARDING
 # -- Compiling architecture RTL of FORWARDING
-# End time: 19:12:21 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:38 on Jan 24,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/LEFT_SHIFTER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:21 on Jan 21,2022
+# Start time: 14:33:38 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/LEFT_SHIFTER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -44,11 +44,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity LEFT_SHIFTER
 # -- Compiling architecture RTL of LEFT_SHIFTER
-# End time: 19:12:21 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:38 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:21 on Jan 21,2022
+# Start time: 14:33:38 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -56,11 +56,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity DATA_MEMORY
 # -- Compiling architecture RTL of DATA_MEMORY
-# End time: 19:12:21 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:38 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:21 on Jan 21,2022
+# Start time: 14:33:38 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -70,11 +70,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity CONTROLLER
 # -- Compiling architecture RTL of CONTROLLER
-# End time: 19:12:21 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:38 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:21 on Jan 21,2022
+# Start time: 14:33:38 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -84,11 +84,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity AND_GATE
 # -- Compiling architecture RTL of AND_GATE
-# End time: 19:12:21 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:38 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:21 on Jan 21,2022
+# Start time: 14:33:38 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -98,11 +98,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ADDER_ALU
 # -- Compiling architecture RTL of ADDER_ALU
-# End time: 19:12:21 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:38 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:22 on Jan 21,2022
+# Start time: 14:33:39 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -110,11 +110,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_CONTROLLER
 # -- Compiling architecture RTL of ALU_CONTROLLER
-# End time: 19:12:22 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:39 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:22 on Jan 21,2022
+# Start time: 14:33:39 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -122,11 +122,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity MIPS_PROCESSOR
 # -- Compiling architecture RTL of MIPS_PROCESSOR
-# End time: 19:12:22 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:39 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:22 on Jan 21,2022
+# Start time: 14:33:39 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -134,11 +134,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PROGRAM_COUNTER
 # -- Compiling architecture RTL of PROGRAM_COUNTER
-# End time: 19:12:22 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:39 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:22 on Jan 21,2022
+# Start time: 14:33:39 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -148,11 +148,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ADDER
 # -- Compiling architecture RTL of ADDER
-# End time: 19:12:22 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:40 on Jan 24,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:22 on Jan 21,2022
+# Start time: 14:33:40 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -160,11 +160,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity IP_MEMORY
 # -- Compiling architecture SYN of ip_memory
-# End time: 19:12:22 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:40 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:22 on Jan 21,2022
+# Start time: 14:33:40 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -174,33 +174,33 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture BEHAVIOR of ALU
-# End time: 19:12:23 on Jan 21,2022, Elapsed time: 0:00:01
+# End time: 14:33:40 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:23 on Jan 21,2022
+# Start time: 14:33:41 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MUX
 # -- Compiling architecture RTL of MUX
-# End time: 19:12:23 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:41 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/SIGN_EXTEND.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:23 on Jan 21,2022
+# Start time: 14:33:41 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/SIGN_EXTEND.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SIGN_EXTEND
 # -- Compiling architecture RTL of SIGN_EXTEND
-# End time: 19:12:23 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:41 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:23 on Jan 21,2022
+# Start time: 14:33:41 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -209,11 +209,11 @@
 # -- Compiling entity REGISTERS
 # -- Compiling architecture RTL of REGISTERS
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd(53): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-# End time: 19:12:23 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:41 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IF_ID.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:23 on Jan 21,2022
+# Start time: 14:33:41 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IF_ID.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -221,11 +221,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity IF_ID
 # -- Compiling architecture RTL of IF_ID
-# End time: 19:12:23 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:42 on Jan 24,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ID_EX.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:23 on Jan 21,2022
+# Start time: 14:33:42 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ID_EX.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -233,11 +233,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ID_EX
 # -- Compiling architecture RTL of ID_EX
-# End time: 19:12:23 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:42 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/EX_MEM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:23 on Jan 21,2022
+# Start time: 14:33:42 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/EX_MEM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -245,11 +245,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity EX_MEM
 # -- Compiling architecture RTL of EX_MEM
-# End time: 19:12:24 on Jan 21,2022, Elapsed time: 0:00:01
+# End time: 14:33:42 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:24 on Jan 21,2022
+# Start time: 14:33:42 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -257,11 +257,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity MEM_WB
 # -- Compiling architecture RTL of MEM_WB
-# End time: 19:12:24 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:42 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:24 on Jan 21,2022
+# Start time: 14:33:42 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -269,11 +269,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity MUX_3_1
 # -- Compiling architecture RTL of MUX_3_1
-# End time: 19:12:24 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:43 on Jan 24,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:24 on Jan 21,2022
+# Start time: 14:33:43 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -281,12 +281,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity HAZARD_MUX
 # -- Compiling architecture RTL of HAZARD_MUX
-# End time: 19:12:24 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:43 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:12:24 on Jan 21,2022
+# Start time: 14:33:43 on Jan 24,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -303,7 +303,7 @@
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd(47): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Note: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd(56): VHDL Compiler exiting
-# End time: 19:12:24 on Jan 21,2022, Elapsed time: 0:00:00
+# End time: 14:33:43 on Jan 24,2022, Elapsed time: 0:00:00
 # Errors: 3, Warnings: 5
 # ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
 # Error in macro ./MIPS_PROCESSOR_run_msim_rtl_vhdl.do line 31
@@ -312,7 +312,7 @@
 # "vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENC..."
 vsim -gui -l msim_transcript work.mips_processor
 # vsim -gui -l msim_transcript work.mips_processor 
-# Start time: 19:12:46 on Jan 21,2022
+# Start time: 14:35:01 on Jan 24,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -348,9 +348,14 @@ vsim -gui -l msim_transcript work.mips_processor
 add wave -position insertpoint sim:/mips_processor/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Tyler McCormick  Hostname: DESKTOP-DBBOOVU  ProcessID: 9860
-#           Attempting to use alternate WLF file "./wlftfnneqg".
+#           Attempting to use alternate WLF file "./wlft7y9svi".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfnneqg
+#           Using alternate file: ./wlft7y9svi
+add wave -position insertpoint sim:/mips_processor/U25/*
+add wave -position insertpoint  \
+sim:/mips_processor/U5/Registers
+add wave -position insertpoint  \
+sim:/mips_processor/U16/Registers
 force -freeze sim:/mips_processor/CLK 1 0, 0 {50 ps} -r 100
 run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -406,69 +411,11 @@ run
 run
 run
 run
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-force -freeze sim:/mips_processor/CLK 1 0, 0 {50 ps} -r 100
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U13
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U13
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U8
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U13
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U13
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 3  Instance: /mips_processor/U13
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 3  Instance: /mips_processor/U13
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 3  Instance: /mips_processor/U8
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 4  Instance: /mips_processor/U8
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 150 ps  Iteration: 2  Instance: /mips_processor/U13
-run
-run
-run
-force -freeze sim:/mips_processor/REG_WRITE 1 0
 run
 run
 run
 run
 run
 run
-run
-# End time: 19:37:28 on Jan 21,2022, Elapsed time: 0:24:42
-# Errors: 0, Warnings: 24
+# End time: 14:53:24 on Jan 24,2022, Elapsed time: 0:18:23
+# Errors: 0, Warnings: 26
