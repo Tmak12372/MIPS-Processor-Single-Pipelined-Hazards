@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "01/22/2022 11:56:05"
+-- DATE "01/28/2022 17:17:26"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -91,11 +91,11 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	MIPS_PROCESSOR IS
     PORT (
 	CLK : IN std_logic;
-	INSTRUCTION_OUT : BUFFER std_logic_vector(31 DOWNTO 0);
-	IP_OUTPUT : BUFFER std_logic_vector(31 DOWNTO 0);
-	PC_INPUT : BUFFER std_logic_vector(3 DOWNTO 0);
-	PC_OUTPUT : BUFFER std_logic_vector(3 DOWNTO 0);
-	IR_ADDR_OUTPUT : BUFFER std_logic_vector(7 DOWNTO 0)
+	INSTRUCTION_OUT : OUT std_logic_vector(31 DOWNTO 0);
+	IP_OUTPUT : OUT std_logic_vector(31 DOWNTO 0);
+	PC_INPUT : OUT std_logic_vector(3 DOWNTO 0);
+	PC_OUTPUT : OUT std_logic_vector(3 DOWNTO 0);
+	IR_ADDR_OUTPUT : OUT std_logic_vector(7 DOWNTO 0)
 	);
 END MIPS_PROCESSOR;
 
