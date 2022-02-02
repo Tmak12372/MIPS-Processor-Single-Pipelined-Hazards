@@ -13,7 +13,6 @@ vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PRO
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd}
-vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd}
@@ -27,6 +26,7 @@ vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PRO
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
 
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd}
 

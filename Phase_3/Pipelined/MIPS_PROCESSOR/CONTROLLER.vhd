@@ -21,7 +21,6 @@ ENTITY CONTROLLER IS
 END CONTROLLER;
 
 ARCHITECTURE RTL OF CONTROLLER IS
-SIGNAL BUFF : STD_LOGIC;
 BEGIN
 	PROC : PROCESS (OPCODE,CLK) 
 	BEGIN
@@ -33,7 +32,6 @@ BEGIN
             ALUSRC <= '0';
             MEMREAD <= '0';
             MEMWRITE <= '0';
-				BUFF <= '1';
             REGWRITE <= '1'; --NEED A DELAY
         ELSIF (OPCODE = "100011") THEN --LW FROM FIGURE 4.22 IN BOOK
             REGDST <= '0';
@@ -43,7 +41,7 @@ BEGIN
             ALUSRC <= '1';
             MEMREAD <= '1';
             MEMWRITE <= '0';
-				BUFF <= '0';
+				
             REGWRITE <= '1'; --NEED A DELAY
         ELSIF (OPCODE = "101011") THEN --SW FROM FIGURE 4.22 IN BOOK
             REGDST <= '-';
@@ -53,7 +51,7 @@ BEGIN
             ALUSRC <= '1';
             MEMREAD <= '0';
             MEMWRITE <= '1';
-				BUFF <= '0';
+				
             REGWRITE <= '0'; --NEED A DELAY
         ELSIF (OPCODE = "000100") THEN --BEQ FROM FIGURE 4.22 IN BOOK
             REGDST <= '-';
@@ -63,7 +61,7 @@ BEGIN
             ALUSRC <= '0';
             MEMREAD <= '0';
             MEMWRITE <= '0';
-				BUFF <= '0';
+				
             REGWRITE <= '0'; --NEED A DELAY
 		  ELSE
 				REGDST <= '0';
@@ -73,15 +71,9 @@ BEGIN
             ALUSRC <= '0';
             MEMREAD <= '0';
             MEMWRITE <= '0';
-				BUFF <= '0';
+				
             REGWRITE <= '0'; --NEED A DELAY
         END IF;
-		  
---		  if(BRANCH_B = '1') then
---				REGWRITE <= '0';
---		  else
---				REGWRITE <= BUFF;
---		  end if;
 		  
 	END PROCESS;
 END RTL;

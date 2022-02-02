@@ -6,7 +6,6 @@ vlib rtl_work
 vmap work rtl_work
 
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/LEFT_SHIFTER.vhd}
-vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/DATA_MEMORY.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/CONTROLLER.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/AND_GATE.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/ADDER_ALU.vhd}
@@ -18,6 +17,7 @@ vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PRO
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/MUX.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/SIGN_EXTEND.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/REGISTERS.vhd}
+vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/DATA_MEM_IP.vhd}
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
 
 vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle/MIPS_PROCESSOR/TESTBENCH.vhd}

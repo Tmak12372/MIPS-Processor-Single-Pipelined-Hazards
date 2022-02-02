@@ -74,6 +74,8 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_1993
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
 set_global_assignment -name SDC_FILE MIPS_PROCESSOR.out.sdc
 set_global_assignment -name VHDL_FILE HAZARD_UNIT.vhd
 set_global_assignment -name VHDL_FILE FORWARDING.vhd
@@ -90,7 +92,6 @@ set_global_assignment -name VHDL_FILE ADDER.vhd
 set_global_assignment -name VHDL_FILE INSTRUCTION_REGISTER.vhd
 set_global_assignment -name QIP_FILE IP_MEMORY.qip
 set_global_assignment -name VHDL_FILE ALU.vhd
-set_global_assignment -name VHDL_FILE 2_TO_1_MUX.vhd
 set_global_assignment -name VHDL_FILE MUX.vhd
 set_global_assignment -name VHDL_FILE SIGN_EXTEND.vhd
 set_global_assignment -name VHDL_FILE REGISTERS.vhd
