@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "01/28/2022 17:17:26"
+-- DATE "02/08/2022 16:56:26"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -91,95 +91,95 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	MIPS_PROCESSOR IS
     PORT (
 	CLK : IN std_logic;
-	INSTRUCTION_OUT : OUT std_logic_vector(31 DOWNTO 0);
-	IP_OUTPUT : OUT std_logic_vector(31 DOWNTO 0);
-	PC_INPUT : OUT std_logic_vector(3 DOWNTO 0);
-	PC_OUTPUT : OUT std_logic_vector(3 DOWNTO 0);
-	IR_ADDR_OUTPUT : OUT std_logic_vector(7 DOWNTO 0)
+	INSTRUCTION_OUT : BUFFER std_logic_vector(31 DOWNTO 0);
+	IP_OUTPUT : BUFFER std_logic_vector(31 DOWNTO 0);
+	PC_INPUT : BUFFER std_logic_vector(3 DOWNTO 0);
+	PC_OUTPUT : BUFFER std_logic_vector(3 DOWNTO 0);
+	IR_ADDR_OUTPUT : BUFFER std_logic_vector(7 DOWNTO 0)
 	);
 END MIPS_PROCESSOR;
 
 -- Design Ports Information
--- INSTRUCTION_OUT[0]	=>  Location: PIN_Y10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[1]	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[2]	=>  Location: PIN_W14,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[3]	=>  Location: PIN_B7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[4]	=>  Location: PIN_V13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[5]	=>  Location: PIN_AA13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[6]	=>  Location: PIN_V12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[7]	=>  Location: PIN_AA12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[8]	=>  Location: PIN_AB14,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[9]	=>  Location: PIN_R13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[10]	=>  Location: PIN_AB9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[11]	=>  Location: PIN_H11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[12]	=>  Location: PIN_V11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[13]	=>  Location: PIN_AA10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[14]	=>  Location: PIN_AA11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[15]	=>  Location: PIN_W10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[16]	=>  Location: PIN_V9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[17]	=>  Location: PIN_Y7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[18]	=>  Location: PIN_V10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[19]	=>  Location: PIN_A5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[20]	=>  Location: PIN_W7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[21]	=>  Location: PIN_D9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[22]	=>  Location: PIN_Y2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[23]	=>  Location: PIN_V7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[24]	=>  Location: PIN_D10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[25]	=>  Location: PIN_Y4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[26]	=>  Location: PIN_AB13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[27]	=>  Location: PIN_Y3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[28]	=>  Location: PIN_Y8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[29]	=>  Location: PIN_W6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[30]	=>  Location: PIN_T6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- INSTRUCTION_OUT[31]	=>  Location: PIN_Y6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[0]	=>  Location: PIN_P12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[1]	=>  Location: PIN_AB10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[2]	=>  Location: PIN_AA9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[3]	=>  Location: PIN_R12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[4]	=>  Location: PIN_AA5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[5]	=>  Location: PIN_P10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[6]	=>  Location: PIN_P11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[7]	=>  Location: PIN_W13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[8]	=>  Location: PIN_R10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[9]	=>  Location: PIN_AB12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[10]	=>  Location: PIN_W12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[11]	=>  Location: PIN_W5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[12]	=>  Location: PIN_AB11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[13]	=>  Location: PIN_Y13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[14]	=>  Location: PIN_Y11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[15]	=>  Location: PIN_AB6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[16]	=>  Location: PIN_AA3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[17]	=>  Location: PIN_AB4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[18]	=>  Location: PIN_R1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[19]	=>  Location: PIN_Y5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[20]	=>  Location: PIN_W4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[21]	=>  Location: PIN_W3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[22]	=>  Location: PIN_AA1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[23]	=>  Location: PIN_AA2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[24]	=>  Location: PIN_AB7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[25]	=>  Location: PIN_AA7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[26]	=>  Location: PIN_W11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[27]	=>  Location: PIN_R11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[28]	=>  Location: PIN_AB8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[29]	=>  Location: PIN_AB2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[30]	=>  Location: PIN_AA8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IP_OUTPUT[31]	=>  Location: PIN_W8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_INPUT[0]	=>  Location: PIN_V18,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_INPUT[1]	=>  Location: PIN_V20,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_INPUT[2]	=>  Location: PIN_Y1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_INPUT[3]	=>  Location: PIN_V8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_OUTPUT[0]	=>  Location: PIN_N21,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_OUTPUT[1]	=>  Location: PIN_A7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_OUTPUT[2]	=>  Location: PIN_U6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_OUTPUT[3]	=>  Location: PIN_P9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IR_ADDR_OUTPUT[0]	=>  Location: PIN_U3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IR_ADDR_OUTPUT[1]	=>  Location: PIN_C5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IR_ADDR_OUTPUT[2]	=>  Location: PIN_U7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IR_ADDR_OUTPUT[3]	=>  Location: PIN_AB5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IR_ADDR_OUTPUT[4]	=>  Location: PIN_W9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IR_ADDR_OUTPUT[5]	=>  Location: PIN_R9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IR_ADDR_OUTPUT[6]	=>  Location: PIN_AB3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- IR_ADDR_OUTPUT[7]	=>  Location: PIN_AA6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[0]	=>  Location: PIN_D10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[1]	=>  Location: PIN_D9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[2]	=>  Location: PIN_E10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[3]	=>  Location: PIN_D21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[4]	=>  Location: PIN_E11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[5]	=>  Location: PIN_J10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[6]	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[7]	=>  Location: PIN_D8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[8]	=>  Location: PIN_B7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[9]	=>  Location: PIN_C8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[10]	=>  Location: PIN_H11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[11]	=>  Location: PIN_C7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[12]	=>  Location: PIN_E9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[13]	=>  Location: PIN_D7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[14]	=>  Location: PIN_A5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[15]	=>  Location: PIN_J13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[16]	=>  Location: PIN_H14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[17]	=>  Location: PIN_A19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[18]	=>  Location: PIN_C16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[19]	=>  Location: PIN_A16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[20]	=>  Location: PIN_C19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[21]	=>  Location: PIN_E16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[22]	=>  Location: PIN_C18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[23]	=>  Location: PIN_A18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[24]	=>  Location: PIN_A17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[25]	=>  Location: PIN_E14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[26]	=>  Location: PIN_A4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[27]	=>  Location: PIN_B17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[28]	=>  Location: PIN_F16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[29]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[30]	=>  Location: PIN_A20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION_OUT[31]	=>  Location: PIN_C14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[0]	=>  Location: PIN_A7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[1]	=>  Location: PIN_A8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[2]	=>  Location: PIN_B11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[3]	=>  Location: PIN_A9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[4]	=>  Location: PIN_B10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[5]	=>  Location: PIN_J11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[6]	=>  Location: PIN_E20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[7]	=>  Location: PIN_C9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[8]	=>  Location: PIN_J14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[9]	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[10]	=>  Location: PIN_H12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[11]	=>  Location: PIN_G17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[12]	=>  Location: PIN_E18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[13]	=>  Location: PIN_D17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[14]	=>  Location: PIN_B8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[15]	=>  Location: PIN_B19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[16]	=>  Location: PIN_C13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[17]	=>  Location: PIN_A14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[18]	=>  Location: PIN_E13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[19]	=>  Location: PIN_D14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[20]	=>  Location: PIN_H13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[21]	=>  Location: PIN_E12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[22]	=>  Location: PIN_B14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[23]	=>  Location: PIN_A15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[24]	=>  Location: PIN_B16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[25]	=>  Location: PIN_D15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[26]	=>  Location: PIN_A12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[27]	=>  Location: PIN_B15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[28]	=>  Location: PIN_C15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[29]	=>  Location: PIN_C17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[30]	=>  Location: PIN_D13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IP_OUTPUT[31]	=>  Location: PIN_C12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_INPUT[0]	=>  Location: PIN_AB21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_INPUT[1]	=>  Location: PIN_C6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_INPUT[2]	=>  Location: PIN_B4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_INPUT[3]	=>  Location: PIN_C10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_OUTPUT[0]	=>  Location: PIN_V13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_OUTPUT[1]	=>  Location: PIN_N20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_OUTPUT[2]	=>  Location: PIN_C4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_OUTPUT[3]	=>  Location: PIN_C11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IR_ADDR_OUTPUT[0]	=>  Location: PIN_G1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IR_ADDR_OUTPUT[1]	=>  Location: PIN_R1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IR_ADDR_OUTPUT[2]	=>  Location: PIN_E8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IR_ADDR_OUTPUT[3]	=>  Location: PIN_B12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IR_ADDR_OUTPUT[4]	=>  Location: PIN_J12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IR_ADDR_OUTPUT[5]	=>  Location: PIN_A10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IR_ADDR_OUTPUT[6]	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- IR_ADDR_OUTPUT[7]	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- CLK	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
@@ -297,20 +297,17 @@ SIGNAL \~GND~combout\ : std_logic;
 SIGNAL \U3|ADDR_OUT[2]~0_combout\ : std_logic;
 SIGNAL \U3|ADDR_OUT[2]~_wirecell_combout\ : std_logic;
 SIGNAL \U2|Add0~0_combout\ : std_logic;
-SIGNAL \U1|ADDRESS_OUT[3]~feeder_combout\ : std_logic;
 SIGNAL \U3|ADDR_OUT[3]~feeder_combout\ : std_logic;
 SIGNAL \U2|Add0~1\ : std_logic;
 SIGNAL \U2|Add0~2_combout\ : std_logic;
 SIGNAL \U3|ADDR_OUT[4]~feeder_combout\ : std_logic;
 SIGNAL \U2|Add0~3\ : std_logic;
 SIGNAL \U2|Add0~4_combout\ : std_logic;
-SIGNAL \U3|ADDR_OUT[5]~feeder_combout\ : std_logic;
 SIGNAL \U2|Add0~5\ : std_logic;
 SIGNAL \U2|Add0~6_combout\ : std_logic;
 SIGNAL \U3|ADDR_OUT[6]~feeder_combout\ : std_logic;
 SIGNAL \U2|Add0~7\ : std_logic;
 SIGNAL \U2|Add0~8_combout\ : std_logic;
-SIGNAL \U3|ADDR_OUT[7]~feeder_combout\ : std_logic;
 SIGNAL \U3|INST_OUT[0]~feeder_combout\ : std_logic;
 SIGNAL \U3|INST_OUT[1]~feeder_combout\ : std_logic;
 SIGNAL \U3|INST_OUT[2]~feeder_combout\ : std_logic;
@@ -424,7 +421,7 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor);
 
--- Location: IOOBUF_X34_Y0_N9
+-- Location: IOOBUF_X31_Y39_N30
 \INSTRUCTION_OUT[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -436,7 +433,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[0]~output_o\);
 
--- Location: IOOBUF_X34_Y39_N30
+-- Location: IOOBUF_X31_Y39_N9
 \INSTRUCTION_OUT[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -448,7 +445,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[1]~output_o\);
 
--- Location: IOOBUF_X49_Y0_N23
+-- Location: IOOBUF_X36_Y39_N23
 \INSTRUCTION_OUT[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -460,7 +457,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[2]~output_o\);
 
--- Location: IOOBUF_X34_Y39_N23
+-- Location: IOOBUF_X78_Y36_N9
 \INSTRUCTION_OUT[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -472,7 +469,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[3]~output_o\);
 
--- Location: IOOBUF_X49_Y0_N30
+-- Location: IOOBUF_X36_Y39_N16
 \INSTRUCTION_OUT[4]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -484,7 +481,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[4]~output_o\);
 
--- Location: IOOBUF_X49_Y0_N16
+-- Location: IOOBUF_X34_Y39_N9
 \INSTRUCTION_OUT[5]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -496,7 +493,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[5]~output_o\);
 
--- Location: IOOBUF_X38_Y0_N23
+-- Location: IOOBUF_X34_Y39_N30
 \INSTRUCTION_OUT[6]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -508,7 +505,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[6]~output_o\);
 
--- Location: IOOBUF_X40_Y0_N2
+-- Location: IOOBUF_X31_Y39_N2
 \INSTRUCTION_OUT[7]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -520,7 +517,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[7]~output_o\);
 
--- Location: IOOBUF_X49_Y0_N9
+-- Location: IOOBUF_X34_Y39_N23
 \INSTRUCTION_OUT[8]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -532,7 +529,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[8]~output_o\);
 
--- Location: IOOBUF_X49_Y0_N2
+-- Location: IOOBUF_X36_Y39_N30
 \INSTRUCTION_OUT[9]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -544,7 +541,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[9]~output_o\);
 
--- Location: IOOBUF_X34_Y0_N16
+-- Location: IOOBUF_X34_Y39_N16
 \INSTRUCTION_OUT[10]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -556,7 +553,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[10]~output_o\);
 
--- Location: IOOBUF_X34_Y39_N16
+-- Location: IOOBUF_X34_Y39_N2
 \INSTRUCTION_OUT[11]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -568,7 +565,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[11]~output_o\);
 
--- Location: IOOBUF_X38_Y0_N30
+-- Location: IOOBUF_X29_Y39_N2
 \INSTRUCTION_OUT[12]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -580,7 +577,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[12]~output_o\);
 
--- Location: IOOBUF_X34_Y0_N2
+-- Location: IOOBUF_X29_Y39_N16
 \INSTRUCTION_OUT[13]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -592,7 +589,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[13]~output_o\);
 
--- Location: IOOBUF_X40_Y0_N9
+-- Location: IOOBUF_X31_Y39_N16
 \INSTRUCTION_OUT[14]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -604,7 +601,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[14]~output_o\);
 
--- Location: IOOBUF_X24_Y0_N30
+-- Location: IOOBUF_X60_Y54_N30
 \INSTRUCTION_OUT[15]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -616,7 +613,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[15]~output_o\);
 
--- Location: IOOBUF_X31_Y0_N30
+-- Location: IOOBUF_X60_Y54_N23
 \INSTRUCTION_OUT[16]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -628,7 +625,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[16]~output_o\);
 
--- Location: IOOBUF_X20_Y0_N9
+-- Location: IOOBUF_X66_Y54_N9
 \INSTRUCTION_OUT[17]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -640,7 +637,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[17]~output_o\);
 
--- Location: IOOBUF_X31_Y0_N23
+-- Location: IOOBUF_X62_Y54_N30
 \INSTRUCTION_OUT[18]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -652,7 +649,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[18]~output_o\);
 
--- Location: IOOBUF_X31_Y39_N16
+-- Location: IOOBUF_X60_Y54_N16
 \INSTRUCTION_OUT[19]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -664,7 +661,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[19]~output_o\);
 
--- Location: IOOBUF_X24_Y0_N9
+-- Location: IOOBUF_X69_Y54_N9
 \INSTRUCTION_OUT[20]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -676,7 +673,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[20]~output_o\);
 
--- Location: IOOBUF_X31_Y39_N9
+-- Location: IOOBUF_X74_Y54_N2
 \INSTRUCTION_OUT[21]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -688,7 +685,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[21]~output_o\);
 
--- Location: IOOBUF_X16_Y0_N16
+-- Location: IOOBUF_X69_Y54_N23
 \INSTRUCTION_OUT[22]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -700,7 +697,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[22]~output_o\);
 
--- Location: IOOBUF_X20_Y0_N23
+-- Location: IOOBUF_X66_Y54_N30
 \INSTRUCTION_OUT[23]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -712,7 +709,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[23]~output_o\);
 
--- Location: IOOBUF_X31_Y39_N30
+-- Location: IOOBUF_X64_Y54_N2
 \INSTRUCTION_OUT[24]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -724,7 +721,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[24]~output_o\);
 
--- Location: IOOBUF_X24_Y0_N16
+-- Location: IOOBUF_X66_Y54_N23
 \INSTRUCTION_OUT[25]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -736,7 +733,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[25]~output_o\);
 
--- Location: IOOBUF_X40_Y0_N16
+-- Location: IOOBUF_X31_Y39_N23
 \INSTRUCTION_OUT[26]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -748,7 +745,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[26]~output_o\);
 
--- Location: IOOBUF_X24_Y0_N23
+-- Location: IOOBUF_X69_Y54_N30
 \INSTRUCTION_OUT[27]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -760,7 +757,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[27]~output_o\);
 
--- Location: IOOBUF_X20_Y0_N2
+-- Location: IOOBUF_X71_Y54_N30
 \INSTRUCTION_OUT[28]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -772,7 +769,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[28]~output_o\);
 
--- Location: IOOBUF_X16_Y0_N30
+-- Location: IOOBUF_X69_Y54_N2
 \INSTRUCTION_OUT[29]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -784,7 +781,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[29]~output_o\);
 
--- Location: IOOBUF_X0_Y3_N23
+-- Location: IOOBUF_X66_Y54_N2
 \INSTRUCTION_OUT[30]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -796,7 +793,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[30]~output_o\);
 
--- Location: IOOBUF_X20_Y0_N30
+-- Location: IOOBUF_X58_Y54_N16
 \INSTRUCTION_OUT[31]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -808,7 +805,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \INSTRUCTION_OUT[31]~output_o\);
 
--- Location: IOOBUF_X40_Y0_N30
+-- Location: IOOBUF_X49_Y54_N30
 \IP_OUTPUT[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -820,7 +817,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[0]~output_o\);
 
--- Location: IOOBUF_X38_Y0_N16
+-- Location: IOOBUF_X46_Y54_N2
 \IP_OUTPUT[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -832,7 +829,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[1]~output_o\);
 
--- Location: IOOBUF_X34_Y0_N23
+-- Location: IOOBUF_X49_Y54_N9
 \IP_OUTPUT[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -844,7 +841,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[2]~output_o\);
 
--- Location: IOOBUF_X38_Y0_N2
+-- Location: IOOBUF_X46_Y54_N23
 \IP_OUTPUT[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -856,7 +853,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[3]~output_o\);
 
--- Location: IOOBUF_X26_Y0_N2
+-- Location: IOOBUF_X46_Y54_N9
 \IP_OUTPUT[4]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -868,7 +865,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[4]~output_o\);
 
--- Location: IOOBUF_X26_Y0_N9
+-- Location: IOOBUF_X49_Y54_N23
 \IP_OUTPUT[5]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -880,7 +877,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[5]~output_o\);
 
--- Location: IOOBUF_X34_Y0_N30
+-- Location: IOOBUF_X78_Y40_N2
 \IP_OUTPUT[6]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -892,7 +889,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[6]~output_o\);
 
--- Location: IOOBUF_X46_Y0_N2
+-- Location: IOOBUF_X46_Y54_N16
 \IP_OUTPUT[7]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -904,7 +901,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[7]~output_o\);
 
--- Location: IOOBUF_X26_Y0_N16
+-- Location: IOOBUF_X78_Y44_N24
 \IP_OUTPUT[8]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -916,7 +913,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[8]~output_o\);
 
--- Location: IOOBUF_X40_Y0_N23
+-- Location: IOOBUF_X54_Y54_N16
 \IP_OUTPUT[9]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -928,7 +925,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[9]~output_o\);
 
--- Location: IOOBUF_X46_Y0_N9
+-- Location: IOOBUF_X49_Y54_N16
 \IP_OUTPUT[10]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -940,7 +937,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[10]~output_o\);
 
--- Location: IOOBUF_X14_Y0_N2
+-- Location: IOOBUF_X78_Y49_N16
 \IP_OUTPUT[11]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -952,7 +949,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[11]~output_o\);
 
--- Location: IOOBUF_X38_Y0_N9
+-- Location: IOOBUF_X78_Y49_N2
 \IP_OUTPUT[12]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -964,7 +961,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[12]~output_o\);
 
--- Location: IOOBUF_X51_Y0_N9
+-- Location: IOOBUF_X74_Y54_N16
 \IP_OUTPUT[13]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -976,7 +973,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[13]~output_o\);
 
--- Location: IOOBUF_X36_Y0_N2
+-- Location: IOOBUF_X46_Y54_N30
 \IP_OUTPUT[14]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -988,7 +985,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[14]~output_o\);
 
--- Location: IOOBUF_X29_Y0_N9
+-- Location: IOOBUF_X69_Y54_N16
 \IP_OUTPUT[15]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1000,7 +997,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[15]~output_o\);
 
--- Location: IOOBUF_X26_Y0_N30
+-- Location: IOOBUF_X58_Y54_N23
 \IP_OUTPUT[16]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1012,7 +1009,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[16]~output_o\);
 
--- Location: IOOBUF_X26_Y0_N23
+-- Location: IOOBUF_X58_Y54_N30
 \IP_OUTPUT[17]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1024,7 +1021,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[17]~output_o\);
 
--- Location: IOOBUF_X0_Y3_N2
+-- Location: IOOBUF_X56_Y54_N16
 \IP_OUTPUT[18]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1036,7 +1033,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[18]~output_o\);
 
--- Location: IOOBUF_X18_Y0_N2
+-- Location: IOOBUF_X56_Y54_N9
 \IP_OUTPUT[19]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1048,7 +1045,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[19]~output_o\);
 
--- Location: IOOBUF_X18_Y0_N16
+-- Location: IOOBUF_X54_Y54_N2
 \IP_OUTPUT[20]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1060,7 +1057,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[20]~output_o\);
 
--- Location: IOOBUF_X18_Y0_N9
+-- Location: IOOBUF_X56_Y54_N23
 \IP_OUTPUT[21]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1072,7 +1069,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[21]~output_o\);
 
--- Location: IOOBUF_X18_Y0_N30
+-- Location: IOOBUF_X56_Y54_N2
 \IP_OUTPUT[22]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1084,7 +1081,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[22]~output_o\);
 
--- Location: IOOBUF_X18_Y0_N23
+-- Location: IOOBUF_X58_Y54_N2
 \IP_OUTPUT[23]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1096,7 +1093,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[23]~output_o\);
 
--- Location: IOOBUF_X29_Y0_N2
+-- Location: IOOBUF_X60_Y54_N9
 \IP_OUTPUT[24]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1108,7 +1105,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[24]~output_o\);
 
--- Location: IOOBUF_X29_Y0_N16
+-- Location: IOOBUF_X66_Y54_N16
 \IP_OUTPUT[25]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1120,7 +1117,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[25]~output_o\);
 
--- Location: IOOBUF_X36_Y0_N9
+-- Location: IOOBUF_X54_Y54_N23
 \IP_OUTPUT[26]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1132,7 +1129,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[26]~output_o\);
 
--- Location: IOOBUF_X31_Y0_N2
+-- Location: IOOBUF_X58_Y54_N9
 \IP_OUTPUT[27]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1144,7 +1141,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[27]~output_o\);
 
--- Location: IOOBUF_X31_Y0_N9
+-- Location: IOOBUF_X60_Y54_N2
 \IP_OUTPUT[28]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1156,7 +1153,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[28]~output_o\);
 
--- Location: IOOBUF_X22_Y0_N16
+-- Location: IOOBUF_X74_Y54_N23
 \IP_OUTPUT[29]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1168,7 +1165,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[29]~output_o\);
 
--- Location: IOOBUF_X31_Y0_N16
+-- Location: IOOBUF_X56_Y54_N30
 \IP_OUTPUT[30]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1180,7 +1177,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[30]~output_o\);
 
--- Location: IOOBUF_X24_Y0_N2
+-- Location: IOOBUF_X54_Y54_N30
 \IP_OUTPUT[31]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1192,7 +1189,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IP_OUTPUT[31]~output_o\);
 
--- Location: IOOBUF_X78_Y15_N23
+-- Location: IOOBUF_X62_Y0_N30
 \PC_INPUT[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1204,7 +1201,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \PC_INPUT[0]~output_o\);
 
--- Location: IOOBUF_X78_Y17_N23
+-- Location: IOOBUF_X29_Y39_N9
 \PC_INPUT[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1216,7 +1213,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \PC_INPUT[1]~output_o\);
 
--- Location: IOOBUF_X16_Y0_N23
+-- Location: IOOBUF_X26_Y39_N23
 \PC_INPUT[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1228,7 +1225,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \PC_INPUT[2]~output_o\);
 
--- Location: IOOBUF_X20_Y0_N16
+-- Location: IOOBUF_X51_Y54_N30
 \PC_INPUT[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1240,7 +1237,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \PC_INPUT[3]~output_o\);
 
--- Location: IOOBUF_X78_Y25_N9
+-- Location: IOOBUF_X49_Y0_N30
 \PC_OUTPUT[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1252,7 +1249,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \PC_OUTPUT[0]~output_o\);
 
--- Location: IOOBUF_X49_Y54_N30
+-- Location: IOOBUF_X78_Y34_N2
 \PC_OUTPUT[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1264,7 +1261,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \PC_OUTPUT[1]~output_o\);
 
--- Location: IOOBUF_X16_Y0_N9
+-- Location: IOOBUF_X24_Y39_N2
 \PC_OUTPUT[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1276,7 +1273,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \PC_OUTPUT[2]~output_o\);
 
--- Location: IOOBUF_X22_Y0_N23
+-- Location: IOOBUF_X51_Y54_N23
 \PC_OUTPUT[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1288,7 +1285,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \PC_OUTPUT[3]~output_o\);
 
--- Location: IOOBUF_X0_Y10_N2
+-- Location: IOOBUF_X0_Y26_N2
 \IR_ADDR_OUTPUT[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1300,7 +1297,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IR_ADDR_OUTPUT[0]~output_o\);
 
--- Location: IOOBUF_X24_Y39_N23
+-- Location: IOOBUF_X0_Y3_N2
 \IR_ADDR_OUTPUT[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1312,7 +1309,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IR_ADDR_OUTPUT[1]~output_o\);
 
--- Location: IOOBUF_X16_Y0_N2
+-- Location: IOOBUF_X24_Y39_N9
 \IR_ADDR_OUTPUT[2]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1324,7 +1321,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IR_ADDR_OUTPUT[2]~output_o\);
 
--- Location: IOOBUF_X29_Y0_N30
+-- Location: IOOBUF_X49_Y54_N2
 \IR_ADDR_OUTPUT[3]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1336,7 +1333,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IR_ADDR_OUTPUT[3]~output_o\);
 
--- Location: IOOBUF_X22_Y0_N2
+-- Location: IOOBUF_X54_Y54_N9
 \IR_ADDR_OUTPUT[4]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1348,7 +1345,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IR_ADDR_OUTPUT[4]~output_o\);
 
--- Location: IOOBUF_X22_Y0_N30
+-- Location: IOOBUF_X51_Y54_N16
 \IR_ADDR_OUTPUT[5]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1360,7 +1357,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IR_ADDR_OUTPUT[5]~output_o\);
 
--- Location: IOOBUF_X22_Y0_N9
+-- Location: IOOBUF_X51_Y54_N2
 \IR_ADDR_OUTPUT[6]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1372,7 +1369,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \IR_ADDR_OUTPUT[6]~output_o\);
 
--- Location: IOOBUF_X29_Y0_N23
+-- Location: IOOBUF_X51_Y54_N9
 \IR_ADDR_OUTPUT[7]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1409,7 +1406,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	outclk => \CLK~inputclkctrl_outclk\);
 
--- Location: LCCOMB_X43_Y38_N26
+-- Location: LCCOMB_X47_Y48_N0
 \~GND\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \~GND~combout\ = GND
@@ -1422,7 +1419,7 @@ GENERIC MAP (
 PORT MAP (
 	combout => \~GND~combout\);
 
--- Location: LCCOMB_X29_Y4_N16
+-- Location: LCCOMB_X52_Y50_N28
 \U3|ADDR_OUT[2]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|ADDR_OUT[2]~0_combout\ = !\U3|ADDR_OUT\(2)
@@ -1436,7 +1433,7 @@ PORT MAP (
 	datac => \U3|ADDR_OUT\(2),
 	combout => \U3|ADDR_OUT[2]~0_combout\);
 
--- Location: FF_X29_Y4_N17
+-- Location: FF_X52_Y50_N29
 \U3|ADDR_OUT[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1450,7 +1447,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|ADDR_OUT\(2));
 
--- Location: LCCOMB_X29_Y4_N28
+-- Location: LCCOMB_X52_Y50_N12
 \U3|ADDR_OUT[2]~_wirecell\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|ADDR_OUT[2]~_wirecell_combout\ = !\U3|ADDR_OUT\(2)
@@ -1464,7 +1461,7 @@ PORT MAP (
 	datad => \U3|ADDR_OUT\(2),
 	combout => \U3|ADDR_OUT[2]~_wirecell_combout\);
 
--- Location: LCCOMB_X29_Y4_N18
+-- Location: LCCOMB_X52_Y50_N18
 \U2|Add0~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U2|Add0~0_combout\ = (\U1|ADDRESS_OUT\(3) & (\U3|ADDR_OUT\(2) $ (VCC))) # (!\U1|ADDRESS_OUT\(3) & (\U3|ADDR_OUT\(2) & VCC))
@@ -1482,21 +1479,7 @@ PORT MAP (
 	combout => \U2|Add0~0_combout\,
 	cout => \U2|Add0~1\);
 
--- Location: LCCOMB_X29_Y4_N12
-\U1|ADDRESS_OUT[3]~feeder\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U1|ADDRESS_OUT[3]~feeder_combout\ = \U2|Add0~0_combout\
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \U2|Add0~0_combout\,
-	combout => \U1|ADDRESS_OUT[3]~feeder_combout\);
-
--- Location: FF_X29_Y4_N13
+-- Location: FF_X52_Y50_N19
 \U1|ADDRESS_OUT[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1505,12 +1488,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
-	d => \U1|ADDRESS_OUT[3]~feeder_combout\,
+	d => \U2|Add0~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \U1|ADDRESS_OUT\(3));
 
--- Location: LCCOMB_X29_Y4_N10
+-- Location: LCCOMB_X52_Y50_N10
 \U3|ADDR_OUT[3]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|ADDR_OUT[3]~feeder_combout\ = \U1|ADDRESS_OUT\(3)
@@ -1524,7 +1507,7 @@ PORT MAP (
 	datad => \U1|ADDRESS_OUT\(3),
 	combout => \U3|ADDR_OUT[3]~feeder_combout\);
 
--- Location: FF_X29_Y4_N11
+-- Location: FF_X52_Y50_N11
 \U3|ADDR_OUT[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1538,7 +1521,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|ADDR_OUT\(3));
 
--- Location: LCCOMB_X29_Y4_N20
+-- Location: LCCOMB_X52_Y50_N20
 \U2|Add0~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U2|Add0~2_combout\ = (\U1|ADDRESS_OUT\(4) & (!\U2|Add0~1\)) # (!\U1|ADDRESS_OUT\(4) & ((\U2|Add0~1\) # (GND)))
@@ -1556,7 +1539,7 @@ PORT MAP (
 	combout => \U2|Add0~2_combout\,
 	cout => \U2|Add0~3\);
 
--- Location: FF_X29_Y4_N21
+-- Location: FF_X52_Y50_N21
 \U1|ADDRESS_OUT[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1570,7 +1553,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U1|ADDRESS_OUT\(4));
 
--- Location: LCCOMB_X29_Y4_N14
+-- Location: LCCOMB_X52_Y50_N16
 \U3|ADDR_OUT[4]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|ADDR_OUT[4]~feeder_combout\ = \U1|ADDRESS_OUT\(4)
@@ -1584,7 +1567,7 @@ PORT MAP (
 	datad => \U1|ADDRESS_OUT\(4),
 	combout => \U3|ADDR_OUT[4]~feeder_combout\);
 
--- Location: FF_X29_Y4_N15
+-- Location: FF_X52_Y50_N17
 \U3|ADDR_OUT[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1598,7 +1581,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|ADDR_OUT\(4));
 
--- Location: LCCOMB_X29_Y4_N22
+-- Location: LCCOMB_X52_Y50_N22
 \U2|Add0~4\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U2|Add0~4_combout\ = (\U1|ADDRESS_OUT\(5) & (\U2|Add0~3\ $ (GND))) # (!\U1|ADDRESS_OUT\(5) & (!\U2|Add0~3\ & VCC))
@@ -1616,7 +1599,7 @@ PORT MAP (
 	combout => \U2|Add0~4_combout\,
 	cout => \U2|Add0~5\);
 
--- Location: FF_X29_Y4_N23
+-- Location: FF_X52_Y50_N23
 \U1|ADDRESS_OUT[5]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1630,21 +1613,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U1|ADDRESS_OUT\(5));
 
--- Location: LCCOMB_X29_Y4_N2
-\U3|ADDR_OUT[5]~feeder\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U3|ADDR_OUT[5]~feeder_combout\ = \U1|ADDRESS_OUT\(5)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \U1|ADDRESS_OUT\(5),
-	combout => \U3|ADDR_OUT[5]~feeder_combout\);
-
--- Location: FF_X29_Y4_N3
+-- Location: FF_X52_Y50_N5
 \U3|ADDR_OUT[5]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1653,12 +1622,13 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
-	d => \U3|ADDR_OUT[5]~feeder_combout\,
+	asdata => \U1|ADDRESS_OUT\(5),
+	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \U3|ADDR_OUT\(5));
 
--- Location: LCCOMB_X29_Y4_N24
+-- Location: LCCOMB_X52_Y50_N24
 \U2|Add0~6\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U2|Add0~6_combout\ = (\U1|ADDRESS_OUT\(6) & (!\U2|Add0~5\)) # (!\U1|ADDRESS_OUT\(6) & ((\U2|Add0~5\) # (GND)))
@@ -1676,7 +1646,7 @@ PORT MAP (
 	combout => \U2|Add0~6_combout\,
 	cout => \U2|Add0~7\);
 
--- Location: FF_X29_Y4_N25
+-- Location: FF_X52_Y50_N25
 \U1|ADDRESS_OUT[6]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1690,7 +1660,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U1|ADDRESS_OUT\(6));
 
--- Location: LCCOMB_X29_Y4_N6
+-- Location: LCCOMB_X52_Y50_N0
 \U3|ADDR_OUT[6]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|ADDR_OUT[6]~feeder_combout\ = \U1|ADDRESS_OUT\(6)
@@ -1704,7 +1674,7 @@ PORT MAP (
 	datad => \U1|ADDRESS_OUT\(6),
 	combout => \U3|ADDR_OUT[6]~feeder_combout\);
 
--- Location: FF_X29_Y4_N7
+-- Location: FF_X52_Y50_N1
 \U3|ADDR_OUT[6]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1718,7 +1688,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|ADDR_OUT\(6));
 
--- Location: LCCOMB_X29_Y4_N26
+-- Location: LCCOMB_X52_Y50_N26
 \U2|Add0~8\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U2|Add0~8_combout\ = \U1|ADDRESS_OUT\(7) $ (!\U2|Add0~7\)
@@ -1733,7 +1703,7 @@ PORT MAP (
 	cin => \U2|Add0~7\,
 	combout => \U2|Add0~8_combout\);
 
--- Location: FF_X29_Y4_N27
+-- Location: FF_X52_Y50_N27
 \U1|ADDRESS_OUT[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1747,21 +1717,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U1|ADDRESS_OUT\(7));
 
--- Location: LCCOMB_X29_Y4_N30
-\U3|ADDR_OUT[7]~feeder\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \U3|ADDR_OUT[7]~feeder_combout\ = \U1|ADDRESS_OUT\(7)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datac => \U1|ADDRESS_OUT\(7),
-	combout => \U3|ADDR_OUT[7]~feeder_combout\);
-
--- Location: FF_X29_Y4_N31
+-- Location: FF_X52_Y50_N7
 \U3|ADDR_OUT[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1770,12 +1726,13 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
-	d => \U3|ADDR_OUT[7]~feeder_combout\,
+	asdata => \U1|ADDRESS_OUT\(7),
+	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \U3|ADDR_OUT\(7));
 
--- Location: M9K_X33_Y4_N0
+-- Location: M9K_X53_Y53_N0
 \U4|altsyncram_component|auto_generated|ram_block1a0\ : fiftyfivenm_ram_block
 -- pragma translate_off
 GENERIC MAP (
@@ -1814,7 +1771,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	portadataout => \U4|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\);
 
--- Location: LCCOMB_X34_Y4_N6
+-- Location: LCCOMB_X47_Y39_N12
 \U3|INST_OUT[0]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[0]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(0)
@@ -1828,7 +1785,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(0),
 	combout => \U3|INST_OUT[0]~feeder_combout\);
 
--- Location: FF_X34_Y4_N7
+-- Location: FF_X47_Y39_N13
 \U3|INST_OUT[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1842,21 +1799,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(0));
 
--- Location: LCCOMB_X34_Y4_N0
+-- Location: LCCOMB_X47_Y39_N14
 \U3|INST_OUT[1]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[1]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(1)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000011110000",
+	lut_mask => "1111111100000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \U4|altsyncram_component|auto_generated|q_a\(1),
+	datad => \U4|altsyncram_component|auto_generated|q_a\(1),
 	combout => \U3|INST_OUT[1]~feeder_combout\);
 
--- Location: FF_X34_Y4_N1
+-- Location: FF_X47_Y39_N15
 \U3|INST_OUT[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1870,21 +1827,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(1));
 
--- Location: LCCOMB_X34_Y4_N24
+-- Location: LCCOMB_X47_Y39_N26
 \U3|INST_OUT[2]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[2]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(2)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000011110000",
+	lut_mask => "1111111100000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \U4|altsyncram_component|auto_generated|q_a\(2),
+	datad => \U4|altsyncram_component|auto_generated|q_a\(2),
 	combout => \U3|INST_OUT[2]~feeder_combout\);
 
--- Location: FF_X34_Y4_N25
+-- Location: FF_X47_Y39_N27
 \U3|INST_OUT[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1898,7 +1855,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(2));
 
--- Location: LCCOMB_X34_Y4_N22
+-- Location: LCCOMB_X50_Y53_N14
 \U3|INST_OUT[3]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[3]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(3)
@@ -1912,7 +1869,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(3),
 	combout => \U3|INST_OUT[3]~feeder_combout\);
 
--- Location: FF_X34_Y4_N23
+-- Location: FF_X50_Y53_N15
 \U3|INST_OUT[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1926,7 +1883,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(3));
 
--- Location: LCCOMB_X34_Y4_N12
+-- Location: LCCOMB_X47_Y39_N28
 \U3|INST_OUT[4]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[4]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(4)
@@ -1940,7 +1897,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(4),
 	combout => \U3|INST_OUT[4]~feeder_combout\);
 
--- Location: FF_X34_Y4_N13
+-- Location: FF_X47_Y39_N29
 \U3|INST_OUT[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1954,7 +1911,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(4));
 
--- Location: LCCOMB_X34_Y4_N4
+-- Location: LCCOMB_X47_Y39_N30
 \U3|INST_OUT[5]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[5]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(5)
@@ -1968,7 +1925,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(5),
 	combout => \U3|INST_OUT[5]~feeder_combout\);
 
--- Location: FF_X34_Y4_N5
+-- Location: FF_X47_Y39_N31
 \U3|INST_OUT[5]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1982,21 +1939,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(5));
 
--- Location: LCCOMB_X34_Y4_N8
+-- Location: LCCOMB_X44_Y39_N8
 \U3|INST_OUT[6]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[6]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(6)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100000000",
+	lut_mask => "1111000011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \U4|altsyncram_component|auto_generated|q_a\(6),
+	datac => \U4|altsyncram_component|auto_generated|q_a\(6),
 	combout => \U3|INST_OUT[6]~feeder_combout\);
 
--- Location: FF_X34_Y4_N9
+-- Location: FF_X44_Y39_N9
 \U3|INST_OUT[6]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2010,21 +1967,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(6));
 
--- Location: LCCOMB_X34_Y4_N2
+-- Location: LCCOMB_X47_Y39_N20
 \U3|INST_OUT[7]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[7]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(7)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100000000",
+	lut_mask => "1111000011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \U4|altsyncram_component|auto_generated|q_a\(7),
+	datac => \U4|altsyncram_component|auto_generated|q_a\(7),
 	combout => \U3|INST_OUT[7]~feeder_combout\);
 
--- Location: FF_X34_Y4_N3
+-- Location: FF_X47_Y39_N21
 \U3|INST_OUT[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2038,7 +1995,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(7));
 
--- Location: LCCOMB_X34_Y4_N14
+-- Location: LCCOMB_X47_Y39_N18
 \U3|INST_OUT[8]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[8]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(8)
@@ -2052,7 +2009,7 @@ PORT MAP (
 	datac => \U4|altsyncram_component|auto_generated|q_a\(8),
 	combout => \U3|INST_OUT[8]~feeder_combout\);
 
--- Location: FF_X34_Y4_N15
+-- Location: FF_X47_Y39_N19
 \U3|INST_OUT[8]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2066,7 +2023,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(8));
 
--- Location: LCCOMB_X34_Y4_N28
+-- Location: LCCOMB_X47_Y39_N4
 \U3|INST_OUT[9]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[9]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(9)
@@ -2080,7 +2037,7 @@ PORT MAP (
 	datac => \U4|altsyncram_component|auto_generated|q_a\(9),
 	combout => \U3|INST_OUT[9]~feeder_combout\);
 
--- Location: FF_X34_Y4_N29
+-- Location: FF_X47_Y39_N5
 \U3|INST_OUT[9]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2094,7 +2051,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(9));
 
--- Location: LCCOMB_X34_Y4_N26
+-- Location: LCCOMB_X47_Y39_N6
 \U3|INST_OUT[10]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[10]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(10)
@@ -2108,7 +2065,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(10),
 	combout => \U3|INST_OUT[10]~feeder_combout\);
 
--- Location: FF_X34_Y4_N27
+-- Location: FF_X47_Y39_N7
 \U3|INST_OUT[10]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2122,21 +2079,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(10));
 
--- Location: LCCOMB_X34_Y4_N10
+-- Location: LCCOMB_X47_Y39_N10
 \U3|INST_OUT[11]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[11]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(11)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100000000",
+	lut_mask => "1111000011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \U4|altsyncram_component|auto_generated|q_a\(11),
+	datac => \U4|altsyncram_component|auto_generated|q_a\(11),
 	combout => \U3|INST_OUT[11]~feeder_combout\);
 
--- Location: FF_X34_Y4_N11
+-- Location: FF_X47_Y39_N11
 \U3|INST_OUT[11]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2150,7 +2107,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(11));
 
--- Location: LCCOMB_X34_Y4_N20
+-- Location: LCCOMB_X47_Y39_N16
 \U3|INST_OUT[12]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[12]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(12)
@@ -2164,7 +2121,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(12),
 	combout => \U3|INST_OUT[12]~feeder_combout\);
 
--- Location: FF_X34_Y4_N21
+-- Location: FF_X47_Y39_N17
 \U3|INST_OUT[12]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2178,21 +2135,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(12));
 
--- Location: LCCOMB_X34_Y4_N18
+-- Location: LCCOMB_X47_Y39_N22
 \U3|INST_OUT[13]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[13]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(13)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100000000",
+	lut_mask => "1111000011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \U4|altsyncram_component|auto_generated|q_a\(13),
+	datac => \U4|altsyncram_component|auto_generated|q_a\(13),
 	combout => \U3|INST_OUT[13]~feeder_combout\);
 
--- Location: FF_X34_Y4_N19
+-- Location: FF_X47_Y39_N23
 \U3|INST_OUT[13]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2206,7 +2163,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(13));
 
--- Location: M9K_X33_Y4_N0
+-- Location: M9K_X53_Y53_N0
 \U4|altsyncram_component|auto_generated|ram_block1a14\ : fiftyfivenm_ram_block
 -- pragma translate_off
 GENERIC MAP (
@@ -2245,21 +2202,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	portadataout => \U4|altsyncram_component|auto_generated|ram_block1a14_PORTADATAOUT_bus\);
 
--- Location: LCCOMB_X34_Y4_N30
+-- Location: LCCOMB_X47_Y39_N8
 \U3|INST_OUT[14]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[14]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(14)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100000000",
+	lut_mask => "1111000011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \U4|altsyncram_component|auto_generated|q_a\(14),
+	datac => \U4|altsyncram_component|auto_generated|q_a\(14),
 	combout => \U3|INST_OUT[14]~feeder_combout\);
 
--- Location: FF_X34_Y4_N31
+-- Location: FF_X47_Y39_N9
 \U3|INST_OUT[14]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2273,7 +2230,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(14));
 
--- Location: LCCOMB_X32_Y4_N18
+-- Location: LCCOMB_X61_Y53_N28
 \U3|INST_OUT[15]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[15]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(15)
@@ -2287,7 +2244,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(15),
 	combout => \U3|INST_OUT[15]~feeder_combout\);
 
--- Location: FF_X32_Y4_N19
+-- Location: FF_X61_Y53_N29
 \U3|INST_OUT[15]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2301,21 +2258,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(15));
 
--- Location: LCCOMB_X32_Y4_N28
+-- Location: LCCOMB_X60_Y53_N6
 \U3|INST_OUT[16]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[16]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(16)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000011110000",
+	lut_mask => "1111111100000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \U4|altsyncram_component|auto_generated|q_a\(16),
+	datad => \U4|altsyncram_component|auto_generated|q_a\(16),
 	combout => \U3|INST_OUT[16]~feeder_combout\);
 
--- Location: FF_X32_Y4_N29
+-- Location: FF_X60_Y53_N7
 \U3|INST_OUT[16]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2329,21 +2286,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(16));
 
--- Location: LCCOMB_X32_Y4_N8
+-- Location: LCCOMB_X61_Y53_N0
 \U3|INST_OUT[17]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[17]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(17)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100000000",
+	lut_mask => "1111000011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \U4|altsyncram_component|auto_generated|q_a\(17),
+	datac => \U4|altsyncram_component|auto_generated|q_a\(17),
 	combout => \U3|INST_OUT[17]~feeder_combout\);
 
--- Location: FF_X32_Y4_N9
+-- Location: FF_X61_Y53_N1
 \U3|INST_OUT[17]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2357,7 +2314,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(17));
 
--- Location: LCCOMB_X32_Y4_N6
+-- Location: LCCOMB_X61_Y53_N2
 \U3|INST_OUT[18]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[18]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(18)
@@ -2371,7 +2328,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(18),
 	combout => \U3|INST_OUT[18]~feeder_combout\);
 
--- Location: FF_X32_Y4_N7
+-- Location: FF_X61_Y53_N3
 \U3|INST_OUT[18]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2385,7 +2342,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(18));
 
--- Location: LCCOMB_X32_Y4_N24
+-- Location: LCCOMB_X61_Y53_N18
 \U3|INST_OUT[19]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[19]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(19)
@@ -2399,7 +2356,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(19),
 	combout => \U3|INST_OUT[19]~feeder_combout\);
 
--- Location: FF_X32_Y4_N25
+-- Location: FF_X61_Y53_N19
 \U3|INST_OUT[19]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2413,7 +2370,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(19));
 
--- Location: LCCOMB_X32_Y4_N20
+-- Location: LCCOMB_X61_Y53_N6
 \U3|INST_OUT[20]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[20]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(20)
@@ -2427,7 +2384,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(20),
 	combout => \U3|INST_OUT[20]~feeder_combout\);
 
--- Location: FF_X32_Y4_N21
+-- Location: FF_X61_Y53_N7
 \U3|INST_OUT[20]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2441,7 +2398,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(20));
 
--- Location: LCCOMB_X32_Y4_N12
+-- Location: LCCOMB_X61_Y53_N24
 \U3|INST_OUT[21]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[21]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(21)
@@ -2455,7 +2412,7 @@ PORT MAP (
 	datac => \U4|altsyncram_component|auto_generated|q_a\(21),
 	combout => \U3|INST_OUT[21]~feeder_combout\);
 
--- Location: FF_X32_Y4_N13
+-- Location: FF_X61_Y53_N25
 \U3|INST_OUT[21]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2469,21 +2426,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(21));
 
--- Location: LCCOMB_X32_Y4_N14
+-- Location: LCCOMB_X61_Y53_N8
 \U3|INST_OUT[22]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[22]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(22)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000011110000",
+	lut_mask => "1111111100000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \U4|altsyncram_component|auto_generated|q_a\(22),
+	datad => \U4|altsyncram_component|auto_generated|q_a\(22),
 	combout => \U3|INST_OUT[22]~feeder_combout\);
 
--- Location: FF_X32_Y4_N15
+-- Location: FF_X61_Y53_N9
 \U3|INST_OUT[22]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2497,7 +2454,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(22));
 
--- Location: LCCOMB_X32_Y4_N0
+-- Location: LCCOMB_X61_Y53_N16
 \U3|INST_OUT[23]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[23]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(23)
@@ -2511,7 +2468,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(23),
 	combout => \U3|INST_OUT[23]~feeder_combout\);
 
--- Location: FF_X32_Y4_N1
+-- Location: FF_X61_Y53_N17
 \U3|INST_OUT[23]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2525,21 +2482,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(23));
 
--- Location: LCCOMB_X32_Y4_N22
+-- Location: LCCOMB_X61_Y53_N22
 \U3|INST_OUT[24]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[24]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(24)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000011110000",
+	lut_mask => "1111111100000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \U4|altsyncram_component|auto_generated|q_a\(24),
+	datad => \U4|altsyncram_component|auto_generated|q_a\(24),
 	combout => \U3|INST_OUT[24]~feeder_combout\);
 
--- Location: FF_X32_Y4_N23
+-- Location: FF_X61_Y53_N23
 \U3|INST_OUT[24]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2553,21 +2510,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(24));
 
--- Location: LCCOMB_X32_Y4_N2
+-- Location: LCCOMB_X61_Y53_N12
 \U3|INST_OUT[25]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[25]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(25)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100000000",
+	lut_mask => "1111000011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \U4|altsyncram_component|auto_generated|q_a\(25),
+	datac => \U4|altsyncram_component|auto_generated|q_a\(25),
 	combout => \U3|INST_OUT[25]~feeder_combout\);
 
--- Location: FF_X32_Y4_N3
+-- Location: FF_X61_Y53_N13
 \U3|INST_OUT[25]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2581,7 +2538,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(25));
 
--- Location: LCCOMB_X34_Y4_N16
+-- Location: LCCOMB_X47_Y39_N24
 \U3|INST_OUT[26]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[26]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(26)
@@ -2595,7 +2552,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(26),
 	combout => \U3|INST_OUT[26]~feeder_combout\);
 
--- Location: FF_X34_Y4_N17
+-- Location: FF_X47_Y39_N25
 \U3|INST_OUT[26]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2609,7 +2566,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(26));
 
--- Location: LCCOMB_X32_Y4_N16
+-- Location: LCCOMB_X61_Y53_N30
 \U3|INST_OUT[27]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[27]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(27)
@@ -2623,7 +2580,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(27),
 	combout => \U3|INST_OUT[27]~feeder_combout\);
 
--- Location: FF_X32_Y4_N17
+-- Location: FF_X61_Y53_N31
 \U3|INST_OUT[27]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2637,21 +2594,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(27));
 
--- Location: LCCOMB_X32_Y4_N10
+-- Location: LCCOMB_X61_Y53_N20
 \U3|INST_OUT[28]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[28]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(28)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100000000",
+	lut_mask => "1111000011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \U4|altsyncram_component|auto_generated|q_a\(28),
+	datac => \U4|altsyncram_component|auto_generated|q_a\(28),
 	combout => \U3|INST_OUT[28]~feeder_combout\);
 
--- Location: FF_X32_Y4_N11
+-- Location: FF_X61_Y53_N21
 \U3|INST_OUT[28]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2665,7 +2622,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(28));
 
--- Location: LCCOMB_X32_Y4_N26
+-- Location: LCCOMB_X61_Y53_N26
 \U3|INST_OUT[29]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[29]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(29)
@@ -2679,7 +2636,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(29),
 	combout => \U3|INST_OUT[29]~feeder_combout\);
 
--- Location: FF_X32_Y4_N27
+-- Location: FF_X61_Y53_N27
 \U3|INST_OUT[29]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2693,7 +2650,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(29));
 
--- Location: LCCOMB_X32_Y4_N30
+-- Location: LCCOMB_X61_Y53_N10
 \U3|INST_OUT[30]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[30]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(30)
@@ -2707,7 +2664,7 @@ PORT MAP (
 	datac => \U4|altsyncram_component|auto_generated|q_a\(30),
 	combout => \U3|INST_OUT[30]~feeder_combout\);
 
--- Location: FF_X32_Y4_N31
+-- Location: FF_X61_Y53_N11
 \U3|INST_OUT[30]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2721,7 +2678,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \U3|INST_OUT\(30));
 
--- Location: LCCOMB_X32_Y4_N4
+-- Location: LCCOMB_X60_Y53_N0
 \U3|INST_OUT[31]~feeder\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \U3|INST_OUT[31]~feeder_combout\ = \U4|altsyncram_component|auto_generated|q_a\(31)
@@ -2735,7 +2692,7 @@ PORT MAP (
 	datad => \U4|altsyncram_component|auto_generated|q_a\(31),
 	combout => \U3|INST_OUT[31]~feeder_combout\);
 
--- Location: FF_X32_Y4_N5
+-- Location: FF_X60_Y53_N1
 \U3|INST_OUT[31]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (

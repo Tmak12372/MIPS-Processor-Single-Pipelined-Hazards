@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PROCESSOR
-Fri Jan 28 18:03:36 2022
+Tue Feb 08 17:03:47 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jan 28 18:03:36 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 08 17:03:47 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
@@ -544,7 +544,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jan 28 18:03:20 2022
+    Info: Processing started: Tue Feb 08 17:03:30 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -555,8 +555,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file alu_con
     Info (12022): Found design unit 1: ALU_CONTROLLER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 14
     Info (12023): Found entity 1: ALU_CONTROLLER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/ALU_CONTROLLER.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mips_processor.vhd
-    Info (12022): Found design unit 1: MIPS_PROCESSOR-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 23
-    Info (12023): Found entity 1: MIPS_PROCESSOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 6
+    Info (12022): Found design unit 1: MIPS_PROCESSOR-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 28
+    Info (12023): Found entity 1: MIPS_PROCESSOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file program_counter.vhd
     Info (12022): Found design unit 1: PROGRAM_COUNTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 17
     Info (12023): Found entity 1: PROGRAM_COUNTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 6
@@ -583,10 +583,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file registe
     Info (12022): Found design unit 1: REGISTERS-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd Line: 18
     Info (12023): Found entity 1: REGISTERS File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd Line: 5
 Info (12127): Elaborating entity "MIPS_PROCESSOR" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MIPS_PROCESSOR.vhd(34): object "ALU_ZERO" assigned a value but never read File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 34
-Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 41
-Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 42
-Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U4" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 43
+Warning (10036): Verilog HDL or VHDL warning at MIPS_PROCESSOR.vhd(40): object "ALU_ZERO" assigned a value but never read File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 40
+Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 46
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 47
+Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U4" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 48
 Info (12128): Elaborating entity "altsyncram" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
 Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
 Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
@@ -643,16 +643,16 @@ Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ctq3.tdf
     Info (12023): Found entity 1: altsyncram_ctq3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_ctq3" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:U5" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 44
-Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:U6" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 45
-Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U7" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 46
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U8" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 47
-Info (12128): Elaborating entity "ALU_CONTROLLER" for hierarchy "ALU_CONTROLLER:U9" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 48
+Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:U5" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 49
+Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:U6" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 50
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U7" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 51
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U8" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 52
+Info (12128): Elaborating entity "ALU_CONTROLLER" for hierarchy "ALU_CONTROLLER:U9" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 53
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "REGISTERS:U5|Registers" is uninferred due to asynchronous read logic File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/REGISTERS.vhd Line: 21
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "O_PC_OUTPUT[0]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 17
-    Warning (13410): Pin "O_PC_OUTPUT[1]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 17
+    Warning (13410): Pin "O_PC_OUTPUT[0]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 22
+    Warning (13410): Pin "O_PC_OUTPUT[1]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_2/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -662,9 +662,9 @@ Info (21057): Implemented 2829 device resources after synthesis - the final reso
     Info (21061): Implemented 2684 logic cells
     Info (21064): Implemented 32 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4799 megabytes
-    Info: Processing ended: Fri Jan 28 18:03:36 2022
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Tue Feb 08 17:03:47 2022
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:32
 
 
