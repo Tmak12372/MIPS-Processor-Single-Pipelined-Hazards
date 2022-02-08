@@ -1,0 +1,3 @@
+Warning (20013): Ignored 24 assignments for entity "ADXL345_Driver" -- entity does not exist in design
+Warning (20013): Ignored 24 assignments for entity "accelerometer_top" -- entity does not exist in design
+Warning (20013): Ignored 24 assignments for entity "hw8p3" -- entity does not exist in design
