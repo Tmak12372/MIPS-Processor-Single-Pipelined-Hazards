@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PROCESSOR
-Tue Feb 08 16:55:52 2022
+Thu Feb 10 16:34:43 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,19 +16,18 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Source assignments for IP_MEMORY:U3|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated
  14. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_PROCESSOR
  15. Parameter Settings for User Entity Instance: PROGRAM_COUNTER:U1
  16. Parameter Settings for User Entity Instance: ADDER:U2
- 17. Parameter Settings for User Entity Instance: INSTRUCTION_REGISTER:U3
- 18. Parameter Settings for User Entity Instance: IP_MEMORY:U4|altsyncram:altsyncram_component
- 19. altsyncram Parameter Settings by Entity Instance
- 20. Port Connectivity Checks: "IP_MEMORY:U4"
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
+ 17. Parameter Settings for User Entity Instance: IP_MEMORY:U3|altsyncram:altsyncram_component
+ 18. altsyncram Parameter Settings by Entity Instance
+ 19. Port Connectivity Checks: "IP_MEMORY:U3"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -55,16 +54,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 08 16:55:52 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 10 16:34:43 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 45                                          ;
-;     Total combinational functions  ; 8                                           ;
-;     Dedicated logic registers      ; 43                                          ;
-; Total registers                    ; 43                                          ;
-; Total pins                         ; 81                                          ;
+; Total logic elements               ; 7                                           ;
+;     Total combinational functions  ; 7                                           ;
+;     Dedicated logic registers      ; 6                                           ;
+; Total registers                    ; 6                                           ;
+; Total pins                         ; 53                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -177,28 +176,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                    ;
-+----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                      ; Library ;
-+----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; MIPS_PROCESSOR.vhd               ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd       ;         ;
-; PROGRAM_COUNTER.vhd              ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd      ;         ;
-; ADDER.vhd                        ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/ADDER.vhd                ;         ;
-; INSTRUCTION_REGISTER.vhd         ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd ;         ;
-; IP_MEMORY.vhd                    ; yes             ; User Wizard-Generated File             ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd            ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                             ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                      ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                             ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                             ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                              ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                 ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                 ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                               ;         ;
-; db/altsyncram_1cr3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/db/altsyncram_1cr3.tdf   ;         ;
-; instructions.mif                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/instructions.mif         ;         ;
-+----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                    ; Library ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; MIPS_PROCESSOR.vhd               ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd     ;         ;
+; PROGRAM_COUNTER.vhd              ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd    ;         ;
+; ADDER.vhd                        ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/ADDER.vhd              ;         ;
+; IP_MEMORY.vhd                    ; yes             ; User Wizard-Generated File             ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd          ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                           ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                    ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                              ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                           ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                           ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                            ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                               ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                             ;         ;
+; db/altsyncram_1cr3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/db/altsyncram_1cr3.tdf ;         ;
+; instructions.mif                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/instructions.mif       ;         ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -206,47 +204,46 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 45        ;
+; Estimated Total logic elements              ; 7         ;
 ;                                             ;           ;
-; Total combinational functions               ; 8         ;
+; Total combinational functions               ; 7         ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 1         ;
+;     -- 3 input functions                    ; 0         ;
 ;     -- <=2 input functions                  ; 7         ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 4         ;
-;     -- arithmetic mode                      ; 4         ;
+;     -- normal mode                          ; 2         ;
+;     -- arithmetic mode                      ; 5         ;
 ;                                             ;           ;
-; Total registers                             ; 43        ;
-;     -- Dedicated logic registers            ; 43        ;
+; Total registers                             ; 6         ;
+;     -- Dedicated logic registers            ; 6         ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 81        ;
+; I/O pins                                    ; 53        ;
 ; Total memory bits                           ; 8192      ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 75        ;
-; Total fan-out                               ; 509       ;
-; Average fan-out                             ; 2.08      ;
+; Maximum fan-out                             ; 38        ;
+; Total fan-out                               ; 378       ;
+; Average fan-out                             ; 2.50      ;
 +---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                         ; Entity Name          ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------+----------------------+--------------+
-; |MIPS_PROCESSOR                           ; 8 (1)               ; 43 (0)                    ; 8192        ; 0          ; 0            ; 0       ; 0         ; 81   ; 0            ; 0          ; |MIPS_PROCESSOR                                                                             ; MIPS_PROCESSOR       ; work         ;
-;    |ADDER:U2|                             ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ADDER:U2                                                                    ; ADDER                ; work         ;
-;    |INSTRUCTION_REGISTER:U3|              ; 2 (2)               ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|INSTRUCTION_REGISTER:U3                                                     ; INSTRUCTION_REGISTER ; work         ;
-;    |IP_MEMORY:U4|                         ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4                                                                ; IP_MEMORY            ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component                                ; altsyncram           ; work         ;
-;          |altsyncram_1cr3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated ; altsyncram_1cr3      ; work         ;
-;    |PROGRAM_COUNTER:U1|                   ; 0 (0)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|PROGRAM_COUNTER:U1                                                          ; PROGRAM_COUNTER      ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------+----------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                           ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                         ; Entity Name     ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------+-----------------+--------------+
+; |MIPS_PROCESSOR                           ; 7 (1)               ; 6 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 53   ; 0            ; 0          ; |MIPS_PROCESSOR                                                                             ; MIPS_PROCESSOR  ; work         ;
+;    |ADDER:U2|                             ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ADDER:U2                                                                    ; ADDER           ; work         ;
+;    |IP_MEMORY:U3|                         ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U3                                                                ; IP_MEMORY       ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U3|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
+;          |altsyncram_1cr3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U3|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated ; altsyncram_1cr3 ; work         ;
+;    |PROGRAM_COUNTER:U1|                   ; 0 (0)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|PROGRAM_COUNTER:U1                                                          ; PROGRAM_COUNTER ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -255,7 +252,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------------------+
 ; Name                                                                                   ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF              ;
 +----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------------------+
-; IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; INSTRUCTIONS.mif ;
+; IP_MEMORY:U3|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; INSTRUCTIONS.mif ;
 +----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------------------+
 
 
@@ -264,22 +261,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------------+-----------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance              ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+------------------------------+-----------------+
-; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |MIPS_PROCESSOR|IP_MEMORY:U4 ; IP_MEMORY.vhd   ;
+; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |MIPS_PROCESSOR|IP_MEMORY:U3 ; IP_MEMORY.vhd   ;
 +--------+--------------+---------+--------------+--------------+------------------------------+-----------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                       ;
-+----------------------------------------+-------------------------------------------------+
-; Register name                          ; Reason for Removal                              ;
-+----------------------------------------+-------------------------------------------------+
-; PROGRAM_COUNTER:U1|ADDRESS_OUT[0,1]    ; Merged with INSTRUCTION_REGISTER:U3|ADDR_OUT[0] ;
-; INSTRUCTION_REGISTER:U3|ADDR_OUT[1]    ; Merged with INSTRUCTION_REGISTER:U3|ADDR_OUT[0] ;
-; INSTRUCTION_REGISTER:U3|ADDR_OUT[0]    ; Stuck at GND due to stuck port data_in          ;
-; PROGRAM_COUNTER:U1|ADDRESS_OUT[2]      ; Merged with INSTRUCTION_REGISTER:U3|ADDR_OUT[2] ;
-; PROGRAM_COUNTER:U1|ADDRESS_OUT[8..31]  ; Lost fanout                                     ;
-; Total Number of Removed Registers = 29 ;                                                 ;
-+----------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                     ;
++----------------------------------------+-----------------------------------------------+
+; Register name                          ; Reason for Removal                            ;
++----------------------------------------+-----------------------------------------------+
+; PROGRAM_COUNTER:U1|ADDRESS_OUT[1]      ; Merged with PROGRAM_COUNTER:U1|ADDRESS_OUT[0] ;
+; PROGRAM_COUNTER:U1|ADDRESS_OUT[0]      ; Stuck at GND due to stuck port data_in        ;
+; PROGRAM_COUNTER:U1|ADDRESS_OUT[8..31]  ; Lost fanout                                   ;
+; Total Number of Removed Registers = 26 ;                                               ;
++----------------------------------------+-----------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                       ;
++------------------------------------+--------------------+-------------------------------------------------------------------------+
+; Register name                      ; Reason for Removal ; Registers Removed due to This Register                                  ;
++------------------------------------+--------------------+-------------------------------------------------------------------------+
+; PROGRAM_COUNTER:U1|ADDRESS_OUT[31] ; Lost Fanouts       ; PROGRAM_COUNTER:U1|ADDRESS_OUT[30], PROGRAM_COUNTER:U1|ADDRESS_OUT[29], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[28], PROGRAM_COUNTER:U1|ADDRESS_OUT[27], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[26], PROGRAM_COUNTER:U1|ADDRESS_OUT[25], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[24], PROGRAM_COUNTER:U1|ADDRESS_OUT[23], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[22], PROGRAM_COUNTER:U1|ADDRESS_OUT[21], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[20], PROGRAM_COUNTER:U1|ADDRESS_OUT[19], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[18], PROGRAM_COUNTER:U1|ADDRESS_OUT[17], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[16], PROGRAM_COUNTER:U1|ADDRESS_OUT[15], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[14], PROGRAM_COUNTER:U1|ADDRESS_OUT[13], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[12], PROGRAM_COUNTER:U1|ADDRESS_OUT[11], ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[10], PROGRAM_COUNTER:U1|ADDRESS_OUT[9],  ;
+;                                    ;                    ; PROGRAM_COUNTER:U1|ADDRESS_OUT[8]                                       ;
++------------------------------------+--------------------+-------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -287,7 +302,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 43    ;
+; Total registers                              ; 6     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -297,18 +312,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; INSTRUCTION_REGISTER:U3|ADDR_OUT[2]    ; 6       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
-
-
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated ;
+; Source assignments for IP_MEMORY:U3|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -347,18 +352,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: INSTRUCTION_REGISTER:U3 ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; size           ; 32    ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: IP_MEMORY:U4|altsyncram:altsyncram_component ;
+; Parameter Settings for User Entity Instance: IP_MEMORY:U3|altsyncram:altsyncram_component ;
 +------------------------------------+----------------------+-------------------------------+
 ; Parameter Name                     ; Value                ; Type                          ;
 +------------------------------------+----------------------+-------------------------------+
@@ -424,7 +419,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Name                                      ; Value                                        ;
 +-------------------------------------------+----------------------------------------------+
 ; Number of entity instances                ; 1                                            ;
-; Entity Instance                           ; IP_MEMORY:U4|altsyncram:altsyncram_component ;
+; Entity Instance                           ; IP_MEMORY:U3|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                  ;
 ;     -- WIDTH_A                            ; 32                                           ;
 ;     -- NUMWORDS_A                         ; 256                                          ;
@@ -439,7 +434,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------+
-; Port Connectivity Checks: "IP_MEMORY:U4" ;
+; Port Connectivity Checks: "IP_MEMORY:U3" ;
 +------+-------+----------+----------------+
 ; Port ; Type  ; Severity ; Details        ;
 +------+-------+----------+----------------+
@@ -453,20 +448,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 81                          ;
-; cycloneiii_ff         ; 43                          ;
-;     plain             ; 43                          ;
-; cycloneiii_lcell_comb ; 8                           ;
-;     arith             ; 4                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 1                           ;
-;     normal            ; 4                           ;
+; boundary_port         ; 53                          ;
+; cycloneiii_ff         ; 6                           ;
+;     plain             ; 6                           ;
+; cycloneiii_lcell_comb ; 7                           ;
+;     arith             ; 5                           ;
+;         2 data inputs ; 5                           ;
+;     normal            ; 2                           ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
+;         1 data inputs ; 1                           ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.40                        ;
-; Average LUT depth     ; 0.24                        ;
+; Max LUT depth         ; 1.50                        ;
+; Average LUT depth     ; 0.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -485,7 +479,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Feb 08 16:55:36 2022
+    Info: Processing started: Thu Feb 10 16:34:28 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -493,7 +487,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file testben
     Info (12022): Found design unit 1: TESTBENCH-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd Line: 8
     Info (12023): Found entity 1: TESTBENCH File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mips_processor.vhd
-    Info (12022): Found design unit 1: MIPS_PROCESSOR-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 22
+    Info (12022): Found design unit 1: MIPS_PROCESSOR-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 21
     Info (12023): Found entity 1: MIPS_PROCESSOR File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file program_counter.vhd
     Info (12022): Found design unit 1: PROGRAM_COUNTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd Line: 18
@@ -501,20 +495,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file program
 Info (12021): Found 2 design units, including 1 entities, in source file adder.vhd
     Info (12022): Found design unit 1: ADDER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/ADDER.vhd Line: 18
     Info (12023): Found entity 1: ADDER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/ADDER.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file instruction_register.vhd
-    Info (12022): Found design unit 1: INSTRUCTION_REGISTER-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 18
-    Info (12023): Found entity 1: INSTRUCTION_REGISTER File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/INSTRUCTION_REGISTER.vhd Line: 5
+Warning (12019): Can't analyze file -- file INSTRUCTION_REGISTER.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file ip_memory.vhd
     Info (12022): Found design unit 1: ip_memory-SYN File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 55
     Info (12023): Found entity 1: IP_MEMORY File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 43
 Info (12127): Elaborating entity "MIPS_PROCESSOR" for the top level hierarchy
-Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 29
-Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 30
-Info (12128): Elaborating entity "INSTRUCTION_REGISTER" for hierarchy "INSTRUCTION_REGISTER:U3" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 31
-Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U4" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 32
-Info (12128): Elaborating entity "altsyncram" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
-Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U4|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
-Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
+Info (12128): Elaborating entity "PROGRAM_COUNTER" for hierarchy "PROGRAM_COUNTER:U1" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 28
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:U2" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 29
+Info (12128): Elaborating entity "IP_MEMORY" for hierarchy "IP_MEMORY:U3" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 30
+Info (12128): Elaborating entity "altsyncram" for hierarchy "IP_MEMORY:U3|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
+Info (12130): Elaborated megafunction instantiation "IP_MEMORY:U3|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
+Info (12133): Instantiated megafunction "IP_MEMORY:U3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd Line: 62
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -567,43 +558,25 @@ Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_comp
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1cr3.tdf
     Info (12023): Found entity 1: altsyncram_1cr3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/db/altsyncram_1cr3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_1cr3" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "altsyncram_1cr3" for hierarchy "IP_MEMORY:U3|altsyncram:altsyncram_component|altsyncram_1cr3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "PC_INPUT[0]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 15
-    Warning (13410): Pin "PC_INPUT[1]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 15
-    Warning (13410): Pin "PC_OUTPUT[0]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 16
-    Warning (13410): Pin "PC_OUTPUT[1]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 16
-    Warning (13410): Pin "IR_ADDR_OUTPUT[0]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 17
-    Warning (13410): Pin "IR_ADDR_OUTPUT[1]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 17
+    Warning (13410): Pin "PC_INPUT[0]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 14
+    Warning (13410): Pin "PC_INPUT[1]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 14
+    Warning (13410): Pin "PC_OUTPUT[0]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 15
+    Warning (13410): Pin "PC_OUTPUT[1]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 15
+    Warning (13410): Pin "READ_ADDRESS[0]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 16
+    Warning (13410): Pin "READ_ADDRESS[1]" is stuck at GND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 24 registers lost all their fanouts during netlist optimizations.
 Info (128000): Starting physical synthesis optimizations for speed
 Info (332104): Reading SDC File: 'MIPS_PROCESSOR.out.sdc'
-Warning (332174): Ignored filter at MIPS_PROCESSOR.out.sdc(43): EX_MEM:U20|M_OUT[1] could not be matched with a register File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 43
-Warning (332049): Ignored create_clock at MIPS_PROCESSOR.out.sdc(43): Argument <targets> is an empty collection File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 43
-    Info (332050): create_clock -name {EX_MEM:U20|M_OUT[1]} -period 1.000 -waveform { 0.000 0.500 } [get_registers {EX_MEM:U20|M_OUT[1]}] File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 43
-Warning (332174): Ignored filter at MIPS_PROCESSOR.out.sdc(64): EX_MEM:U20|M_OUT[1] could not be matched with a clock File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 64
-Warning (332049): Ignored set_clock_uncertainty at MIPS_PROCESSOR.out.sdc(64): Argument -rise_to with value [get_clocks {EX_MEM:U20|M_OUT[1]}] contains zero elements File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 64
-    Info (332050): set_clock_uncertainty -rise_from [get_clocks {CLK}] -rise_to [get_clocks {EX_MEM:U20|M_OUT[1]}]  0.030   File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 64
-Warning (332049): Ignored set_clock_uncertainty at MIPS_PROCESSOR.out.sdc(65): Argument -fall_to with value [get_clocks {EX_MEM:U20|M_OUT[1]}] contains zero elements File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 65
-    Info (332050): set_clock_uncertainty -rise_from [get_clocks {CLK}] -fall_to [get_clocks {EX_MEM:U20|M_OUT[1]}]  0.030   File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 65
-Warning (332049): Ignored set_clock_uncertainty at MIPS_PROCESSOR.out.sdc(68): Argument -rise_to with value [get_clocks {EX_MEM:U20|M_OUT[1]}] contains zero elements File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 68
-    Info (332050): set_clock_uncertainty -fall_from [get_clocks {CLK}] -rise_to [get_clocks {EX_MEM:U20|M_OUT[1]}]  0.030   File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 68
-Warning (332049): Ignored set_clock_uncertainty at MIPS_PROCESSOR.out.sdc(69): Argument -fall_to with value [get_clocks {EX_MEM:U20|M_OUT[1]}] contains zero elements File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 69
-    Info (332050): set_clock_uncertainty -fall_from [get_clocks {CLK}] -fall_to [get_clocks {EX_MEM:U20|M_OUT[1]}]  0.030   File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 69
-Warning (332049): Ignored set_clock_uncertainty at MIPS_PROCESSOR.out.sdc(70): Argument -rise_from with value [get_clocks {EX_MEM:U20|M_OUT[1]}] contains zero elements File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 70
-    Info (332050): set_clock_uncertainty -rise_from [get_clocks {EX_MEM:U20|M_OUT[1]}] -rise_to [get_clocks {CLK}]  0.030   File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 70
-Warning (332049): Ignored set_clock_uncertainty at MIPS_PROCESSOR.out.sdc(71): Argument -rise_from with value [get_clocks {EX_MEM:U20|M_OUT[1]}] contains zero elements File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 71
-    Info (332050): set_clock_uncertainty -rise_from [get_clocks {EX_MEM:U20|M_OUT[1]}] -fall_to [get_clocks {CLK}]  0.030   File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 71
-Warning (332049): Ignored set_clock_uncertainty at MIPS_PROCESSOR.out.sdc(72): Argument -fall_from with value [get_clocks {EX_MEM:U20|M_OUT[1]}] contains zero elements File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 72
-    Info (332050): set_clock_uncertainty -fall_from [get_clocks {EX_MEM:U20|M_OUT[1]}] -rise_to [get_clocks {CLK}]  0.030   File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 72
-Warning (332049): Ignored set_clock_uncertainty at MIPS_PROCESSOR.out.sdc(73): Argument -fall_from with value [get_clocks {EX_MEM:U20|M_OUT[1]}] contains zero elements File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 73
-    Info (332050): set_clock_uncertainty -fall_from [get_clocks {EX_MEM:U20|M_OUT[1]}] -fall_to [get_clocks {CLK}]  0.030   File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.out.sdc Line: 73
+Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning (332169): From CLK (Rise) to CLK (Rise) (setup and hold)
 Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
 Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
-    Info (332111):   10.000          CLK
+    Info (332111):   12.500          CLK
 Info (128002): Starting physical synthesis algorithm register retiming
 Info (128003): Physical synthesis algorithm register retiming complete: estimated slack improvement of 0 ps
 Info (128002): Starting physical synthesis algorithm combinational resynthesis using boolean division
@@ -611,15 +584,15 @@ Info (128003): Physical synthesis algorithm combinational resynthesis using bool
 Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:01
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 159 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 80 output pins
-    Info (21061): Implemented 46 logic cells
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 11 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Tue Feb 08 16:55:52 2022
-    Info: Elapsed time: 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Thu Feb 10 16:34:43 2022
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:32
 
 
