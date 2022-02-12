@@ -146,6 +146,10 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity a
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity hw8p3 -section_id Top
 set_location_assignment PIN_P11 -to CLK
 set_location_assignment PIN_C10 -to SEL
+set_global_assignment -name VHDL_FILE REGISTER_AND.vhd
+set_global_assignment -name VHDL_FILE Decoder_5_32.vhd
+set_global_assignment -name VHDL_FILE MUX_32_1.vhd
+set_global_assignment -name VHDL_FILE D_FF.vhd
 set_global_assignment -name SDC_FILE MIPS_PROCESSOR.out.sdc
 set_global_assignment -name VHDL_FILE CLK_DIVIDER.vhd
 set_global_assignment -name VHDL_FILE bcd_7segment.vhd

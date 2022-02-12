@@ -1,14 +1,14 @@
-Fitter Status : Successful - Tue Feb 08 13:13:38 2022
+Fitter Status : Successful - Fri Feb 11 21:05:28 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : MIPS_PROCESSOR
 Top-level Entity Name : MIPS_PROCESSOR
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 1,876 / 49,760 ( 4 % )
-    Total combinational functions : 1,875 / 49,760 ( 4 % )
-    Dedicated logic registers : 1,063 / 49,760 ( 2 % )
-Total registers : 1063
+Total logic elements : 2,919 / 49,760 ( 6 % )
+    Total combinational functions : 2,919 / 49,760 ( 6 % )
+    Dedicated logic registers : 1,064 / 49,760 ( 2 % )
+Total registers : 1064
 Total pins : 197 / 360 ( 55 % )
 Total virtual pins : 0
 Total memory bits : 16,384 / 1,677,312 ( < 1 % )
