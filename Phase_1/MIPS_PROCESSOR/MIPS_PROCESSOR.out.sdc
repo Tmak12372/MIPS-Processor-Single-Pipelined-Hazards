@@ -20,7 +20,7 @@
 ## PROGRAM "Quartus Prime"
 ## VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-## DATE    "Wed Dec 29 17:36:25 2021"
+## DATE    "Mon Feb 14 11:36:02 2022"
 
 ##
 ## DEVICE  "10M50DAF484C7G"
@@ -39,7 +39,7 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name {CLK} -period 12.500 -waveform { 0.000 5.000 } [get_ports {CLK}]
+create_clock -name {CLK} -period 12.500  [get_ports {CLK}]
 
 
 #**************************************************************
@@ -57,6 +57,11 @@ create_clock -name {CLK} -period 12.500 -waveform { 0.000 5.000 } [get_ports {CL
 #**************************************************************
 # Set Clock Uncertainty
 #**************************************************************
+
+set_clock_uncertainty -rise_from [get_clocks {CLK}] -rise_to [get_clocks {CLK}]  0.020  
+set_clock_uncertainty -rise_from [get_clocks {CLK}] -fall_to [get_clocks {CLK}]  0.020  
+set_clock_uncertainty -fall_from [get_clocks {CLK}] -rise_to [get_clocks {CLK}]  0.020  
+set_clock_uncertainty -fall_from [get_clocks {CLK}] -fall_to [get_clocks {CLK}]  0.020  
 
 
 #**************************************************************

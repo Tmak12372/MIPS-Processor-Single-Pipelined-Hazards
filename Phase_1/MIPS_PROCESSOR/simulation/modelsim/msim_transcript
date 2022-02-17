@@ -1,38 +1,75 @@
 # Reading pref.tcl
-# do MIPS_PROCESSOR_run_msim_gate_vhdl.do
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do MIPS_PROCESSOR_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
+# vlib rtl_work
+# vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work gate_work 
+# vmap work rtl_work 
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {MIPS_PROCESSOR.vho}
+# vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:19:32 on Feb 10,2022
-# vcom -reportprogress 300 -93 -work work MIPS_PROCESSOR.vho 
+# Start time: 13:09:42 on Feb 17,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package fiftyfivenm_atom_pack
-# -- Loading package fiftyfivenm_components
-# -- Compiling entity hard_block
-# -- Compiling architecture structure of hard_block
-# -- Loading package dffeas_pack
-# -- Loading package altera_primitives_components
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PROGRAM_COUNTER
+# -- Compiling architecture RTL of PROGRAM_COUNTER
+# End time: 13:09:42 on Feb 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/ADDER.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:09:42 on Feb 17,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/ADDER.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ADDER
+# -- Compiling architecture RTL of ADDER
+# End time: 13:09:42 on Feb 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:09:42 on Feb 17,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/IP_MEMORY.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity IP_MEMORY
+# -- Compiling architecture SYN of ip_memory
+# End time: 13:09:43 on Feb 17,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:09:43 on Feb 17,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
 # -- Compiling entity MIPS_PROCESSOR
-# -- Compiling architecture structure of MIPS_PROCESSOR
-# End time: 16:19:33 on Feb 10,2022, Elapsed time: 0:00:01
+# -- Compiling architecture RTL of MIPS_PROCESSOR
+# -- Loading entity PROGRAM_COUNTER
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity ADDER
+# -- Loading package altera_mf_components
+# -- Loading entity IP_MEMORY
+# End time: 13:09:43 on Feb 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:19:33 on Feb 10,2022
+# Start time: 13:09:43 on Feb 17,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -43,41 +80,27 @@
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 16:19:33 on Feb 10,2022, Elapsed time: 0:00:00
+# End time: 13:09:43 on Feb 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 3
 # 
-# vsim -t 1ps -L altera -L altera_lnsim -L fiftyfivenm -L gate_work -L work -voptargs="+acc"  TESTBENCH
-# vsim -t 1ps -L altera -L altera_lnsim -L fiftyfivenm -L gate_work -L work -voptargs=""+acc"" TESTBENCH 
-# Start time: 16:19:33 on Feb 10,2022
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TESTBENCH
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TESTBENCH 
+# Start time: 13:09:43 on Feb 17,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.testbench(rtl)
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
-# Loading fiftyfivenm.fiftyfivenm_atom_pack(body)
-# Loading fiftyfivenm.fiftyfivenm_components
-# Loading work.mips_processor(structure)
-# ** Warning: (vsim-8713) Suspect default binding for component instance 'UUT'.
-# Entity has no generics at all; the component has generics:
-#           ADDR_SIZE
-#           SIZE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_1/MIPS_PROCESSOR/TESTBENCH.vhd Line: 33
-# Loading work.hard_block(structure)
-# Loading fiftyfivenm.fiftyfivenm_io_obuf(behavior)
-# Loading fiftyfivenm.fiftyfivenm_io_ibuf(behavior)
-# Loading fiftyfivenm.fiftyfivenm_clkctrl(vital_clkctrl)
-# Loading fiftyfivenm.fiftyfivenm_ena_reg(behave)
-# Loading fiftyfivenm.fiftyfivenm_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
-# Loading fiftyfivenm.fiftyfivenm_ram_block(block_arch)
-# Loading fiftyfivenm.fiftyfivenm_ram_register(reg_arch)
-# Loading fiftyfivenm.fiftyfivenm_ram_pulse_generator(pgen_arch)
-# Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
-# Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_mf_components
+# Loading work.mips_processor(rtl)
+# Loading work.program_counter(rtl)
+# Loading work.adder(rtl)
+# Loading work.ip_memory(syn)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
 # 
 # add wave *
 # view structure
@@ -85,5 +108,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 16:21:54 on Feb 10,2022, Elapsed time: 0:02:21
-# Errors: 0, Warnings: 1
+# End time: 13:22:11 on Feb 17,2022, Elapsed time: 0:12:28
+# Errors: 0, Warnings: 0

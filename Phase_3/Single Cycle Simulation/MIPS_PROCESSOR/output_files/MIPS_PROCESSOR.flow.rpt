@@ -1,5 +1,5 @@
 Flow report for MIPS_PROCESSOR
-Fri Feb 11 20:23:05 2022
+Tue Feb 15 18:32:11 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Feb 11 20:23:05 2022       ;
+; Flow Status                        ; Successful - Tue Feb 15 18:32:11 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/11/2022 20:21:10 ;
+; Start date & time ; 02/15/2022 18:30:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_PROCESSOR      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
 ; Assignment Name                         ; Value                                  ; Default Value ; Entity Name       ; Section Id                        ;
 +-----------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                   ; 192123327304435.164463246908712        ; --            ; --                ; --                                ;
+; COMPILER_SIGNATURE_ID                   ; 192123327304435.164497141506664        ; --            ; --                ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME                ; NA                                     ; --            ; --                ; TESTBENCH                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST         ; Off                                    ; --            ; --                ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST         ; Off                                    ; --            ; --                ; eda_board_design_boundary_scan    ;
@@ -128,11 +128,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 4875 MB             ; 00:00:41                           ;
-; Fitter               ; 00:01:12     ; 1.1                     ; 5417 MB             ; 00:01:31                           ;
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 4875 MB             ; 00:00:42                           ;
+; Fitter               ; 00:01:12     ; 1.1                     ; 5418 MB             ; 00:01:30                           ;
 ; Assembler            ; 00:00:04     ; 1.0                     ; 4699 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.4                     ; 4830 MB             ; 00:00:12                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.4                     ; 4828 MB             ; 00:00:12                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
 ; Total                ; 00:01:50     ; --                      ; --                  ; 00:02:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
