@@ -26,9 +26,9 @@ V?Bh<aUM:D<7N51fnR97Rz0
 !s100 iSgij<n2R`@T[i<GFZlZX1
 Z9 OV;C;2020.1;71
 31
-Z10 !s110 1644632615
+Z10 !s110 1645237209
 !i10b 1
-Z11 !s108 1644632615.000000
+Z11 !s108 1645237209.000000
 Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ADDER.vhd|
 Z13 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ADDER.vhd|
 !i113 1
@@ -73,11 +73,11 @@ VPmo=VO220K7cJZh^EN7E<3
 !s100 cUX[PSJLFN0heK9@[L:BV1
 R9
 31
-Z20 !s110 1644632614
+R10
 !i10b 1
-Z21 !s108 1644632614.000000
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd|
-Z23 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd|
+R11
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd|
+Z21 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd|
 !i113 1
 R14
 R15
@@ -87,7 +87,7 @@ R3
 R4
 R5
 R6
-Z24 DEx4 work 9 adder_alu 0 22 Pmo=VO220K7cJZh^EN7E<3
+Z22 DEx4 work 9 adder_alu 0 22 Pmo=VO220K7cJZh^EN7E<3
 !i122 8
 l20
 L19 7
@@ -95,16 +95,16 @@ VGjU040;O8JK6hGUC[^7ah2
 !s100 Kj03bnG4D]KMd_cYL[ZIh2
 R9
 31
-R20
+R10
 !i10b 1
+R11
+R20
 R21
-R22
-R23
 !i113 1
 R14
 R15
 Ealu
-Z25 w1644274334
+Z23 w1644274334
 R3
 R2
 R4
@@ -112,17 +112,17 @@ R5
 R6
 !i122 13
 R0
-Z26 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ALU.vhd
-Z27 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ALU.vhd
+Z24 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ALU.vhd
+Z25 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ALU.vhd
 l0
 L6 1
 Vn[kWT36A^kABEeG;ezGRB2
 !s100 mDQAobg35R9G;B03^dD2V0
 R9
 31
-R10
+Z26 !s110 1645237210
 !i10b 1
-R11
+Z27 !s108 1645237210.000000
 Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ALU.vhd|
 Z29 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ALU.vhd|
 !i113 1
@@ -142,9 +142,9 @@ VOQjCm;0JZZz@0E56<?][R2
 !s100 IJ4k^>MC;L<iTjK[HM9zA1
 R9
 31
-R10
+R26
 !i10b 1
-R11
+R27
 R28
 R29
 !i113 1
@@ -165,9 +165,9 @@ VH1<VNja^kzOR2YE?<T[f^0
 !s100 VK01GbhYM<annUZMQ]c9T3
 R9
 31
-R20
+R10
 !i10b 1
-R21
+R11
 Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ALU_CONTROLLER.vhd|
 Z35 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/ALU_CONTROLLER.vhd|
 !i113 1
@@ -185,9 +185,9 @@ V]=0`Ez_OW?942KgEMn8P?2
 !s100 m=XQciDNMT[nAOb8EcIXL3
 R9
 31
-R20
+R10
 !i10b 1
-R21
+R11
 R34
 R35
 !i113 1
@@ -210,9 +210,9 @@ VAgUC0C=i<gm4Bo0i9AEc=1
 !s100 g149eW_[2Y8>P11B`<_>02
 R9
 31
-R20
+R10
 !i10b 1
-R21
+R11
 Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/AND_GATE.vhd|
 Z40 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/AND_GATE.vhd|
 !i113 1
@@ -232,9 +232,9 @@ V6gDah;cN`lzPhe^ggWDg91
 !s100 1h^zGQEG=Iif;Y][jlEN[1
 R9
 31
-R20
+R10
 !i10b 1
-R21
+R11
 R39
 R40
 !i113 1
@@ -257,11 +257,11 @@ VmjKA>F;]@_iJJ<oHGdA[X2
 !s100 BOPmma:h>m>n3YzN>;C^C0
 R9
 31
-R20
+R10
 !i10b 1
-R21
-Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/CONTROLLER.vhd|
-Z46 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/CONTROLLER.vhd|
+Z45 !s108 1645237208.000000
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/CONTROLLER.vhd|
+Z47 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/CONTROLLER.vhd|
 !i113 1
 R14
 R15
@@ -271,7 +271,7 @@ R3
 R4
 R5
 R6
-Z47 DEx4 work 10 controller 0 22 mjKA>F;]@_iJJ<oHGdA[X2
+Z48 DEx4 work 10 controller 0 22 mjKA>F;]@_iJJ<oHGdA[X2
 !i122 6
 l24
 L23 77
@@ -279,34 +279,34 @@ V8jDjmBHZ]Td61maAGnMn01
 !s100 k<B3KV[UmnYdcPVNf8ZAF1
 R9
 31
-R20
+R10
 !i10b 1
-R21
 R45
 R46
+R47
 !i113 1
 R14
 R15
 Ed_ff
-Z48 w1644629389
+Z49 w1644629389
 R4
 R5
 R6
 !i122 4
 R0
-Z49 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd
-Z50 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd
+Z50 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd
+Z51 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd
 l0
 L5 1
 VJzNgdbMXHZWYITY1:UYHg3
 !s100 8c^9Ld??ZBU1YKHNd9;kG1
 R9
 31
-R20
+Z52 !s110 1645237208
 !i10b 1
-Z51 !s108 1644632613.000000
-Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd|
-Z53 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd|
+R45
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd|
+Z54 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd|
 !i113 1
 R14
 R15
@@ -322,42 +322,42 @@ VXgnGPzAWc9M]``iRECES72
 !s100 gJKg7al8gNj>_NhoAhV<_2
 R9
 31
-R20
-!i10b 1
-R51
 R52
+!i10b 1
+R45
 R53
+R54
 !i113 1
 R14
 R15
 Edata_mem_ip
-Z54 w1643759003
-Z55 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+Z55 w1643759003
+Z56 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
 R5
 R6
 !i122 16
 R0
-Z56 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd
-Z57 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd
+Z57 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd
+Z58 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd
 l0
-Z58 L43 1
+Z59 L43 1
 V^<aE@X_i4S<RX0Ke=zBHc1
 !s100 QOHEJYl2kU_B@YcBVQM3B0
 R9
 31
-Z59 !s110 1644632616
+R26
 !i10b 1
-Z60 !s108 1644632616.000000
-Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd|
-Z62 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd|
+R27
+Z60 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd|
+Z61 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd|
 !i113 1
 R14
 R15
 Asyn
-R55
+R56
 R5
 R6
-Z63 DEx4 work 11 data_mem_ip 0 22 ^<aE@X_i4S<RX0Ke=zBHc1
+Z62 DEx4 work 11 data_mem_ip 0 22 ^<aE@X_i4S<RX0Ke=zBHc1
 !i122 16
 l60
 L56 37
@@ -365,34 +365,34 @@ V8]AJK[9cOn6I51[zXj^V]3
 !s100 T=T43ac[hj;2?8@cM;DI22
 R9
 31
-R59
+R26
 !i10b 1
+R27
 R60
 R61
-R62
 !i113 1
 R14
 R15
 Edecoder_5_32
-Z64 w1644548431
+Z63 w1644548431
 R4
 R5
 R6
 !i122 3
 R0
-Z65 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd
-Z66 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd
+Z64 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd
+Z65 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd
 l0
 L5 1
 V5BVoXzO5N_=ecYN[ZCQmd3
 !s100 XQ_QWQfdX3zdjTY:oR9?71
 R9
 31
-Z67 !s110 1644632613
+R52
 !i10b 1
-R51
-Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd|
-Z69 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd|
+R45
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd|
+Z67 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd|
 !i113 1
 R14
 R15
@@ -408,42 +408,42 @@ VWaNV?aJ^43cK6PlTL:YmX1
 !s100 1PImeEIIe=_4gdYMb_0VR3
 R9
 31
-R67
+R52
 !i10b 1
-R51
-R68
-R69
+R45
+R66
+R67
 !i113 1
 R14
 R15
 Eip_memory
-Z70 w1643758812
-R55
+Z68 w1643758812
+R56
 R5
 R6
 !i122 12
 R0
-Z71 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd
-Z72 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd
+Z69 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd
+Z70 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd
 l0
-R58
+R59
 Vjzn3S`S:P4c[n2b8TGRBg3
 !s100 Z2M4WJfzd?R0QUY7eWWhI3
 R9
 31
-R10
+R26
 !i10b 1
-R11
-Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd|
-Z74 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd|
+R27
+Z71 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd|
+Z72 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd|
 !i113 1
 R14
 R15
 Asyn
-R55
+R56
 R5
 R6
-Z75 DEx4 work 9 ip_memory 0 22 jzn3S`S:P4c[n2b8TGRBg3
+Z73 DEx4 work 9 ip_memory 0 22 jzn3S`S:P4c[n2b8TGRBg3
 !i122 12
 l59
 L55 36
@@ -451,34 +451,34 @@ Vd8eQ2o@1a@S@dJYZgii6c1
 !s100 C@<2[Dgd98;e8:XmA3Bg?1
 R9
 31
-R10
+R26
 !i10b 1
-R11
-R73
-R74
+R27
+R71
+R72
 !i113 1
 R14
 R15
 Eleft_shifter
-Z76 w1642029533
+Z74 w1642029533
 R4
 R5
 R6
 !i122 5
 R0
-Z77 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd
-Z78 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd
+Z75 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd
+Z76 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd
 l0
 L5 1
 VF:]@[UF2FQ@VRN?<;]F1l3
 !s100 g3B=HaVkB9W@XK1j`JQR=0
 R9
 31
-R20
+R52
 !i10b 1
-R21
-Z79 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd|
-Z80 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd|
+R45
+Z77 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd|
+Z78 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd|
 !i113 1
 R14
 R15
@@ -486,7 +486,7 @@ Artl
 R4
 R5
 R6
-Z81 DEx4 work 12 left_shifter 0 22 F:]@[UF2FQ@VRN?<;]F1l3
+Z79 DEx4 work 12 left_shifter 0 22 F:]@[UF2FQ@VRN?<;]F1l3
 !i122 5
 l17
 L16 4
@@ -494,99 +494,99 @@ VO]K1m;mQDLV1Lga67C5]O1
 !s100 i_]=L1S:b]E_8?6@`4TK83
 R9
 31
-R20
+R52
 !i10b 1
-R21
-R79
-R80
+R45
+R77
+R78
 !i113 1
 R14
 R15
 Emips_processor
-Z82 w1644274336
+Z80 w1644971761
 R4
 R5
 R6
 !i122 17
 R0
-Z83 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd
-Z84 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd
+Z81 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd
+Z82 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd
 l0
 L10 1
-VY@l[hC=c5edQ>;O1:=YMQ0
-!s100 V0D18RQ363R7DVZOAI2G=1
+V1]6RP0^j07M5]:BP5T^Wh3
+!s100 :iemhXcY]:=eWM3=H=2G<3
 R9
 31
-R59
+Z83 !s110 1645237211
 !i10b 1
-R60
-Z85 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd|
-Z86 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd|
+R27
+Z84 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd|
+Z85 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd|
 !i113 1
 R14
 R15
 Artl
-R63
+R62
 R41
-R24
-R81
-R47
+R22
+R79
+R48
 R36
 R30
-Z87 DEx4 work 3 mux 0 22 h@hNaYbSDcLo]@I52K2]O1
-Z88 DEx4 work 11 sign_extend 0 22 0gM3?EF=5mNFd9C6hWD4L0
-Z89 DEx4 work 9 registers 0 22 zfgH?7iPcFc8FkLnSZ9<41
-R55
-R75
+Z86 DEx4 work 3 mux 0 22 h@hNaYbSDcLo]@I52K2]O1
+Z87 DEx4 work 11 sign_extend 0 22 0gM3?EF=5mNFd9C6hWD4L0
+Z88 DEx4 work 9 registers 0 22 zfgH?7iPcFc8FkLnSZ9<41
+R56
+R73
 R2
 R3
 R16
-Z90 DEx4 work 15 program_counter 0 22 <^E6c?Y=hlG2gWCO:LW=H1
+Z89 DEx4 work 15 program_counter 0 22 <^E6c?Y=hlG2gWCO:LW=H1
 R4
 R5
 R6
-DEx4 work 14 mips_processor 0 22 Y@l[hC=c5edQ>;O1:=YMQ0
+DEx4 work 14 mips_processor 0 22 1]6RP0^j07M5]:BP5T^Wh3
 !i122 17
-l59
-L33 73
-V@nF6g<j>8?J<>RHK3eh2C0
-!s100 5BGVY`YHZ_5<1NDi]De^W2
+l50
+L24 53
+VMJ5<]5_9oDRRZmSLCQJdP2
+!s100 mhaKgboWa_^a_j9G]9R:b1
 R9
 31
-R59
+R83
 !i10b 1
-R60
+R27
+R84
 R85
-R86
 !i113 1
 R14
 R15
 Emux
-Z91 w1639695578
+Z90 w1639695578
 R5
 R6
 !i122 14
 R0
-Z92 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX.vhd
-Z93 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX.vhd
+Z91 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX.vhd
+Z92 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX.vhd
 l0
 L4 1
 Vh@hNaYbSDcLo]@I52K2]O1
 !s100 c147K?kDI5NB_GY9Xe]g92
 R9
 31
-R10
+R26
 !i10b 1
-R11
-Z94 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX.vhd|
-Z95 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX.vhd|
+R27
+Z93 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX.vhd|
+Z94 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX.vhd|
 !i113 1
 R14
 R15
 Artl
 R5
 R6
-R87
+R86
 !i122 14
 l19
 L18 12
@@ -594,34 +594,34 @@ Va0nCR0Y?8mPe]53bVEa[G2
 !s100 XSgkk8:W@^0>FoG[7n7LO3
 R9
 31
-R10
+R26
 !i10b 1
-R11
+R27
+R93
 R94
-R95
 !i113 1
 R14
 R15
 Emux_32_1
-Z96 w1644548624
+Z95 w1644548624
 R4
 R5
 R6
 !i122 2
 R0
-Z97 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX_32_1.vhd
-Z98 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX_32_1.vhd
+Z96 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX_32_1.vhd
+Z97 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX_32_1.vhd
 l0
 L5 1
 Vg573Cn;TUI60B;LYQB=I21
 !s100 5]mMl^P@gdzo3^6S`FbmI1
 R9
 31
-R67
+R52
 !i10b 1
-R51
-Z99 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX_32_1.vhd|
-Z100 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX_32_1.vhd|
+R45
+Z98 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX_32_1.vhd|
+Z99 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/MUX_32_1.vhd|
 !i113 1
 R14
 R15
@@ -637,23 +637,23 @@ VXF[O20TO4kc<CeMKkSbhV0
 !s100 oNPU5b2OTaYSI0931B0mA0
 R9
 31
-R67
+R52
 !i10b 1
-R51
+R45
+R98
 R99
-R100
 !i113 1
 R14
 R15
 Eprogram_counter
-Z101 w1640658095
+Z100 w1640658095
 R4
 R5
 R6
 !i122 10
 R0
-Z102 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd
-Z103 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd
+Z101 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd
+Z102 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd
 l0
 L6 1
 V<^E6c?Y=hlG2gWCO:LW=H1
@@ -662,9 +662,9 @@ R9
 31
 R10
 !i10b 1
-R21
-Z104 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd|
-Z105 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd|
+R11
+Z103 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd|
+Z104 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd|
 !i113 1
 R14
 R15
@@ -672,7 +672,7 @@ Artl
 R4
 R5
 R6
-R90
+R89
 !i122 10
 l19
 L17 11
@@ -682,32 +682,32 @@ R9
 31
 R10
 !i10b 1
-R21
+R11
+R103
 R104
-R105
 !i113 1
 R14
 R15
 Eregister_and
-Z106 w1644545120
+Z105 w1644545120
 R4
 R5
 R6
 !i122 1
 R0
-Z107 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd
-Z108 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd
+Z106 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd
+Z107 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd
 l0
 L5 1
 VZCoFGUSHeT;>:G>i>L`Sk3
 !s100 ScV@dohQ_3V6P>=4=keD;1
 R9
 31
-R67
+R52
 !i10b 1
-R51
-Z109 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd|
-Z110 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd|
+R45
+Z108 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd|
+Z109 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd|
 !i113 1
 R14
 R15
@@ -723,32 +723,32 @@ Vn^KHd<@MDVGoL^zb<A<9o2
 !s100 <l4OgGVO5G6RzkVFRFO^h2
 R9
 31
-R67
+R52
 !i10b 1
-R51
+R45
+R108
 R109
-R110
 !i113 1
 R14
 R15
 Eregisters
-Z111 w1644632468
+Z110 w1644632468
 R4
 R5
 R6
 !i122 0
 R0
-Z112 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTERS.vhd
-Z113 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTERS.vhd
+Z111 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTERS.vhd
+Z112 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTERS.vhd
 l0
 L6 1
 VzfgH?7iPcFc8FkLnSZ9<41
 !s100 ;;kBL`CD[h75`R4C=>^^Q3
 R9
 31
-R67
+Z113 !s110 1645237207
 !i10b 1
-Z114 !s108 1644632612.000000
+Z114 !s108 1645237207.000000
 Z115 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTERS.vhd|
 Z116 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/REGISTERS.vhd|
 !i113 1
@@ -758,7 +758,7 @@ Artl
 R4
 R5
 R6
-R89
+R88
 !i122 0
 l137
 L19 143
@@ -766,7 +766,7 @@ V2:E>ZTHNYBOiJX6Ib?67]2
 !s100 K69Y:7LZhl02[V?kH^0P<1
 R9
 31
-R67
+R113
 !i10b 1
 R114
 R115
@@ -788,9 +788,9 @@ V0gM3?EF=5mNFd9C6hWD4L0
 !s100 O5LY=BBz_NUY_[]<]VB3o3
 R9
 31
-R10
+R26
 !i10b 1
-R11
+R27
 Z120 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/SIGN_EXTEND.vhd|
 Z121 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/SIGN_EXTEND.vhd|
 !i113 1
@@ -799,7 +799,7 @@ R15
 Artl
 R5
 R6
-R88
+R87
 !i122 15
 l16
 L14 12
@@ -807,16 +807,16 @@ V1oVWS5hzlF?WXgXVH::^]1
 !s100 c^B^K30LzbG@3z;H3GO`@1
 R9
 31
-R10
+R26
 !i10b 1
-R11
+R27
 R120
 R121
 !i113 1
 R14
 R15
 Etestbench
-Z122 w1644632417
+Z122 w1645235592
 R4
 R5
 R6
@@ -830,10 +830,10 @@ V3P4cl_:aiYi_L8^3XoeLj1
 !s100 n3LMPUf^LmbW0P`Vo1[XA1
 R9
 31
-R59
+R83
 !i10b 1
-R60
-Z125 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/TESTBENCH.vhd|
+Z125 !s108 1645237211.000000
+Z126 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/TESTBENCH.vhd|
 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/TESTBENCH.vhd|
 !i113 1
 R14
@@ -846,15 +846,15 @@ DEx4 work 9 testbench 0 22 3P4cl_:aiYi_L8^3XoeLj1
 !i122 18
 l36
 L8 49
-VDY9JF<e1VcX;TRHYHJgSI1
-!s100 IH:Dl6Qdl5eD@_`=SW7k_1
+V0EiC3Dm9MG1n:_2njY7J=0
+!s100 W90]K030CgkzZNU:Uk39?1
 R9
 31
-R59
+R83
 !i10b 1
-R60
 R125
-Z126 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/TESTBENCH.vhd|
+R126
+Z127 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/TESTBENCH.vhd|
 !i113 1
 R14
 R15
