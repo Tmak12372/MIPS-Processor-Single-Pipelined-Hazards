@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PROCESSOR
-Fri Feb 18 21:03:16 2022
+Fri Mar 25 14:37:09 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -18,62 +18,61 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Inverted Register Statistics
- 13. Physical Synthesis Netlist Optimizations
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated
- 16. Source assignments for DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_ebr3:auto_generated
- 17. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_PROCESSOR
- 18. Parameter Settings for User Entity Instance: PROGRAM_COUNTER:U1
- 19. Parameter Settings for User Entity Instance: ADDER:U2
- 20. Parameter Settings for User Entity Instance: IP_MEMORY:U4|altsyncram:altsyncram_component
- 21. Parameter Settings for User Entity Instance: REGISTERS:U5
- 22. Parameter Settings for User Entity Instance: SIGN_EXTEND:U6
- 23. Parameter Settings for User Entity Instance: MUX:U7
- 24. Parameter Settings for User Entity Instance: ALU:U8
- 25. Parameter Settings for User Entity Instance: MUX:U11
- 26. Parameter Settings for User Entity Instance: LEFT_SHIFTER:U12
- 27. Parameter Settings for User Entity Instance: ADDER_ALU:U13
- 28. Parameter Settings for User Entity Instance: MUX:U14
- 29. Parameter Settings for User Entity Instance: MUX:U17
- 30. Parameter Settings for User Entity Instance: DATA_MEM_IP:U18|altsyncram:altsyncram_component
- 31. altsyncram Parameter Settings by Entity Instance
- 32. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:31:U90"
- 33. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:30:U90"
- 34. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:29:U90"
- 35. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:28:U90"
- 36. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:27:U90"
- 37. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:26:U90"
- 38. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:25:U90"
- 39. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:24:U90"
- 40. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:23:U90"
- 41. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:22:U90"
- 42. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:21:U90"
- 43. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:20:U90"
- 44. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:19:U90"
- 45. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:18:U90"
- 46. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:17:U90"
- 47. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:16:U90"
- 48. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:15:U90"
- 49. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:14:U90"
- 50. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:13:U90"
- 51. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:12:U90"
- 52. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:11:U90"
- 53. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:10:U90"
- 54. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:9:U90"
- 55. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:8:U90"
- 56. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:7:U90"
- 57. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:6:U90"
- 58. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:5:U90"
- 59. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:4:U90"
- 60. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:3:U90"
- 61. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:2:U90"
- 62. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:1:U90"
- 63. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:0:U90"
- 64. Port Connectivity Checks: "IP_MEMORY:U4"
- 65. Post-Synthesis Netlist Statistics for Top Partition
- 66. Elapsed Time Per Partition
- 67. Analysis & Synthesis Messages
- 68. Analysis & Synthesis Suppressed Messages
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated
+ 15. Source assignments for DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated
+ 16. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_PROCESSOR
+ 17. Parameter Settings for User Entity Instance: PROGRAM_COUNTER:U1
+ 18. Parameter Settings for User Entity Instance: ADDER:U2
+ 19. Parameter Settings for User Entity Instance: IP_MEMORY:U4|altsyncram:altsyncram_component
+ 20. Parameter Settings for User Entity Instance: REGISTERS:U5
+ 21. Parameter Settings for User Entity Instance: SIGN_EXTEND:U6
+ 22. Parameter Settings for User Entity Instance: MUX:U7
+ 23. Parameter Settings for User Entity Instance: ALU:U8
+ 24. Parameter Settings for User Entity Instance: MUX:U11
+ 25. Parameter Settings for User Entity Instance: LEFT_SHIFTER:U12
+ 26. Parameter Settings for User Entity Instance: ADDER_ALU:U13
+ 27. Parameter Settings for User Entity Instance: MUX:U14
+ 28. Parameter Settings for User Entity Instance: MUX:U17
+ 29. Parameter Settings for User Entity Instance: DATA_MEM_IP:U18|altsyncram:altsyncram_component
+ 30. altsyncram Parameter Settings by Entity Instance
+ 31. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:31:U90"
+ 32. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:30:U90"
+ 33. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:29:U90"
+ 34. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:28:U90"
+ 35. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:27:U90"
+ 36. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:26:U90"
+ 37. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:25:U90"
+ 38. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:24:U90"
+ 39. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:23:U90"
+ 40. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:22:U90"
+ 41. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:21:U90"
+ 42. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:20:U90"
+ 43. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:19:U90"
+ 44. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:18:U90"
+ 45. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:17:U90"
+ 46. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:16:U90"
+ 47. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:15:U90"
+ 48. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:14:U90"
+ 49. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:13:U90"
+ 50. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:12:U90"
+ 51. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:11:U90"
+ 52. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:10:U90"
+ 53. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:9:U90"
+ 54. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:8:U90"
+ 55. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:7:U90"
+ 56. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:6:U90"
+ 57. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:5:U90"
+ 58. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:4:U90"
+ 59. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:3:U90"
+ 60. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:2:U90"
+ 61. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:1:U90"
+ 62. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:0:U90"
+ 63. Port Connectivity Checks: "IP_MEMORY:U4"
+ 64. Post-Synthesis Netlist Statistics for Top Partition
+ 65. Elapsed Time Per Partition
+ 66. Analysis & Synthesis Messages
+ 67. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -100,16 +99,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 18 21:03:15 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 25 14:37:09 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 3,046                                       ;
-;     Total combinational functions  ; 2,758                                       ;
-;     Dedicated logic registers      ; 1,239                                       ;
-; Total registers                    ; 1239                                        ;
-; Total pins                         ; 138                                         ;
+; Total logic elements               ; 2,789                                       ;
+;     Total combinational functions  ; 2,788                                       ;
+;     Dedicated logic registers      ; 1,031                                       ;
+; Total registers                    ; 1031                                        ;
+; Total pins                         ; 170                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 16,384                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -127,6 +126,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
 ; Top-level entity name                                            ; MIPS_PROCESSOR     ; MIPS_PROCESSOR     ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                   ; Off                ;                    ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                      ; Off                ; Off                ;
@@ -218,7 +218,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -256,7 +256,7 @@ https://fpgasoftware.intel.com/eula.
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                       ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                     ;         ;
 ; db/altsyncram_ctq3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf ;         ;
-; db/altsyncram_ebr3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/db/altsyncram_ebr3.tdf ;         ;
+; db/altsyncram_32s3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/db/altsyncram_32s3.tdf ;         ;
 ; memory.mif                       ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/memory.mif             ;         ;
 +----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
 
@@ -266,31 +266,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,046     ;
+; Estimated Total logic elements              ; 2,789     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2758      ;
+; Total combinational functions               ; 2788      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2541      ;
-;     -- 3 input functions                    ; 202       ;
-;     -- <=2 input functions                  ; 15        ;
+;     -- 4 input functions                    ; 2542      ;
+;     -- 3 input functions                    ; 234       ;
+;     -- <=2 input functions                  ; 12        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2716      ;
+;     -- normal mode                          ; 2746      ;
 ;     -- arithmetic mode                      ; 42        ;
 ;                                             ;           ;
-; Total registers                             ; 1239      ;
-;     -- Dedicated logic registers            ; 1239      ;
+; Total registers                             ; 1031      ;
+;     -- Dedicated logic registers            ; 1031      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 138       ;
+; I/O pins                                    ; 170       ;
 ; Total memory bits                           ; 16384     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 1303      ;
-; Total fan-out                               ; 15402     ;
-; Average fan-out                             ; 3.55      ;
+; Maximum fan-out                             ; 1095      ;
+; Total fan-out                               ; 14967     ;
+; Average fan-out                             ; 3.54      ;
 +---------------------------------------------+-----------+
 
 
@@ -299,53 +299,55 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                            ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |MIPS_PROCESSOR                           ; 2758 (1)            ; 1239 (0)                  ; 16384       ; 0          ; 0            ; 0       ; 0         ; 138  ; 0            ; 0          ; |MIPS_PROCESSOR                                                                                ; MIPS_PROCESSOR  ; work         ;
+; |MIPS_PROCESSOR                           ; 2788 (1)            ; 1031 (0)                  ; 16384       ; 0          ; 0            ; 0       ; 0         ; 170  ; 0            ; 0          ; |MIPS_PROCESSOR                                                                                ; MIPS_PROCESSOR  ; work         ;
 ;    |ADDER:U2|                             ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ADDER:U2                                                                       ; ADDER           ; work         ;
-;    |ALU:U8|                               ; 255 (255)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU:U8                                                                         ; ALU             ; work         ;
+;    |ALU:U8|                               ; 230 (230)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU:U8                                                                         ; ALU             ; work         ;
 ;    |ALU_CONTROLLER:U9|                    ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU_CONTROLLER:U9                                                              ; ALU_CONTROLLER  ; work         ;
 ;    |AND_GATE:U15|                         ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|AND_GATE:U15                                                                   ; AND_GATE        ; work         ;
-;    |CONTROLLER:U10|                       ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|CONTROLLER:U10                                                                 ; CONTROLLER      ; work         ;
+;    |CONTROLLER:U10|                       ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|CONTROLLER:U10                                                                 ; CONTROLLER      ; work         ;
 ;    |DATA_MEM_IP:U18|                      ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|DATA_MEM_IP:U18                                                                ; DATA_MEM_IP     ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|DATA_MEM_IP:U18|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_ebr3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_ebr3:auto_generated ; altsyncram_ebr3 ; work         ;
+;          |altsyncram_32s3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated ; altsyncram_32s3 ; work         ;
 ;    |IP_MEMORY:U4|                         ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4                                                                   ; IP_MEMORY       ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component                                   ; altsyncram      ; work         ;
 ;          |altsyncram_ctq3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated    ; altsyncram_ctq3 ; work         ;
 ;    |MUX:U11|                              ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U11                                                                        ; MUX             ; work         ;
-;    |PROGRAM_COUNTER:U1|                   ; 14 (14)             ; 22 (22)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|PROGRAM_COUNTER:U1                                                             ; PROGRAM_COUNTER ; work         ;
-;    |REGISTERS:U5|                         ; 2452 (0)            ; 1217 (1)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5                                                                   ; REGISTERS       ; work         ;
-;       |D_FF:\GEN2:0:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:0:U90                                                  ; D_FF            ; work         ;
-;       |D_FF:\GEN2:10:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:10:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:11:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:11:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:12:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:12:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:13:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:13:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:14:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:14:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:15:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:15:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:16:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:16:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:17:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:17:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:18:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:18:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:19:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:19:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:1:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:1:U90                                                  ; D_FF            ; work         ;
-;       |D_FF:\GEN2:20:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:20:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:21:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:21:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:22:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:22:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:23:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:23:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:24:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:24:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:25:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:25:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:26:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:26:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:27:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:27:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:28:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:28:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:29:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:29:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:2:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:2:U90                                                  ; D_FF            ; work         ;
-;       |D_FF:\GEN2:30:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:30:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:31:U90|                 ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:31:U90                                                 ; D_FF            ; work         ;
-;       |D_FF:\GEN2:3:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:3:U90                                                  ; D_FF            ; work         ;
-;       |D_FF:\GEN2:4:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:4:U90                                                  ; D_FF            ; work         ;
-;       |D_FF:\GEN2:5:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:5:U90                                                  ; D_FF            ; work         ;
-;       |D_FF:\GEN2:6:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:6:U90                                                  ; D_FF            ; work         ;
-;       |D_FF:\GEN2:7:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:7:U90                                                  ; D_FF            ; work         ;
-;       |D_FF:\GEN2:8:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:8:U90                                                  ; D_FF            ; work         ;
-;       |D_FF:\GEN2:9:U90|                  ; 34 (34)             ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:9:U90                                                  ; D_FF            ; work         ;
+;    |MUX:U17|                              ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U17                                                                        ; MUX             ; work         ;
+;    |MUX:U7|                               ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U7                                                                         ; MUX             ; work         ;
+;    |PROGRAM_COUNTER:U1|                   ; 6 (6)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|PROGRAM_COUNTER:U1                                                             ; PROGRAM_COUNTER ; work         ;
+;    |REGISTERS:U5|                         ; 2452 (0)            ; 1025 (1)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5                                                                   ; REGISTERS       ; work         ;
+;       |D_FF:\GEN2:0:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:0:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:10:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:10:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:11:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:11:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:12:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:12:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:13:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:13:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:14:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:14:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:15:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:15:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:16:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:16:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:17:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:17:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:18:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:18:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:19:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:19:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:1:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:1:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:20:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:20:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:21:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:21:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:22:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:22:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:23:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:23:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:24:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:24:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:25:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:25:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:26:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:26:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:27:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:27:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:28:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:28:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:29:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:29:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:2:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:2:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:30:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:30:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:31:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:31:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:3:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:3:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:4:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:4:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:5:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:5:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:6:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:6:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:7:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:7:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:8:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:8:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:9:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:9:U90                                                  ; D_FF            ; work         ;
 ;       |Decoder_5_32:U50|                  ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|Decoder_5_32:U50                                                  ; Decoder_5_32    ; work         ;
 ;       |MUX_32_1:U122|                     ; 672 (672)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U122                                                     ; MUX_32_1        ; work         ;
 ;       |MUX_32_1:U123|                     ; 672 (672)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U123                                                     ; MUX_32_1        ; work         ;
@@ -365,7 +367,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
 ; Name                                                                                      ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF          ;
 +-------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
-; DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_ebr3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; MEMORY.mif   ;
+; DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; MEMORY.mif   ;
 ; IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|ALTSYNCRAM    ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; Assembly.mif ;
 +-------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
 
@@ -396,12 +398,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1239  ;
+; Total registers                              ; 1031  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1216  ;
+; Number of registers using Clock Enable       ; 1024  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -414,508 +416,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; REGISTERS:U5|IsStartup                 ; 64      ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
-
-
-+---------------------------------------------------------------------------------------------------------+
-; Physical Synthesis Netlist Optimizations                                                                ;
-+----------------------------------------------------------------+------------------+---------------------+
-; Node                                                           ; Action           ; Reason              ;
-+----------------------------------------------------------------+------------------+---------------------+
-; ADDER:U2|ADDR_OUT[2]~0                                         ; Modified         ; Timing optimization ;
-; AND_GATE:U15|F~10                                              ; Modified         ; Timing optimization ;
-; AND_GATE:U15|F~10_RTM047                                       ; Modified         ; Timing optimization ;
-; AND_GATE:U15|F~10_RTM051                                       ; Modified         ; Timing optimization ;
-; CONTROLLER:U10|ALUOP[0]~0_RTM050                               ; Modified         ; Timing optimization ;
-; CONTROLLER:U10|ALUOP[0]~0_RTM050                               ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[2]                                 ; Deleted          ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[2]_NEW10_RTM038                    ; Modified         ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[2]_NEW10_RTM038                    ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[2]_NEW10_RTM039                    ; Modified         ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[2]_OTERM11                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[2]_OTERM35                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[2]_OTERM37                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[2]~7                               ; Modified         ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[3]                                 ; Deleted          ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[3]_OTERM9                          ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[3]_OTERM31                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[3]_OTERM33                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[4]                                 ; Deleted          ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[4]_OTERM7                          ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[4]_OTERM27                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[4]_OTERM29                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[5]                                 ; Deleted          ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[5]_OTERM5                          ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[5]_OTERM23                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[5]_OTERM25                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[6]                                 ; Deleted          ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[6]_OTERM3                          ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[6]_OTERM19                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[6]_OTERM21                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]                                 ; Deleted          ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM1                          ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM13                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM15                         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_NEW_REG44_RTM046        ; Modified         ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_NEW_REG44_RTM046        ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM41_OTERM53         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM41_OTERM55         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM41_OTERM57         ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM41_OTERM59_OTERM61 ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM41_OTERM59_OTERM63 ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM41_OTERM59_OTERM65 ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM41_OTERM59_OTERM67 ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM43                 ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM45                 ; Retimed Register ; Timing optimization ;
-; PROGRAM_COUNTER:U1|ADDR_OUT[7]_OTERM17_OTERM49                 ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[23]_OTERM673              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[23]_OTERM675              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[24]_OTERM585              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[24]_OTERM587              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[30]_OTERM621              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[30]_OTERM623              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[31]_OTERM569              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[31]_OTERM571              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[31]_OTERM573              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[31]_OTERM575              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[23]_OTERM705              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[23]_OTERM707              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[24]_OTERM669              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[24]_OTERM671              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[30]_OTERM689              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[30]_OTERM691              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[31]_OTERM661              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[31]_OTERM663              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[31]_OTERM665              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[31]_OTERM667              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[23]_OTERM641              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[23]_OTERM643              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[24]_OTERM365              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[24]_OTERM367              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[24]_OTERM369              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[24]_OTERM371              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[30]_OTERM433              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[30]_OTERM435              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[31]_OTERM553              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[31]_OTERM555              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[23]_OTERM601              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[23]_OTERM603              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[24]_OTERM653              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[24]_OTERM655              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[30]_OTERM681              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[30]_OTERM683              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[31]_OTERM485              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[31]_OTERM487              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[31]_OTERM489              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[31]_OTERM491              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[23]_OTERM517              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[23]_OTERM519              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[24]_OTERM565              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[24]_OTERM567              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[30]_OTERM613              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[30]_OTERM615              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[31]_OTERM349              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[31]_OTERM351              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[31]_OTERM353              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[31]_OTERM355              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[23]_OTERM697              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[23]_OTERM699              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[24]_OTERM497              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[24]_OTERM499              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[24]_OTERM501              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[24]_OTERM503              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[30]_OTERM581              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[30]_OTERM583              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[31]_OTERM645              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[31]_OTERM647              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[23]_OTERM381              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[23]_OTERM383              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[24]_OTERM241              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[24]_OTERM243              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[30]_OTERM313              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[30]_OTERM315              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[31]_OTERM225              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[31]_OTERM227              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[31]_OTERM229              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[31]_OTERM231              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[23]_OTERM545              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[23]_OTERM547              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[24]_OTERM413              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[24]_OTERM415              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[30]_OTERM481              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[30]_OTERM483              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[31]_OTERM401              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[31]_OTERM403              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[31]_OTERM405              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[31]_OTERM407              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[23]_OTERM637              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[23]_OTERM639              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[24]_OTERM337              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[24]_OTERM339              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[24]_OTERM341              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[24]_OTERM343              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[30]_OTERM425              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[30]_OTERM427              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[31]_OTERM549              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[31]_OTERM551              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[23]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[23]_OTERM701              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[23]_OTERM703              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[24]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[24]_OTERM533              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[24]_OTERM535              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[24]_OTERM537              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[24]_OTERM539              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[30]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[30]_OTERM589              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[30]_OTERM591              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[31]                       ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[31]_OTERM649              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[31]_OTERM651              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[23]_OTERM625             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[23]_OTERM627             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[24]_OTERM149             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[24]_OTERM151             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[24]_OTERM153             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[24]_OTERM155             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[30]_OTERM221             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[30]_OTERM223             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[31]_OTERM525             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[31]_OTERM527             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[23]_OTERM597             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[23]_OTERM599             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[24]_OTERM493             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[24]_OTERM495             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[30]_OTERM577             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[30]_OTERM579             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[31]_OTERM445             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[31]_OTERM447             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[31]_OTERM449             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[31]_OTERM451             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[23]_OTERM257             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[23]_OTERM259             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[24]_OTERM529             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[24]_OTERM531             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[30]_OTERM593             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[30]_OTERM595             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[31]_OTERM137             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[31]_OTERM139             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[31]_OTERM141             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[31]_OTERM143             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[23]_OTERM693             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[23]_OTERM695             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[24]_OTERM269             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[24]_OTERM271             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[24]_OTERM273             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[24]_OTERM275             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[30]_OTERM361             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[30]_OTERM363             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[31]_OTERM629             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[31]_OTERM631             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[23]_OTERM177             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[23]_OTERM179             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[24]_OTERM213             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[24]_OTERM215             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[30]_OTERM277             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[30]_OTERM279             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[31]_OTERM81              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[31]_OTERM83              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[31]_OTERM85              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[31]_OTERM87              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[23]_OTERM521             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[23]_OTERM523             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[24]_OTERM193             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[24]_OTERM195             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[24]_OTERM197             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[24]_OTERM199             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[30]_OTERM253             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[30]_OTERM255             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[31]_OTERM357             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[31]_OTERM359             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[23]_OTERM461             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[23]_OTERM463             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[24]_OTERM561             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[24]_OTERM563             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[30]_OTERM609             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[30]_OTERM611             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[31]_OTERM321             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[31]_OTERM323             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[31]_OTERM325             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[31]_OTERM327             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[23]_OTERM617             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[23]_OTERM619             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[24]_OTERM657             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[24]_OTERM659             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[30]_OTERM685             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[30]_OTERM687             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[31]_OTERM509             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[31]_OTERM511             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[31]_OTERM513             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[31]_OTERM515             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[23]_OTERM465             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[23]_OTERM467             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[24]_OTERM329             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[24]_OTERM331             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[30]_OTERM429             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[30]_OTERM431             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[31]_OTERM289             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[31]_OTERM291             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[31]_OTERM293             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[31]_OTERM295             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[23]_OTERM605             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[23]_OTERM607             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[24]_OTERM453             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[24]_OTERM455             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[24]_OTERM457             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[24]_OTERM459             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[30]_OTERM557             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[30]_OTERM559             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[31]_OTERM473             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[31]_OTERM475             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[23]_OTERM469             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[23]_OTERM471             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[24]_OTERM297             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[24]_OTERM299             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[24]_OTERM301             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[24]_OTERM303             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[30]_OTERM417             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[30]_OTERM419             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[31]_OTERM309             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[31]_OTERM311             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[23]_OTERM421             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[23]_OTERM423             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[24]_OTERM633             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[24]_OTERM635             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[30]_OTERM677             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[30]_OTERM679             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[31]_OTERM261             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[31]_OTERM263             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[31]_OTERM265             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[31]_OTERM267             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[23]_OTERM345             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[23]_OTERM347             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[24]_OTERM93              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[24]_OTERM95              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[24]_OTERM97              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[24]_OTERM99              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[30]_OTERM133             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[30]_OTERM135             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[31]_OTERM205             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[31]_OTERM207             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[23]_OTERM305             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[23]_OTERM307             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[24]_OTERM377             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[24]_OTERM379             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[30]_OTERM441             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[30]_OTERM443             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[31]_OTERM185             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[31]_OTERM187             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[31]_OTERM189             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[31]_OTERM191             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[23]_OTERM385             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[23]_OTERM387             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[24]_OTERM245             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[24]_OTERM247             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[30]_OTERM317             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[30]_OTERM319             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[31]_OTERM233             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[31]_OTERM235             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[31]_OTERM237             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[31]_OTERM239             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[23]_OTERM541             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[23]_OTERM543             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[24]_OTERM409             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[24]_OTERM411             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[30]_OTERM477             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[30]_OTERM479             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[31]_OTERM393             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[31]_OTERM395             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[31]_OTERM397             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[31]_OTERM399             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[23]_OTERM389             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[23]_OTERM391             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[24]_OTERM109             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[24]_OTERM111             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[24]_OTERM113             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[24]_OTERM115             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[30]_OTERM145             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[30]_OTERM147             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[31]_OTERM209             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[31]_OTERM211             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[23]_OTERM505             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[23]_OTERM507             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[24]_OTERM169             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[24]_OTERM171             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[24]_OTERM173             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[24]_OTERM175             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[30]_OTERM249             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[30]_OTERM251             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[31]_OTERM333             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[31]_OTERM335             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[23]_OTERM181             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[23]_OTERM183             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[24]_OTERM217             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[24]_OTERM219             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[30]_OTERM281             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[30]_OTERM283             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[31]_OTERM101             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[31]_OTERM103             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[31]_OTERM105             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[31]_OTERM107             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[23]_OTERM285             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[23]_OTERM287             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[24]_OTERM373             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[24]_OTERM375             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[30]_OTERM437             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[30]_OTERM439             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[31]_OTERM157             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[31]_OTERM159             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[31]_OTERM161             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[31]_OTERM163             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[23]_OTERM129             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[23]_OTERM131             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[24]_OTERM77              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[24]_OTERM79              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[30]_OTERM89              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[30]_OTERM91              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[31]_OTERM69              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[31]_OTERM71              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[31]_OTERM73              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[31]_OTERM75              ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[23]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[23]_OTERM201             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[23]_OTERM203             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[24]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[24]_OTERM125             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[24]_OTERM127             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[30]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[30]_OTERM165             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[30]_OTERM167             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[31]                      ; Deleted          ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[31]_OTERM117             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[31]_OTERM119             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[31]_OTERM121             ; Retimed Register ; Timing optimization ;
-; REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[31]_OTERM123             ; Retimed Register ; Timing optimization ;
-+----------------------------------------------------------------+------------------+---------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -955,7 +455,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[20] ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[12] ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[4]  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|CONTROLLER:U10|ALUSRC                     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|CONTROLLER:U10|REGWRITE                   ;
 ; 16:1               ; 32 bits   ; 320 LEs       ; 128 LEs              ; 192 LEs                ; No         ; |MIPS_PROCESSOR|ALU:U8|Mux5                               ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|CONTROLLER:U10|ALUOP[0]                   ;
 ; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U123|OUTPUT[0]      ;
@@ -973,7 +473,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------------------+
-; Source assignments for DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_ebr3:auto_generated ;
+; Source assignments for DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                      ;
 +---------------------------------+--------------------+------+-----------------------------------------+
@@ -1177,7 +677,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_A                            ; 32                   ; Signed Integer                   ;
 ; WIDTHAD_A                          ; 8                    ; Signed Integer                   ;
 ; NUMWORDS_A                         ; 256                  ; Signed Integer                   ;
-; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                          ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                          ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                          ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                          ;
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                          ;
@@ -1218,7 +718,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                          ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                   ;
 ; DEVICE_FAMILY                      ; MAX 10               ; Untyped                          ;
-; CBXI_PARAMETER                     ; altsyncram_ebr3      ; Untyped                          ;
+; CBXI_PARAMETER                     ; altsyncram_32s3      ; Untyped                          ;
 +------------------------------------+----------------------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1244,7 +744,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                     ;
 ;     -- WIDTH_A                            ; 32                                              ;
 ;     -- NUMWORDS_A                         ; 256                                             ;
-;     -- OUTDATA_REG_A                      ; CLOCK0                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                    ;
 ;     -- WIDTH_B                            ; 1                                               ;
 ;     -- NUMWORDS_B                         ; 0                                               ;
 ;     -- ADDRESS_REG_B                      ; CLOCK1                                          ;
@@ -1455,9 +955,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+-------+----------+---------------------------+
 ; Port        ; Type  ; Severity ; Details                   ;
 +-------------+-------+----------+---------------------------+
+; load[1..0]  ; Input ; Info     ; Stuck at VCC              ;
 ; load[31..2] ; Input ; Info     ; Stuck at GND              ;
-; load[1]     ; Input ; Info     ; Stuck at VCC              ;
-; load[0]     ; Input ; Info     ; Stuck at GND              ;
 +-------------+-------+----------+---------------------------+
 
 
@@ -1569,24 +1068,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 138                         ;
-; cycloneiii_ff         ; 1239                        ;
-;     ENA               ; 1216                        ;
-;     plain             ; 23                          ;
-; cycloneiii_lcell_comb ; 2758                        ;
+; boundary_port         ; 170                         ;
+; cycloneiii_ff         ; 1031                        ;
+;     ENA               ; 1024                        ;
+;     SLD               ; 6                           ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 2788                        ;
 ;     arith             ; 42                          ;
 ;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 37                          ;
-;     normal            ; 2716                        ;
+;     normal            ; 2746                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 4                           ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 5                           ;
-;         3 data inputs ; 165                         ;
-;         4 data inputs ; 2541                        ;
+;         3 data inputs ; 197                         ;
+;         4 data inputs ; 2542                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 13.90                       ;
-; Average LUT depth     ; 10.92                       ;
+; Max LUT depth         ; 16.90                       ;
+; Average LUT depth     ; 12.86                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1595,7 +1095,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -1605,7 +1105,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Feb 18 21:02:52 2022
+    Info: Processing started: Fri Mar 25 14:36:44 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1625,8 +1125,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file d_ff.vh
     Info (12022): Found design unit 1: D_FF-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd Line: 15
     Info (12023): Found entity 1: D_FF File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/D_FF.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhd
-    Info (12022): Found design unit 1: TESTBENCH-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/TESTBENCH.vhd Line: 8
-    Info (12023): Found entity 1: TESTBENCH File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/TESTBENCH.vhd Line: 5
+    Info (12022): Found design unit 1: TESTBENCH-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/TESTBENCH.vhd Line: 15
+    Info (12023): Found entity 1: TESTBENCH File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/TESTBENCH.vhd Line: 12
 Info (12021): Found 2 design units, including 1 entities, in source file bcd_7segment.vhd
     Info (12022): Found design unit 1: bcd_7segment-Behavioral File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/bcd_7segment.vhd Line: 21
     Info (12023): Found entity 1: bcd_7segment File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/bcd_7segment.vhd Line: 10
@@ -1786,7 +1286,7 @@ Info (12133): Instantiated megafunction "DATA_MEM_IP:U18|altsyncram:altsyncram_c
     Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
     Info (12134): Parameter "outdata_aclr_a" = "NONE"
     Info (12134): Parameter "outdata_aclr_b" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
     Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
     Info (12134): Parameter "power_up_uninitialized" = "FALSE"
     Info (12134): Parameter "ram_block_type" = "AUTO"
@@ -1808,37 +1308,39 @@ Info (12133): Instantiated megafunction "DATA_MEM_IP:U18|altsyncram:altsyncram_c
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ebr3.tdf
-    Info (12023): Found entity 1: altsyncram_ebr3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/db/altsyncram_ebr3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_ebr3" for hierarchy "DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_ebr3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_32s3.tdf
+    Info (12023): Found entity 1: altsyncram_32s3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/db/altsyncram_32s3.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_32s3" for hierarchy "DATA_MEM_IP:U18|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (286030): Timing-Driven Synthesis is running
 Info (128000): Starting physical synthesis optimizations for speed
 Info (332104): Reading SDC File: 'MIPS_PROCESSOR.out.sdc'
 Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning (332169): From CLK (Fall) to CLK (Rise) (setup and hold)
+    Critical Warning (332169): From CLK (Rise) to CLK (Fall) (setup and hold)
     Critical Warning (332169): From CLK (Fall) to CLK (Fall) (setup and hold)
 Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
 Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
-    Info (332111):   12.500          CLK
+    Info (332111):   16.670          CLK
 Info (128002): Starting physical synthesis algorithm register retiming
-Info (128003): Physical synthesis algorithm register retiming complete: estimated slack improvement of 2691 ps
+Info (128003): Physical synthesis algorithm register retiming complete: estimated slack improvement of 0 ps
 Info (128002): Starting physical synthesis algorithm combinational resynthesis using boolean division
 Info (128003): Physical synthesis algorithm combinational resynthesis using boolean division complete: estimated slack improvement of 0 ps
 Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Single Cycle Simulation/MIPS_PROCESSOR/output_files/MIPS_PROCESSOR.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3293 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3023 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 137 output pins
-    Info (21061): Implemented 3091 logic cells
+    Info (21059): Implemented 169 output pins
+    Info (21061): Implemented 2789 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Fri Feb 18 21:03:16 2022
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4876 megabytes
+    Info: Processing ended: Fri Mar 25 14:37:09 2022
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:41
 
 
 +------------------------------------------+

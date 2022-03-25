@@ -8,7 +8,7 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/simulation/modelsim
+Z0 dC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/simulation/modelsim
 Eadder
 Z1 w1642027913
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
@@ -18,19 +18,19 @@ Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 9
 R0
-Z7 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd
-Z8 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd
+Z7 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ADDER.vhd
+Z8 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ADDER.vhd
 l0
 L8 1
 V?Bh<aUM:D<7N51fnR97Rz0
 !s100 iSgij<n2R`@T[i<GFZlZX1
 Z9 OV;C;2020.1;71
 31
-Z10 !s110 1643921987
+Z10 !s110 1647116881
 !i10b 1
-Z11 !s108 1643921987.000000
-Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd|
-Z13 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER.vhd|
+Z11 !s108 1647116881.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ADDER.vhd|
+Z13 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ADDER.vhd|
 !i113 1
 Z14 o-93 -work work
 Z15 tExplicit 1 CvgOpt 0
@@ -65,19 +65,19 @@ R5
 R6
 !i122 6
 R0
-Z18 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd
-Z19 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd
+Z18 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd
+Z19 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd
 l0
 L7 1
 VPmo=VO220K7cJZh^EN7E<3
 !s100 cUX[PSJLFN0heK9@[L:BV1
 R9
 31
-Z20 !s110 1643921986
+Z20 !s110 1647116880
 !i10b 1
-Z21 !s108 1643921986.000000
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd|
-Z23 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ADDER_ALU.vhd|
+Z21 !s108 1647116880.000000
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd|
+Z23 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd|
 !i113 1
 R14
 R15
@@ -104,7 +104,7 @@ R23
 R14
 R15
 Ealu
-Z25 w1640826331
+Z25 w1644359664
 R3
 R2
 R4
@@ -112,19 +112,19 @@ R5
 R6
 !i122 11
 R0
-Z26 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU.vhd
-Z27 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU.vhd
+Z26 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ALU.vhd
+Z27 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ALU.vhd
 l0
 L6 1
-VfC5<0mJ6ai57oM4lOI=N<2
-!s100 YQg53NUDSMbFLziWEk]ah0
+Vn[kWT36A^kABEeG;ezGRB2
+!s100 mDQAobg35R9G;B03^dD2V0
 R9
 31
 R10
 !i10b 1
 R11
-Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU.vhd|
-Z29 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU.vhd|
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ALU.vhd|
+Z29 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ALU.vhd|
 !i113 1
 R14
 R15
@@ -134,12 +134,12 @@ R2
 R4
 R5
 R6
-Z30 DEx4 work 3 alu 0 22 fC5<0mJ6ai57oM4lOI=N<2
+Z30 DEx4 work 3 alu 0 22 n[kWT36A^kABEeG;ezGRB2
 !i122 11
-l17
-L16 28
-V8URz_[7ZYRh<dE5NS`XAB3
-!s100 Cl_QWPHDY85lM:1Jo0>7>0
+l18
+L17 32
+VOQjCm;0JZZz@0E56<?][R2
+!s100 IJ4k^>MC;L<iTjK[HM9zA1
 R9
 31
 R10
@@ -157,19 +157,19 @@ R5
 R6
 !i122 7
 R0
-Z32 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd
-Z33 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd
+Z32 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ALU_CONTROLLER.vhd
+Z33 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ALU_CONTROLLER.vhd
 l0
 L5 1
 VH1<VNja^kzOR2YE?<T[f^0
 !s100 VK01GbhYM<annUZMQ]c9T3
 R9
 31
-R20
+R10
 !i10b 1
 R21
-Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd|
-Z35 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ALU_CONTROLLER.vhd|
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ALU_CONTROLLER.vhd|
+Z35 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ALU_CONTROLLER.vhd|
 !i113 1
 R14
 R15
@@ -185,7 +185,7 @@ VP4@YchHWV=6P5_L7z729H1
 !s100 f9NjCOF4AX0`GX=Vg8fN11
 R9
 31
-R20
+R10
 !i10b 1
 R21
 R34
@@ -202,8 +202,8 @@ R5
 R6
 !i122 5
 R0
-Z37 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd
-Z38 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd
+Z37 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/AND_GATE.vhd
+Z38 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/AND_GATE.vhd
 l0
 L8 1
 VAgUC0C=i<gm4Bo0i9AEc=1
@@ -213,8 +213,8 @@ R9
 R20
 !i10b 1
 R21
-Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd|
-Z40 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/AND_GATE.vhd|
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/AND_GATE.vhd|
+Z40 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/AND_GATE.vhd|
 !i113 1
 R14
 R15
@@ -241,7 +241,7 @@ R40
 R14
 R15
 Econtroller
-Z42 w1643914459
+R25
 R2
 R3
 R4
@@ -249,19 +249,19 @@ R5
 R6
 !i122 4
 R0
-Z43 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd
-Z44 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd
+Z42 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/CONTROLLER.vhd
+Z43 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/CONTROLLER.vhd
 l0
 L8 1
-VemU4j^o69C]a:5=ElX=6N2
-!s100 N@`nSanONG^JN=iN:lzF`2
+VmjKA>F;]@_iJJ<oHGdA[X2
+!s100 BOPmma:h>m>n3YzN>;C^C0
 R9
 31
 R20
 !i10b 1
 R21
-Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd|
-Z46 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/CONTROLLER.vhd|
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/CONTROLLER.vhd|
+Z45 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/CONTROLLER.vhd|
 !i113 1
 R14
 R15
@@ -271,42 +271,42 @@ R3
 R4
 R5
 R6
-Z47 DEx4 work 10 controller 0 22 emU4j^o69C]a:5=ElX=6N2
+Z46 DEx4 work 10 controller 0 22 mjKA>F;]@_iJJ<oHGdA[X2
 !i122 4
-l23
-L22 53
-V5hi_H2QY<;QdjTO@F^2BZ1
-!s100 l8DUCbb?mZE@;AM_>QPUK2
+l24
+L23 77
+V8jDjmBHZ]Td61maAGnMn01
+!s100 k<B3KV[UmnYdcPVNf8ZAF1
 R9
 31
 R20
 !i10b 1
 R21
+R44
 R45
-R46
 !i113 1
 R14
 R15
-Edata_memory
-Z48 w1643834775
+Ed_ff
+Z47 w1644629389
 R4
 R5
 R6
-!i122 3
+!i122 23
 R0
-Z49 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd
-Z50 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd
+Z48 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/d_ff.vhd
+Z49 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/d_ff.vhd
 l0
 L5 1
-VK>mA3IJhWdC46<`JH6T8:0
-!s100 G8NGOghYH1Ug:MYe;bCaB2
+VJzNgdbMXHZWYITY1:UYHg3
+!s100 8c^9Ld??ZBU1YKHNd9;kG1
 R9
 31
-R20
+Z50 !s110 1647116884
 !i10b 1
-R21
-Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd|
-Z52 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/DATA_MEMORY.vhd|
+Z51 !s108 1647116884.000000
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/d_ff.vhd|
+Z53 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/d_ff.vhd|
 !i113 1
 R14
 R15
@@ -314,42 +314,128 @@ Artl
 R4
 R5
 R6
-Z53 DEx4 work 11 data_memory 0 22 K>mA3IJhWdC46<`JH6T8:0
-!i122 3
-l56
-L19 54
-VCcH___T8lITA2U1<FQUmH1
-!s100 jDOAmbC5VRKzZ3]?OU[Rn2
+DEx4 work 4 d_ff 0 22 JzNgdbMXHZWYITY1:UYHg3
+!i122 23
+l16
+L15 14
+VXgnGPzAWc9M]``iRECES72
+!s100 gJKg7al8gNj>_NhoAhV<_2
 R9
 31
-R20
+R50
 !i10b 1
-R21
 R51
 R52
+R53
+!i113 1
+R14
+R15
+Edata_mem_ip
+Z54 w1647022673
+Z55 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+R5
+R6
+!i122 0
+R0
+Z56 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd
+Z57 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd
+l0
+Z58 L43 1
+V^<aE@X_i4S<RX0Ke=zBHc1
+!s100 QOHEJYl2kU_B@YcBVQM3B0
+R9
+31
+Z59 !s110 1647116879
+!i10b 1
+Z60 !s108 1647116879.000000
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd|
+Z62 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd|
+!i113 1
+R14
+R15
+Asyn
+R55
+R5
+R6
+Z63 DEx4 work 11 data_mem_ip 0 22 ^<aE@X_i4S<RX0Ke=zBHc1
+!i122 0
+l60
+L56 37
+VlY5@H0H17ZGnP?FaWKc=g1
+!s100 ^hO;k1dV2803;f5f?kaYe1
+R9
+31
+R59
+!i10b 1
+R60
+R61
+R62
+!i113 1
+R14
+R15
+Edecoder_5_32
+Z64 w1644548431
+R4
+R5
+R6
+!i122 21
+R0
+Z65 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/decoder_5_32.vhd
+Z66 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/decoder_5_32.vhd
+l0
+L5 1
+V5BVoXzO5N_=ecYN[ZCQmd3
+!s100 XQ_QWQfdX3zdjTY:oR9?71
+R9
+31
+Z67 !s110 1647116883
+!i10b 1
+Z68 !s108 1647116883.000000
+Z69 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/decoder_5_32.vhd|
+Z70 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/decoder_5_32.vhd|
+!i113 1
+R14
+R15
+Artl
+R4
+R5
+R6
+DEx4 work 12 decoder_5_32 0 22 5BVoXzO5N_=ecYN[ZCQmd3
+!i122 21
+l12
+L11 36
+VWaNV?aJ^43cK6PlTL:YmX1
+!s100 1PImeEIIe=_4gdYMb_0VR3
+R9
+31
+R67
+!i10b 1
+R68
+R69
+R70
 !i113 1
 R14
 R15
 Eex_mem
-Z54 w1642452921
+Z71 w1642452921
 R4
 R5
 R6
 !i122 17
 R0
-Z55 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/EX_MEM.vhd
-Z56 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/EX_MEM.vhd
+Z72 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/EX_MEM.vhd
+Z73 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/EX_MEM.vhd
 l0
 L6 1
 V]Pb3C5m>1=D_=>hJ7=FB61
 !s100 nLoWA8ILgiSak[?B5Q9U73
 R9
 31
-Z57 !s110 1643921988
+Z74 !s110 1647116882
 !i10b 1
-Z58 !s108 1643921988.000000
-Z59 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/EX_MEM.vhd|
-Z60 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/EX_MEM.vhd|
+Z75 !s108 1647116882.000000
+Z76 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/EX_MEM.vhd|
+Z77 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/EX_MEM.vhd|
 !i113 1
 R14
 R15
@@ -357,7 +443,7 @@ Artl
 R4
 R5
 R6
-Z61 DEx4 work 6 ex_mem 0 22 ]Pb3C5m>1=D_=>hJ7=FB61
+Z78 DEx4 work 6 ex_mem 0 22 ]Pb3C5m>1=D_=>hJ7=FB61
 !i122 17
 l30
 L29 15
@@ -365,34 +451,34 @@ VDYCzQ20[PV=;lVMhLGFmf0
 !s100 JMFNO[?eUj7W0i:B6g0iJ2
 R9
 31
-R57
+R67
 !i10b 1
-R58
-R59
-R60
+R75
+R76
+R77
 !i113 1
 R14
 R15
 Eforwarding
-Z62 w1643159449
+Z79 w1643159449
 R4
 R5
 R6
-!i122 1
+!i122 2
 R0
-Z63 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/FORWARDING.vhd
-Z64 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/FORWARDING.vhd
+Z80 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/FORWARDING.vhd
+Z81 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/FORWARDING.vhd
 l0
 L6 1
 VhWoK<?GTDJP3zQJ00TYBz3
 !s100 WEmo0E_<YJkI0YO[mSoKQ2
 R9
 31
-Z65 !s110 1643921985
+R20
 !i10b 1
-Z66 !s108 1643921985.000000
-Z67 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/FORWARDING.vhd|
-Z68 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/FORWARDING.vhd|
+R21
+Z82 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/FORWARDING.vhd|
+Z83 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/FORWARDING.vhd|
 !i113 1
 R14
 R15
@@ -400,42 +486,42 @@ Artl
 R4
 R5
 R6
-Z69 DEx4 work 10 forwarding 0 22 hWoK<?GTDJP3zQJ00TYBz3
-!i122 1
+Z84 DEx4 work 10 forwarding 0 22 hWoK<?GTDJP3zQJ00TYBz3
+!i122 2
 l24
 L22 22
 VQRm<MU`;CgOc_;NeFzC2P0
 !s100 _Dd^>W?zlozfLzFUCXG>Y1
 R9
 31
-R65
+R20
 !i10b 1
-R66
-R67
-R68
+R21
+R82
+R83
 !i113 1
 R14
 R15
 Ehazard_mux
-Z70 w1642733891
+Z85 w1642733891
 R4
 R5
 R6
 !i122 20
 R0
-Z71 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd
-Z72 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd
+Z86 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/HAZARD_MUX.vhd
+Z87 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/HAZARD_MUX.vhd
 l0
 L6 1
 V43d97[?WJma<_hd>98W6O3
 !s100 kW1Xc_d9XcZFZJ:;ilOfY2
 R9
 31
-Z73 !s110 1643921989
+R67
 !i10b 1
-Z74 !s108 1643921989.000000
-Z75 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd|
-Z76 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_MUX.vhd|
+R68
+Z88 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/HAZARD_MUX.vhd|
+Z89 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/HAZARD_MUX.vhd|
 !i113 1
 R14
 R15
@@ -443,7 +529,7 @@ Artl
 R4
 R5
 R6
-Z77 DEx4 work 10 hazard_mux 0 22 43d97[?WJma<_hd>98W6O3
+Z90 DEx4 work 10 hazard_mux 0 22 43d97[?WJma<_hd>98W6O3
 !i122 20
 l27
 L26 21
@@ -451,34 +537,34 @@ VA81n3LO<i<XUG:XhA^fBk2
 !s100 ?5W?9f[=5[UKYO<d780oP2
 R9
 31
-R73
+R67
 !i10b 1
-R74
-R75
-R76
+R68
+R88
+R89
 !i113 1
 R14
 R15
 Ehazard_unit
-Z78 w1643232149
+Z91 w1643232149
 R4
 R5
 R6
-!i122 0
+!i122 1
 R0
-Z79 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd
-Z80 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd
+Z92 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/HAZARD_UNIT.vhd
+Z93 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/HAZARD_UNIT.vhd
 l0
 L6 1
 Vmc2n^;kdVn[Y5?;PR2ck^0
 !s100 4]d?hT2W3jPJ9X^=m3lNK1
 R9
 31
-R65
+R59
 !i10b 1
-R66
-Z81 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd|
-Z82 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/HAZARD_UNIT.vhd|
+R60
+Z94 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/HAZARD_UNIT.vhd|
+Z95 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/HAZARD_UNIT.vhd|
 !i113 1
 R14
 R15
@@ -486,42 +572,42 @@ Artl
 R4
 R5
 R6
-Z83 DEx4 work 11 hazard_unit 0 22 mc2n^;kdVn[Y5?;PR2ck^0
-!i122 0
+Z96 DEx4 work 11 hazard_unit 0 22 mc2n^;kdVn[Y5?;PR2ck^0
+!i122 1
 l23
 L22 15
 VkD:XzbAaUL6SOzBe7fU=:3
 !s100 W5^UKgeMob<DM@VF3;<KK2
 R9
 31
-R65
+R59
 !i10b 1
-R66
-R81
-R82
+R60
+R94
+R95
 !i113 1
 R14
 R15
 Eid_ex
-Z84 w1642706731
+Z97 w1644359850
 R4
 R5
 R6
 !i122 16
 R0
-Z85 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ID_EX.vhd
-Z86 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ID_EX.vhd
+Z98 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ID_EX.vhd
+Z99 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ID_EX.vhd
 l0
 L6 1
-V`XLKjd9XL`LCBzoej20Y62
-!s100 ZdTIl479hImF7Uebf3=TX1
+VY^;aHfa?KG>h<N<mnPUzU1
+!s100 0X5fgihQzKV3P6b`Ff=9]3
 R9
 31
-R57
+R74
 !i10b 1
-R58
-Z87 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ID_EX.vhd|
-Z88 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/ID_EX.vhd|
+R75
+Z100 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ID_EX.vhd|
+Z101 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/ID_EX.vhd|
 !i113 1
 R14
 R15
@@ -529,42 +615,42 @@ Artl
 R4
 R5
 R6
-Z89 DEx4 work 5 id_ex 0 22 `XLKjd9XL`LCBzoej20Y62
+Z102 DEx4 work 5 id_ex 0 22 Y^;aHfa?KG>h<N<mnPUzU1
 !i122 16
-l36
-L35 18
-VXRzjLzM1Bj5i049;TVYN72
-!s100 WYd:L?ZLXBXR9E>3[cfX10
+l38
+L37 19
+V@OaWF1[iSg>Ko]7gck8za0
+!s100 0@jHUgO2==>9ERNDlCOf61
 R9
 31
-R57
+R74
 !i10b 1
-R58
-R87
-R88
+R75
+R100
+R101
 !i113 1
 R14
 R15
 Eif_id
-Z90 w1643232146
+Z103 w1643232146
 R4
 R5
 R6
 !i122 15
 R0
-Z91 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IF_ID.vhd
-Z92 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IF_ID.vhd
+Z104 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/IF_ID.vhd
+Z105 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/IF_ID.vhd
 l0
 L6 1
 V`I?jolUF<ghO1:0aZZj6F2
 !s100 MRLzLl9<cgPh>_nIO38J<0
 R9
 31
-R57
+R74
 !i10b 1
-R58
-Z93 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IF_ID.vhd|
-Z94 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IF_ID.vhd|
+R75
+Z106 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/IF_ID.vhd|
+Z107 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/IF_ID.vhd|
 !i113 1
 R14
 R15
@@ -572,7 +658,7 @@ Artl
 R4
 R5
 R6
-Z95 DEx4 work 5 if_id 0 22 `I?jolUF<ghO1:0aZZj6F2
+Z108 DEx4 work 5 if_id 0 22 `I?jolUF<ghO1:0aZZj6F2
 !i122 15
 l22
 L21 11
@@ -580,25 +666,25 @@ VdYcAcR4[QK=>R[5l?]66]1
 !s100 PDT8jRn3XCe5ZMElT4cF52
 R9
 31
-R57
+R74
 !i10b 1
-R58
-R93
-R94
+R75
+R106
+R107
 !i113 1
 R14
 R15
 Eip_memory
-Z96 w1643756941
-Z97 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+Z109 w1643756941
+R55
 R5
 R6
 !i122 10
 R0
-Z98 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd
-Z99 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd
+Z110 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd
+Z111 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd
 l0
-L43 1
+R58
 Vjzn3S`S:P4c[n2b8TGRBg3
 !s100 Z2M4WJfzd?R0QUY7eWWhI3
 R9
@@ -606,16 +692,16 @@ R9
 R10
 !i10b 1
 R11
-Z100 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd|
-Z101 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/IP_MEMORY.vhd|
+Z112 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd|
+Z113 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd|
 !i113 1
 R14
 R15
 Asyn
-R97
+R55
 R5
 R6
-Z102 DEx4 work 9 ip_memory 0 22 jzn3S`S:P4c[n2b8TGRBg3
+Z114 DEx4 work 9 ip_memory 0 22 jzn3S`S:P4c[n2b8TGRBg3
 !i122 10
 l59
 L55 36
@@ -626,20 +712,20 @@ R9
 R10
 !i10b 1
 R11
-R100
-R101
+R112
+R113
 !i113 1
 R14
 R15
 Eleft_shifter
-Z103 w1643758110
+Z115 w1643758110
 R4
 R5
 R6
-!i122 2
+!i122 3
 R0
-Z104 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/LEFT_SHIFTER.vhd
-Z105 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/LEFT_SHIFTER.vhd
+Z116 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd
+Z117 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd
 l0
 L5 1
 VF:]@[UF2FQ@VRN?<;]F1l3
@@ -648,9 +734,9 @@ R9
 31
 R20
 !i10b 1
-R66
-Z106 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/LEFT_SHIFTER.vhd|
-Z107 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/LEFT_SHIFTER.vhd|
+R21
+Z118 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd|
+Z119 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd|
 !i113 1
 R14
 R15
@@ -658,8 +744,8 @@ Artl
 R4
 R5
 R6
-Z108 DEx4 work 12 left_shifter 0 22 F:]@[UF2FQ@VRN?<;]F1l3
-!i122 2
+Z120 DEx4 work 12 left_shifter 0 22 F:]@[UF2FQ@VRN?<;]F1l3
+!i122 3
 l17
 L16 4
 VO]K1m;mQDLV1Lga67C5]O1
@@ -668,32 +754,32 @@ R9
 31
 R20
 !i10b 1
-R66
-R106
-R107
+R21
+R118
+R119
 !i113 1
 R14
 R15
 Emem_wb
-R54
+R71
 R4
 R5
 R6
 !i122 18
 R0
-Z109 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd
-Z110 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd
+Z121 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MEM_WB.vhd
+Z122 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MEM_WB.vhd
 l0
 L6 1
 VaOGhmZGf^R]_oVYA]D?[23
 !s100 :7_gMYD9;B:<I5KW=_QzP2
 R9
 31
-R57
+R67
 !i10b 1
-R58
-Z111 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd|
-Z112 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MEM_WB.vhd|
+R68
+Z123 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MEM_WB.vhd|
+Z124 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MEM_WB.vhd|
 !i113 1
 R14
 R15
@@ -701,7 +787,7 @@ Artl
 R4
 R5
 R6
-Z113 DEx4 work 6 mem_wb 0 22 aOGhmZGf^R]_oVYA]D?[23
+Z125 DEx4 work 6 mem_wb 0 22 aOGhmZGf^R]_oVYA]D?[23
 !i122 18
 l24
 L23 12
@@ -709,107 +795,107 @@ V_5[iRiIS>oTSJ4z4WEna_3
 !s100 haS2_=FX61QSE8SZiZ[L:2
 R9
 31
-R57
+R67
 !i10b 1
-R58
-R111
-R112
+R68
+R123
+R124
 !i113 1
 R14
 R15
 Emips_processor
-Z114 w1643916114
+Z126 w1647116628
 R4
 R5
 R6
-!i122 21
+!i122 25
 R0
-Z115 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd
-Z116 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd
+Z127 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd
+Z128 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd
 l0
 L10 1
 VfP35LZj=z[QNK_7i9bGim2
 !s100 5WORcM[UJUB;@3S<6`8aa3
 R9
 31
-R73
+R50
 !i10b 1
-R74
-Z117 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd|
-Z118 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd|
+R51
+Z129 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd|
+Z130 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd|
 !i113 1
 R14
 R15
 Artl
-R77
-R83
-Z119 DEx4 work 7 mux_3_1 0 22 iAUAjhf_a64MX9U<5gNiX2
-R69
-R113
-R61
-R89
-R95
-R53
+R63
+R90
+R96
+Z131 DEx4 work 7 mux_3_1 0 22 iAUAjhf_a64MX9U<5gNiX2
+R84
+R125
+R78
+R102
+R108
 R41
 R24
-R108
-R47
+R120
+R46
 R36
 R30
-Z120 DEx4 work 3 mux 0 22 h@hNaYbSDcLo]@I52K2]O1
-Z121 DEx4 work 11 sign_extend 0 22 0gM3?EF=5mNFd9C6hWD4L0
-Z122 DEx4 work 9 registers 0 22 lGD;4]T_RF5o8gQXUPU8k3
-R97
-R102
+Z132 DEx4 work 3 mux 0 22 h@hNaYbSDcLo]@I52K2]O1
+Z133 DEx4 work 11 sign_extend 0 22 0gM3?EF=5mNFd9C6hWD4L0
+Z134 DEx4 work 9 registers 0 22 zfgH?7iPcFc8FkLnSZ9<41
+R55
+R114
 R2
 R3
 R16
-Z123 DEx4 work 15 program_counter 0 22 QBB?[Ce^OQBLG21:3UlZV0
+Z135 DEx4 work 15 program_counter 0 22 QBB?[Ce^OQBLG21:3UlZV0
 R4
 R5
 R6
 DEx4 work 14 mips_processor 0 22 fP35LZj=z[QNK_7i9bGim2
-!i122 21
+!i122 25
 l90
-L25 107
-VRj9L^[Uk:H`b?8X^:ZHRb3
-!s100 WkM<cdDH`E<[ik_B?H_A<3
+L25 108
+V:;Io5Y;oLP=8?3ATM^gb`3
+!s100 9o1fnTzz1TfzJjBVh9^W43
 R9
 31
-R73
+R50
 !i10b 1
-R74
-R117
-R118
+R51
+R129
+R130
 !i113 1
 R14
 R15
 Emux
-Z124 w1639695578
+Z136 w1639695578
 R5
 R6
 !i122 12
 R0
-Z125 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd
-Z126 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd
+Z137 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MUX.vhd
+Z138 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MUX.vhd
 l0
 L4 1
 Vh@hNaYbSDcLo]@I52K2]O1
 !s100 c147K?kDI5NB_GY9Xe]g92
 R9
 31
-R10
+R74
 !i10b 1
 R11
-Z127 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd|
-Z128 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX.vhd|
+Z139 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MUX.vhd|
+Z140 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MUX.vhd|
 !i113 1
 R14
 R15
 Artl
 R5
 R6
-R120
+R132
 !i122 12
 l19
 L18 12
@@ -817,34 +903,34 @@ Va0nCR0Y?8mPe]53bVEa[G2
 !s100 XSgkk8:W@^0>FoG[7n7LO3
 R9
 31
-R10
+R74
 !i10b 1
 R11
-R127
-R128
+R139
+R140
 !i113 1
 R14
 R15
-Emux_3_1
-Z129 w1642707017
+Emux_32_1
+Z141 w1644548624
 R4
 R5
 R6
-!i122 19
+!i122 24
 R0
-Z130 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd
-Z131 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd
+Z142 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/mux_32_1.vhd
+Z143 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/mux_32_1.vhd
 l0
-L6 1
-ViAUAjhf_a64MX9U<5gNiX2
-!s100 kd^n]dOf<`PHYINB31Ue>0
+L5 1
+Vg573Cn;TUI60B;LYQB=I21
+!s100 5]mMl^P@gdzo3^6S`FbmI1
 R9
 31
-R73
+R50
 !i10b 1
-R74
-Z132 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd|
-Z133 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/MUX_3_1.vhd|
+R51
+Z144 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/mux_32_1.vhd|
+Z145 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/mux_32_1.vhd|
 !i113 1
 R14
 R15
@@ -852,7 +938,50 @@ Artl
 R4
 R5
 R6
-R119
+DEx4 work 8 mux_32_1 0 22 g573Cn;TUI60B;LYQB=I21
+!i122 24
+l47
+L46 36
+VXF[O20TO4kc<CeMKkSbhV0
+!s100 oNPU5b2OTaYSI0931B0mA0
+R9
+31
+R50
+!i10b 1
+R51
+R144
+R145
+!i113 1
+R14
+R15
+Emux_3_1
+Z146 w1642707017
+R4
+R5
+R6
+!i122 19
+R0
+Z147 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MUX_3_1.vhd
+Z148 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MUX_3_1.vhd
+l0
+L6 1
+ViAUAjhf_a64MX9U<5gNiX2
+!s100 kd^n]dOf<`PHYINB31Ue>0
+R9
+31
+R67
+!i10b 1
+R68
+Z149 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MUX_3_1.vhd|
+Z150 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/MUX_3_1.vhd|
+!i113 1
+R14
+R15
+Artl
+R4
+R5
+R6
+R131
 !i122 19
 l18
 L17 15
@@ -860,23 +989,23 @@ VXg4ZdWa[TegBmckZzZH?R3
 !s100 >Wea<c=ALIH?MCe3AfEzj3
 R9
 31
-R73
+R67
 !i10b 1
-R74
-R132
-R133
+R68
+R149
+R150
 !i113 1
 R14
 R15
 Eprogram_counter
-Z134 w1643757276
+Z151 w1643757276
 R4
 R5
 R6
 !i122 8
 R0
-Z135 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd
-Z136 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd
+Z152 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd
+Z153 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd
 l0
 L6 1
 VQBB?[Ce^OQBLG21:3UlZV0
@@ -885,9 +1014,9 @@ R9
 31
 R10
 !i10b 1
-R21
-Z137 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd|
-Z138 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd|
+R11
+Z154 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd|
+Z155 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd|
 !i113 1
 R14
 R15
@@ -895,7 +1024,7 @@ Artl
 R4
 R5
 R6
-R123
+R135
 !i122 8
 l20
 L18 11
@@ -905,32 +1034,32 @@ R9
 31
 R10
 !i10b 1
-R21
-R137
-R138
+R11
+R154
+R155
 !i113 1
 R14
 R15
-Eregisters
-Z139 w1643915191
+Eregister_and
+Z156 w1644545120
 R4
 R5
 R6
-!i122 14
+!i122 22
 R0
-Z140 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd
-Z141 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd
+Z157 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/register_and.vhd
+Z158 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/register_and.vhd
 l0
 L5 1
-VlGD;4]T_RF5o8gQXUPU8k3
-!s100 >GdRmG9H0I;]jja^ML0Gk1
+VZCoFGUSHeT;>:G>i>L`Sk3
+!s100 ScV@dohQ_3V6P>=4=keD;1
 R9
 31
-R57
+R67
 !i10b 1
-R58
-Z142 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd|
-Z143 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/REGISTERS.vhd|
+R68
+Z159 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/register_and.vhd|
+Z160 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/register_and.vhd|
 !i113 1
 R14
 R15
@@ -938,48 +1067,91 @@ Artl
 R4
 R5
 R6
-R122
-!i122 14
-l56
-L18 48
-Vb<_dm:?=?<CeikEY1;UJR0
-!s100 hnCk5Nbl3N0=:oEK^OC=Z3
+DEx4 work 12 register_and 0 22 ZCoFGUSHeT;>:G>i>L`Sk3
+!i122 22
+l14
+L12 5
+Vn^KHd<@MDVGoL^zb<A<9o2
+!s100 <l4OgGVO5G6RzkVFRFO^h2
 R9
 31
-R57
+R67
 !i10b 1
-R58
-R142
-R143
+R68
+R159
+R160
+!i113 1
+R14
+R15
+Eregisters
+Z161 w1644632468
+R4
+R5
+R6
+!i122 14
+R0
+Z162 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/REGISTERS.vhd
+Z163 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/REGISTERS.vhd
+l0
+L6 1
+VzfgH?7iPcFc8FkLnSZ9<41
+!s100 ;;kBL`CD[h75`R4C=>^^Q3
+R9
+31
+R74
+!i10b 1
+R75
+Z164 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/REGISTERS.vhd|
+Z165 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/REGISTERS.vhd|
+!i113 1
+R14
+R15
+Artl
+R4
+R5
+R6
+R134
+!i122 14
+l137
+L19 143
+V2:E>ZTHNYBOiJX6Ib?67]2
+!s100 K69Y:7LZhl02[V?kH^0P<1
+R9
+31
+R74
+!i10b 1
+R75
+R164
+R165
 !i113 1
 R14
 R15
 Esign_extend
-Z144 w1639696197
+Z166 w1639696197
 R5
 R6
 !i122 13
 R0
-Z145 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/SIGN_EXTEND.vhd
-Z146 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/SIGN_EXTEND.vhd
+Z167 8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/SIGN_EXTEND.vhd
+Z168 FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/SIGN_EXTEND.vhd
 l0
 L4 1
 V0gM3?EF=5mNFd9C6hWD4L0
 !s100 O5LY=BBz_NUY_[]<]VB3o3
 R9
 31
-R10
+R74
 !i10b 1
-R11
-Z147 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/SIGN_EXTEND.vhd|
-Z148 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/SIGN_EXTEND.vhd|
+R75
+Z169 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/SIGN_EXTEND.vhd|
+Z170 !s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/SIGN_EXTEND.vhd|
 !i113 1
 R14
 R15
 Artl
 R5
 R6
-R121
+R133
 !i122 13
 l16
 L14 12
@@ -987,11 +1159,11 @@ V1oVWS5hzlF?WXgXVH::^]1
 !s100 c^B^K30LzbG@3z;H3GO`@1
 R9
 31
-R10
+R74
 !i10b 1
-R11
-R147
-R148
+R75
+R169
+R170
 !i113 1
 R14
 R15
@@ -1000,21 +1172,21 @@ w1640282433
 R4
 R5
 R6
-!i122 22
+!i122 26
 R0
-8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd
-FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd
+8C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd
+FC:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd
 l0
 L5 1
 V3P4cl_:aiYi_L8^3XoeLj1
 !s100 n3LMPUf^LmbW0P`Vo1[XA1
 R9
 31
-R73
+R50
 !i10b 1
-R74
-!s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd|
-!s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding/MIPS_PROCESSOR/TESTBENCH.vhd|
+R51
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd|
+!s107 C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_DataHazard_Forwarding_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd|
 !i113 1
 R14
 R15

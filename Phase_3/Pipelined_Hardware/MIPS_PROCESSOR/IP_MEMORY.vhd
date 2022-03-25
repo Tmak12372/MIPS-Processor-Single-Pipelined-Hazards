@@ -55,10 +55,10 @@ END IP_MEMORY;
 ARCHITECTURE SYN OF ip_memory IS
 
 	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (31 DOWNTO 0);
-
+	signal clk : std_logic;
 BEGIN
 	q    <= sub_wire0(31 DOWNTO 0);
-
+	clk <= not clock;
 	altsyncram_component : altsyncram
 	GENERIC MAP (
 		clock_enable_input_a => "BYPASS",
@@ -79,7 +79,7 @@ BEGIN
 	)
 	PORT MAP (
 		address_a => address,
-		clock0 => clock,
+		clock0 => clk,
 		data_a => data,
 		wren_a => wren,
 		q_a => sub_wire0

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PROCESSOR
-Sat Feb 12 11:11:10 2022
+Fri Mar 25 15:35:50 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -15,13 +15,13 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. User-Specified and Inferred Latches
- 11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated
+ 16. Source assignments for DATA_MEM_IP:U30|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated
  17. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_PROCESSOR
  18. Parameter Settings for User Entity Instance: PROGRAM_COUNTER:U1
  19. Parameter Settings for User Entity Instance: ADDER:U2
@@ -34,51 +34,50 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  26. Parameter Settings for User Entity Instance: LEFT_SHIFTER:U12
  27. Parameter Settings for User Entity Instance: ADDER_ALU:U13
  28. Parameter Settings for User Entity Instance: MUX:U14
- 29. Parameter Settings for User Entity Instance: DATA_MEMORY:U16
- 30. Parameter Settings for User Entity Instance: MUX:U17
- 31. Parameter Settings for User Entity Instance: IF_ID:U18
- 32. Parameter Settings for User Entity Instance: ID_EX:U19
- 33. Parameter Settings for User Entity Instance: EX_MEM:U20
- 34. Parameter Settings for User Entity Instance: MEM_WB:U21
+ 29. Parameter Settings for User Entity Instance: MUX:U17
+ 30. Parameter Settings for User Entity Instance: IF_ID:U18
+ 31. Parameter Settings for User Entity Instance: ID_EX:U19
+ 32. Parameter Settings for User Entity Instance: EX_MEM:U20
+ 33. Parameter Settings for User Entity Instance: MEM_WB:U21
+ 34. Parameter Settings for User Entity Instance: DATA_MEM_IP:U30|altsyncram:altsyncram_component
  35. Parameter Settings for User Entity Instance: MUX:U22
  36. altsyncram Parameter Settings by Entity Instance
- 37. Port Connectivity Checks: "CLK_DIVIDER:U29"
- 38. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:31:U90"
- 39. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:30:U90"
- 40. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:29:U90"
- 41. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:28:U90"
- 42. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:27:U90"
- 43. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:26:U90"
- 44. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:25:U90"
- 45. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:24:U90"
- 46. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:23:U90"
- 47. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:22:U90"
- 48. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:21:U90"
- 49. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:20:U90"
- 50. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:19:U90"
- 51. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:18:U90"
- 52. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:17:U90"
- 53. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:16:U90"
- 54. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:15:U90"
- 55. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:14:U90"
- 56. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:13:U90"
- 57. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:12:U90"
- 58. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:11:U90"
- 59. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:10:U90"
- 60. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:9:U90"
- 61. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:8:U90"
- 62. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:7:U90"
- 63. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:6:U90"
- 64. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:5:U90"
- 65. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:4:U90"
- 66. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:3:U90"
- 67. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:2:U90"
- 68. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:1:U90"
- 69. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:0:U90"
- 70. Port Connectivity Checks: "IP_MEMORY:U4"
- 71. Post-Synthesis Netlist Statistics for Top Partition
- 72. Elapsed Time Per Partition
- 73. Analysis & Synthesis Messages
+ 37. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:31:U90"
+ 38. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:30:U90"
+ 39. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:29:U90"
+ 40. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:28:U90"
+ 41. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:27:U90"
+ 42. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:26:U90"
+ 43. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:25:U90"
+ 44. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:24:U90"
+ 45. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:23:U90"
+ 46. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:22:U90"
+ 47. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:21:U90"
+ 48. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:20:U90"
+ 49. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:19:U90"
+ 50. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:18:U90"
+ 51. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:17:U90"
+ 52. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:16:U90"
+ 53. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:15:U90"
+ 54. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:14:U90"
+ 55. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:13:U90"
+ 56. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:12:U90"
+ 57. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:11:U90"
+ 58. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:10:U90"
+ 59. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:9:U90"
+ 60. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:8:U90"
+ 61. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:7:U90"
+ 62. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:6:U90"
+ 63. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:5:U90"
+ 64. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:4:U90"
+ 65. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:3:U90"
+ 66. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:2:U90"
+ 67. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:1:U90"
+ 68. Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:0:U90"
+ 69. Port Connectivity Checks: "IP_MEMORY:U4"
+ 70. Post-Synthesis Netlist Statistics for Top Partition
+ 71. Elapsed Time Per Partition
+ 72. Analysis & Synthesis Messages
 
 
 
@@ -105,18 +104,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Feb 12 11:11:09 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 25 15:35:50 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 4,714                                       ;
-;     Total combinational functions  ; 3,555                                       ;
-;     Dedicated logic registers      ; 2,375                                       ;
-; Total registers                    ; 2375                                        ;
+; Total logic elements               ; 2,917                                       ;
+;     Total combinational functions  ; 2,750                                       ;
+;     Dedicated logic registers      ; 1,318                                       ;
+; Total registers                    ; 1318                                        ;
 ; Total pins                         ; 197                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 8,192                                       ;
+; Total memory bits                  ; 16,384                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 ; UFM blocks                         ; 0                                           ;
@@ -223,7 +222,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -232,14 +231,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                                       ; Library ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; MEMORY.mif                       ; yes             ; User Memory Initialization File        ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MEMORY.mif             ;         ;
+; DATA_MEM_IP.vhd                  ; yes             ; User Wizard-Generated File             ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEM_IP.vhd        ;         ;
 ; REGISTER_AND.vhd                 ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/REGISTER_AND.vhd       ;         ;
 ; Decoder_5_32.vhd                 ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/Decoder_5_32.vhd       ;         ;
 ; MUX_32_1.vhd                     ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MUX_32_1.vhd           ;         ;
 ; D_FF.vhd                         ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/D_FF.vhd               ;         ;
-; CLK_DIVIDER.vhd                  ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/CLK_DIVIDER.vhd        ;         ;
 ; bcd_7segment.vhd                 ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/bcd_7segment.vhd       ;         ;
 ; LEFT_SHIFTER.vhd                 ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/LEFT_SHIFTER.vhd       ;         ;
-; DATA_MEMORY.vhd                  ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd        ;         ;
 ; CONTROLLER.vhd                   ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/CONTROLLER.vhd         ;         ;
 ; AND_GATE.vhd                     ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/AND_GATE.vhd           ;         ;
 ; ADDER_ALU.vhd                    ; yes             ; User VHDL File                         ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/ADDER_ALU.vhd          ;         ;
@@ -267,178 +266,140 @@ https://fpgasoftware.intel.com/eula.
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                ;         ;
 ; db/altsyncram_ctq3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf ;         ;
 ; assembly.mif                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/assembly.mif           ;         ;
+; db/altsyncram_32s3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/db/altsyncram_32s3.tdf ;         ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                       ;
-+---------------------------------------------+---------------------+
-; Resource                                    ; Usage               ;
-+---------------------------------------------+---------------------+
-; Estimated Total logic elements              ; 4,714               ;
-;                                             ;                     ;
-; Total combinational functions               ; 3555                ;
-; Logic element usage by number of LUT inputs ;                     ;
-;     -- 4 input functions                    ; 3115                ;
-;     -- 3 input functions                    ; 379                 ;
-;     -- <=2 input functions                  ; 61                  ;
-;                                             ;                     ;
-; Logic elements by mode                      ;                     ;
-;     -- normal mode                          ; 3482                ;
-;     -- arithmetic mode                      ; 73                  ;
-;                                             ;                     ;
-; Total registers                             ; 2375                ;
-;     -- Dedicated logic registers            ; 2375                ;
-;     -- I/O registers                        ; 0                   ;
-;                                             ;                     ;
-; I/O pins                                    ; 197                 ;
-; Total memory bits                           ; 8192                ;
-;                                             ;                     ;
-; Embedded Multiplier 9-bit elements          ; 0                   ;
-;                                             ;                     ;
-; Maximum fan-out node                        ; CLK_DIVIDER:U29|tmp ;
-; Maximum fan-out                             ; 2375                ;
-; Total fan-out                               ; 21150               ;
-; Average fan-out                             ; 3.33                ;
-+---------------------------------------------+---------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 2,917     ;
+;                                             ;           ;
+; Total combinational functions               ; 2750      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 2457      ;
+;     -- 3 input functions                    ; 279       ;
+;     -- <=2 input functions                  ; 14        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 2708      ;
+;     -- arithmetic mode                      ; 42        ;
+;                                             ;           ;
+; Total registers                             ; 1318      ;
+;     -- Dedicated logic registers            ; 1318      ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 197       ;
+; Total memory bits                           ; 16384     ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 1382      ;
+; Total fan-out                               ; 15372     ;
+; Average fan-out                             ; 3.40      ;
++---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                           ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                         ; Entity Name     ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------+-----------------+--------------+
-; |MIPS_PROCESSOR                           ; 3555 (1)            ; 2375 (0)                  ; 8192        ; 0          ; 0            ; 0       ; 0         ; 197  ; 0            ; 0          ; |MIPS_PROCESSOR                                                                             ; MIPS_PROCESSOR  ; work         ;
-;    |ADDER:U2|                             ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ADDER:U2                                                                    ; ADDER           ; work         ;
-;    |ALU:U8|                               ; 144 (144)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU:U8                                                                      ; ALU             ; work         ;
-;    |ALU_CONTROLLER:U9|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU_CONTROLLER:U9                                                           ; ALU_CONTROLLER  ; work         ;
-;    |CLK_DIVIDER:U29|                      ; 58 (58)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|CLK_DIVIDER:U29                                                             ; CLK_DIVIDER     ; work         ;
-;    |CONTROLLER:U10|                       ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|CONTROLLER:U10                                                              ; CONTROLLER      ; work         ;
-;    |DATA_MEMORY:U16|                      ; 752 (752)           ; 1024 (1024)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|DATA_MEMORY:U16                                                             ; DATA_MEMORY     ; work         ;
-;    |EX_MEM:U20|                           ; 6 (6)               ; 80 (80)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|EX_MEM:U20                                                                  ; EX_MEM          ; work         ;
-;    |ID_EX:U19|                            ; 1 (1)               ; 98 (98)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ID_EX:U19                                                                   ; ID_EX           ; work         ;
-;    |IF_ID:U18|                            ; 0 (0)               ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IF_ID:U18                                                                   ; IF_ID           ; work         ;
-;    |IP_MEMORY:U4|                         ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4                                                                ; IP_MEMORY       ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_ctq3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated ; altsyncram_ctq3 ; work         ;
-;    |MEM_WB:U21|                           ; 0 (0)               ; 71 (71)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MEM_WB:U21                                                                  ; MEM_WB          ; work         ;
-;    |MUX:U11|                              ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U11                                                                     ; MUX             ; work         ;
-;    |MUX:U14|                              ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U14                                                                     ; MUX             ; work         ;
-;    |MUX:U17|                              ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U17                                                                     ; MUX             ; work         ;
-;    |MUX:U22|                              ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U22                                                                     ; MUX             ; work         ;
-;    |MUX:U7|                               ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U7                                                                      ; MUX             ; work         ;
-;    |PROGRAM_COUNTER:U1|                   ; 0 (0)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|PROGRAM_COUNTER:U1                                                          ; PROGRAM_COUNTER ; work         ;
-;    |REGISTERS:U5|                         ; 2426 (0)            ; 1025 (1)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5                                                                ; REGISTERS       ; work         ;
-;       |D_FF:\GEN2:0:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:0:U90                                               ; D_FF            ; work         ;
-;       |D_FF:\GEN2:10:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:10:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:11:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:11:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:12:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:12:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:13:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:13:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:14:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:14:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:15:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:15:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:16:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:16:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:17:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:17:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:18:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:18:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:19:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:19:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:1:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:1:U90                                               ; D_FF            ; work         ;
-;       |D_FF:\GEN2:20:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:20:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:21:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:21:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:22:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:22:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:23:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:23:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:24:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:24:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:25:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:25:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:26:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:26:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:27:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:27:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:28:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:28:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:29:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:29:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:2:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:2:U90                                               ; D_FF            ; work         ;
-;       |D_FF:\GEN2:30:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:30:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:31:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:31:U90                                              ; D_FF            ; work         ;
-;       |D_FF:\GEN2:3:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:3:U90                                               ; D_FF            ; work         ;
-;       |D_FF:\GEN2:4:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:4:U90                                               ; D_FF            ; work         ;
-;       |D_FF:\GEN2:5:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:5:U90                                               ; D_FF            ; work         ;
-;       |D_FF:\GEN2:6:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:6:U90                                               ; D_FF            ; work         ;
-;       |D_FF:\GEN2:7:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:7:U90                                               ; D_FF            ; work         ;
-;       |D_FF:\GEN2:8:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:8:U90                                               ; D_FF            ; work         ;
-;       |D_FF:\GEN2:9:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:9:U90                                               ; D_FF            ; work         ;
-;       |Decoder_5_32:U50|                  ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|Decoder_5_32:U50                                               ; Decoder_5_32    ; work         ;
-;       |MUX_32_1:U122|                     ; 672 (672)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U122                                                  ; MUX_32_1        ; work         ;
-;       |MUX_32_1:U123|                     ; 672 (672)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U123                                                  ; MUX_32_1        ; work         ;
-;       |REGISTER_AND:\GEN1:0:U51|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:0:U51                                       ; REGISTER_AND    ; work         ;
-;       |REGISTER_AND:\GEN1:18:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:18:U51                                      ; REGISTER_AND    ; work         ;
-;       |REGISTER_AND:\GEN1:21:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:21:U51                                      ; REGISTER_AND    ; work         ;
-;       |REGISTER_AND:\GEN1:23:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:23:U51                                      ; REGISTER_AND    ; work         ;
-;       |REGISTER_AND:\GEN1:25:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:25:U51                                      ; REGISTER_AND    ; work         ;
-;       |REGISTER_AND:\GEN1:26:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:26:U51                                      ; REGISTER_AND    ; work         ;
-;       |REGISTER_AND:\GEN1:2:U51|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:2:U51                                       ; REGISTER_AND    ; work         ;
-;    |bcd_7segment:U23|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U23                                                            ; bcd_7segment    ; work         ;
-;    |bcd_7segment:U24|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U24                                                            ; bcd_7segment    ; work         ;
-;    |bcd_7segment:U25|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U25                                                            ; bcd_7segment    ; work         ;
-;    |bcd_7segment:U26|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U26                                                            ; bcd_7segment    ; work         ;
-;    |bcd_7segment:U27|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U27                                                            ; bcd_7segment    ; work         ;
-;    |bcd_7segment:U28|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U28                                                            ; bcd_7segment    ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------+-----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                              ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                            ; Entity Name     ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
+; |MIPS_PROCESSOR                           ; 2750 (1)            ; 1318 (0)                  ; 16384       ; 0          ; 0            ; 0       ; 0         ; 197  ; 0            ; 0          ; |MIPS_PROCESSOR                                                                                ; MIPS_PROCESSOR  ; work         ;
+;    |ADDER:U2|                             ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ADDER:U2                                                                       ; ADDER           ; work         ;
+;    |ALU:U8|                               ; 147 (147)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU:U8                                                                         ; ALU             ; work         ;
+;    |ALU_CONTROLLER:U9|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ALU_CONTROLLER:U9                                                              ; ALU_CONTROLLER  ; work         ;
+;    |CONTROLLER:U10|                       ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|CONTROLLER:U10                                                                 ; CONTROLLER      ; work         ;
+;    |DATA_MEM_IP:U30|                      ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|DATA_MEM_IP:U30                                                                ; DATA_MEM_IP     ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|DATA_MEM_IP:U30|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
+;          |altsyncram_32s3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|DATA_MEM_IP:U30|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated ; altsyncram_32s3 ; work         ;
+;    |EX_MEM:U20|                           ; 6 (6)               ; 80 (80)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|EX_MEM:U20                                                                     ; EX_MEM          ; work         ;
+;    |ID_EX:U19|                            ; 1 (1)               ; 98 (98)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|ID_EX:U19                                                                      ; ID_EX           ; work         ;
+;    |IF_ID:U18|                            ; 0 (0)               ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IF_ID:U18                                                                      ; IF_ID           ; work         ;
+;    |IP_MEMORY:U4|                         ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4                                                                   ; IP_MEMORY       ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component                                   ; altsyncram      ; work         ;
+;          |altsyncram_ctq3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated    ; altsyncram_ctq3 ; work         ;
+;    |MEM_WB:U21|                           ; 0 (0)               ; 71 (71)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MEM_WB:U21                                                                     ; MEM_WB          ; work         ;
+;    |MUX:U11|                              ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U11                                                                        ; MUX             ; work         ;
+;    |MUX:U14|                              ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U14                                                                        ; MUX             ; work         ;
+;    |MUX:U17|                              ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U17                                                                        ; MUX             ; work         ;
+;    |MUX:U22|                              ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U22                                                                        ; MUX             ; work         ;
+;    |MUX:U7|                               ; 29 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U7                                                                         ; MUX             ; work         ;
+;    |PROGRAM_COUNTER:U1|                   ; 0 (0)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|PROGRAM_COUNTER:U1                                                             ; PROGRAM_COUNTER ; work         ;
+;    |REGISTERS:U5|                         ; 2431 (0)            ; 1025 (1)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5                                                                   ; REGISTERS       ; work         ;
+;       |D_FF:\GEN2:0:U90|                  ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:0:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:10:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:10:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:11:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:11:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:12:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:12:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:13:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:13:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:14:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:14:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:15:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:15:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:16:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:16:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:17:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:17:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:18:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:18:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:19:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:19:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:1:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:1:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:20:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:20:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:21:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:21:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:22:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:22:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:23:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:23:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:24:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:24:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:25:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:25:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:26:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:26:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:27:U90|                 ; 34 (34)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:27:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:28:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:28:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:29:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:29:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:2:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:2:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:30:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:30:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:31:U90|                 ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:31:U90                                                 ; D_FF            ; work         ;
+;       |D_FF:\GEN2:3:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:3:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:4:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:4:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:5:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:5:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:6:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:6:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:7:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:7:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:8:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:8:U90                                                  ; D_FF            ; work         ;
+;       |D_FF:\GEN2:9:U90|                  ; 33 (33)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:9:U90                                                  ; D_FF            ; work         ;
+;       |Decoder_5_32:U50|                  ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|Decoder_5_32:U50                                                  ; Decoder_5_32    ; work         ;
+;       |MUX_32_1:U122|                     ; 672 (672)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U122                                                     ; MUX_32_1        ; work         ;
+;       |MUX_32_1:U123|                     ; 672 (672)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U123                                                     ; MUX_32_1        ; work         ;
+;       |REGISTER_AND:\GEN1:0:U51|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:0:U51                                          ; REGISTER_AND    ; work         ;
+;       |REGISTER_AND:\GEN1:18:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:18:U51                                         ; REGISTER_AND    ; work         ;
+;       |REGISTER_AND:\GEN1:21:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:21:U51                                         ; REGISTER_AND    ; work         ;
+;       |REGISTER_AND:\GEN1:23:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:23:U51                                         ; REGISTER_AND    ; work         ;
+;       |REGISTER_AND:\GEN1:25:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:25:U51                                         ; REGISTER_AND    ; work         ;
+;       |REGISTER_AND:\GEN1:26:U51|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:26:U51                                         ; REGISTER_AND    ; work         ;
+;       |REGISTER_AND:\GEN1:2:U51|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|REGISTERS:U5|REGISTER_AND:\GEN1:2:U51                                          ; REGISTER_AND    ; work         ;
+;    |bcd_7segment:U23|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U23                                                               ; bcd_7segment    ; work         ;
+;    |bcd_7segment:U24|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U24                                                               ; bcd_7segment    ; work         ;
+;    |bcd_7segment:U25|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U25                                                               ; bcd_7segment    ; work         ;
+;    |bcd_7segment:U26|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U26                                                               ; bcd_7segment    ; work         ;
+;    |bcd_7segment:U27|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U27                                                               ; bcd_7segment    ; work         ;
+;    |bcd_7segment:U28|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|bcd_7segment:U28                                                               ; bcd_7segment    ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                              ;
-+----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
-; Name                                                                                   ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF          ;
-+----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
-; IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; Assembly.mif ;
-+----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                 ;
++-------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
+; Name                                                                                      ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF          ;
++-------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
+; DATA_MEM_IP:U30|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; MEMORY.mif   ;
+; IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|ALTSYNCRAM    ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; Assembly.mif ;
++-------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                          ;
-+--------+--------------+---------+--------------+--------------+------------------------------+-----------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance              ; IP Include File ;
-+--------+--------------+---------+--------------+--------------+------------------------------+-----------------+
-; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |MIPS_PROCESSOR|IP_MEMORY:U4 ; IP_MEMORY.vhd   ;
-+--------+--------------+---------+--------------+--------------+------------------------------+-----------------+
-
-
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; DATA_MEMORY:U16|READ_DATA[24]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[25]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[26]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[27]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[28]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[29]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[30]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[31]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[20]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[21]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[22]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[23]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[16]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[17]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[18]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[19]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[12]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[13]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[14]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[15]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[8]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[9]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[10]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[11]                       ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[4]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[5]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[6]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[7]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[0]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[1]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[2]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; DATA_MEMORY:U16|READ_DATA[3]                        ; EX_MEM:U20|M_OUT[1] ; yes                    ;
-; Number of user-specified and inferred latches = 32  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
++-------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                             ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                 ; IP Include File ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
+; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |MIPS_PROCESSOR|IP_MEMORY:U4    ; IP_MEMORY.vhd   ;
+; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |MIPS_PROCESSOR|DATA_MEM_IP:U30 ; DATA_MEM_IP.vhd ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
 
 
 +--------------------------------------------------------------------------------------+
@@ -517,12 +478,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2375  ;
+; Total registers                              ; 1318  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2048  ;
+; Number of registers using Clock Enable       ; 1024  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -533,8 +494,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
 ; REGISTERS:U5|IsStartup                 ; 932     ;
-; CLK_DIVIDER:U29|count[0]               ; 2       ;
-; Total number of inverted registers = 2 ;         ;
+; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
 
@@ -544,41 +504,41 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:0:U90|OUTPUT[28]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[19] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[17]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[29] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:16:U90|OUTPUT[15] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:8:U90|OUTPUT[20]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:24:U90|OUTPUT[4]  ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:4:U90|OUTPUT[19]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[17] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[30] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[2]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[20]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[0]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[27] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[17] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[21]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[19] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[13] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[20] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[10]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[26] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[18]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:20:U90|OUTPUT[16] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:12:U90|OUTPUT[20] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:28:U90|OUTPUT[18] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:2:U90|OUTPUT[21]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:18:U90|OUTPUT[21] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:10:U90|OUTPUT[14] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:26:U90|OUTPUT[16] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:6:U90|OUTPUT[11]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:22:U90|OUTPUT[29] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:14:U90|OUTPUT[0]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:30:U90|OUTPUT[6]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:1:U90|OUTPUT[5]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:17:U90|OUTPUT[0]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:9:U90|OUTPUT[4]   ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:25:U90|OUTPUT[2]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[6]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[23] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[23] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[23] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[14]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[5]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[3]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[13] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[8]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[5]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[28] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[28] ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 96 LEs               ; 64 LEs                 ; No         ; |MIPS_PROCESSOR|ALU:U8|Mux22                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:5:U90|OUTPUT[18]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:21:U90|OUTPUT[16] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:13:U90|OUTPUT[11] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:29:U90|OUTPUT[21] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:3:U90|OUTPUT[9]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:19:U90|OUTPUT[9]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:11:U90|OUTPUT[22] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:27:U90|OUTPUT[27] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:7:U90|OUTPUT[4]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:23:U90|OUTPUT[26] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:15:U90|OUTPUT[13] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MIPS_PROCESSOR|REGISTERS:U5|D_FF:\GEN2:31:U90|OUTPUT[5]  ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 96 LEs               ; 64 LEs                 ; No         ; |MIPS_PROCESSOR|ALU:U8|Mux6                               ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|CONTROLLER:U10|REGWRITE                   ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U122|OUTPUT[25]     ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U123|OUTPUT[6]      ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U122|OUTPUT[4]      ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |MIPS_PROCESSOR|REGISTERS:U5|MUX_32_1:U123|OUTPUT[2]      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
@@ -589,6 +549,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------+--------------------+------+--------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                    ;
 +---------------------------------+--------------------+------+--------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Source assignments for DATA_MEM_IP:U30|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                      ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                       ;
++---------------------------------+--------------------+------+-----------------------------------------+
 
 
 +--------------------------------------------------------------------------------+
@@ -762,16 +731,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATA_MEMORY:U16 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; size           ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: MUX:U17 ;
 +----------------+-------+-----------------------------+
@@ -822,6 +781,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATA_MEM_IP:U30|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------+
+; Parameter Name                     ; Value                ; Type                             ;
++------------------------------------+----------------------+----------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                          ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                   ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                          ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                          ;
+; WIDTH_A                            ; 32                   ; Signed Integer                   ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                   ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                   ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                          ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                          ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WIDTH_B                            ; 1                    ; Signed Integer                   ;
+; WIDTHAD_B                          ; 1                    ; Signed Integer                   ;
+; NUMWORDS_B                         ; 0                    ; Signed Integer                   ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                          ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                          ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                          ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                          ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                          ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                          ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                   ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                   ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                          ;
+; BYTE_SIZE                          ; 8                    ; Signed Integer                   ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; INIT_FILE                          ; MEMORY.mif           ; Untyped                          ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                          ;
+; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                   ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                          ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                          ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                   ;
+; DEVICE_FAMILY                      ; MAX 10               ; Untyped                          ;
+; CBXI_PARAMETER                     ; altsyncram_32s3      ; Untyped                          ;
++------------------------------------+----------------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: MUX:U22 ;
 +----------------+-------+-----------------------------+
@@ -832,33 +852,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                         ;
-+-------------------------------------------+----------------------------------------------+
-; Name                                      ; Value                                        ;
-+-------------------------------------------+----------------------------------------------+
-; Number of entity instances                ; 1                                            ;
-; Entity Instance                           ; IP_MEMORY:U4|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                  ;
-;     -- WIDTH_A                            ; 32                                           ;
-;     -- NUMWORDS_A                         ; 256                                          ;
-;     -- OUTDATA_REG_A                      ; CLOCK0                                       ;
-;     -- WIDTH_B                            ; 1                                            ;
-;     -- NUMWORDS_B                         ; 0                                            ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                       ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                 ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
-+-------------------------------------------+----------------------------------------------+
-
-
-+---------------------------------------------+
-; Port Connectivity Checks: "CLK_DIVIDER:U29" ;
-+-------+-------+----------+------------------+
-; Port  ; Type  ; Severity ; Details          ;
-+-------+-------+----------+------------------+
-; reset ; Input ; Info     ; Stuck at GND     ;
-+-------+-------+----------+------------------+
++---------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                            ;
++-------------------------------------------+-------------------------------------------------+
+; Name                                      ; Value                                           ;
++-------------------------------------------+-------------------------------------------------+
+; Number of entity instances                ; 2                                               ;
+; Entity Instance                           ; IP_MEMORY:U4|altsyncram:altsyncram_component    ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                     ;
+;     -- WIDTH_A                            ; 32                                              ;
+;     -- NUMWORDS_A                         ; 256                                             ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                          ;
+;     -- WIDTH_B                            ; 1                                               ;
+;     -- NUMWORDS_B                         ; 0                                               ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ;
+; Entity Instance                           ; DATA_MEM_IP:U30|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                     ;
+;     -- WIDTH_A                            ; 32                                              ;
+;     -- NUMWORDS_A                         ; 256                                             ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                    ;
+;     -- WIDTH_B                            ; 1                                               ;
+;     -- NUMWORDS_B                         ; 0                                               ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ;
++-------------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------------+
@@ -1177,23 +1199,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 197                         ;
-; cycloneiii_ff         ; 2375                        ;
-;     ENA               ; 2048                        ;
-;     plain             ; 327                         ;
-; cycloneiii_lcell_comb ; 3563                        ;
-;     arith             ; 73                          ;
-;         2 data inputs ; 36                          ;
+; cycloneiii_ff         ; 1318                        ;
+;     ENA               ; 1024                        ;
+;     plain             ; 294                         ;
+; cycloneiii_lcell_comb ; 2758                        ;
+;     arith             ; 42                          ;
+;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 37                          ;
-;     normal            ; 3490                        ;
+;     normal            ; 2716                        ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 20                          ;
-;         3 data inputs ; 342                         ;
-;         4 data inputs ; 3115                        ;
-; cycloneiii_ram_block  ; 32                          ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 242                         ;
+;         4 data inputs ; 2457                        ;
+; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.80                        ;
-; Average LUT depth     ; 4.23                        ;
+; Max LUT depth         ; 11.20                       ;
+; Average LUT depth     ; 3.90                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1202,7 +1224,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -1212,10 +1234,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Feb 12 11:10:49 2022
+    Info: Processing started: Fri Mar 25 15:35:25 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file data_mem_ip.vhd
+    Info (12022): Found design unit 1: data_mem_ip-SYN File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEM_IP.vhd Line: 56
+    Info (12023): Found entity 1: DATA_MEM_IP File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEM_IP.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file register_and.vhd
     Info (12022): Found design unit 1: REGISTER_AND-RTL File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/REGISTER_AND.vhd Line: 12
     Info (12023): Found entity 1: REGISTER_AND File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/REGISTER_AND.vhd Line: 5
@@ -1367,50 +1392,68 @@ Info (12128): Elaborating entity "MUX" for hierarchy "MUX:U11" File: C:/Users/Ty
 Info (12128): Elaborating entity "LEFT_SHIFTER" for hierarchy "LEFT_SHIFTER:U12" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 103
 Info (12128): Elaborating entity "ADDER_ALU" for hierarchy "ADDER_ALU:U13" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 104
 Info (12128): Elaborating entity "AND_GATE" for hierarchy "AND_GATE:U15" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 106
-Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DATA_MEMORY:U16" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 107
-Warning (10492): VHDL Process Statement warning at DATA_MEMORY.vhd(38): signal "Registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 38
-Warning (10631): VHDL Process Statement warning at DATA_MEMORY.vhd(35): inferring latch(es) for signal or variable "READ_DATA", which holds its previous value in one or more paths through the process File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[0]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[1]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[2]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[3]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[4]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[5]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[6]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[7]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[8]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[9]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[10]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[11]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[12]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[13]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[14]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[15]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[16]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[17]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[18]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[19]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[20]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[21]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[22]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[23]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[24]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[25]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[26]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[27]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[28]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[29]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[30]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
-Info (10041): Inferred latch for "READ_DATA[31]" at DATA_MEMORY.vhd(35) File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 35
 Info (12128): Elaborating entity "IF_ID" for hierarchy "IF_ID:U18" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 112
 Info (12128): Elaborating entity "ID_EX" for hierarchy "ID_EX:U19" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 113
 Info (12128): Elaborating entity "EX_MEM" for hierarchy "EX_MEM:U20" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 114
 Info (12128): Elaborating entity "MEM_WB" for hierarchy "MEM_WB:U21" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 115
+Info (12128): Elaborating entity "DATA_MEM_IP" for hierarchy "DATA_MEM_IP:U30" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 116
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DATA_MEM_IP:U30|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEM_IP.vhd Line: 63
+Info (12130): Elaborated megafunction instantiation "DATA_MEM_IP:U30|altsyncram:altsyncram_component" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEM_IP.vhd Line: 63
+Info (12133): Instantiated megafunction "DATA_MEM_IP:U30|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEM_IP.vhd Line: 63
+    Info (12134): Parameter "address_aclr_a" = "UNUSED"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "MAX 10"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "MEMORY.mif"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_32s3.tdf
+    Info (12023): Found entity 1: altsyncram_32s3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/db/altsyncram_32s3.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_32s3" for hierarchy "DATA_MEM_IP:U30|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "bcd_7segment" for hierarchy "bcd_7segment:U23" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 132
-Info (12128): Elaborating entity "CLK_DIVIDER" for hierarchy "CLK_DIVIDER:U29" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 138
-Warning (10492): VHDL Process Statement warning at CLK_DIVIDER.vhd(29): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/CLK_DIVIDER.vhd Line: 29
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "DATA_MEMORY:U16|Registers" is uninferred due to asynchronous read logic File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/DATA_MEMORY.vhd Line: 22
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "dFix[0]" is stuck at VCC File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 21
     Warning (13410): Pin "dFix[1]" is stuck at VCC File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Hardware/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 21
@@ -1499,15 +1542,15 @@ Warning (20013): Ignored 24 assignments for entity "hw8p3" -- entity does not ex
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity hw8p3 -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5082 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3285 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 195 output pins
-    Info (21061): Implemented 4853 logic cells
-    Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 90 warnings
-    Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Sat Feb 12 11:11:10 2022
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:38
+    Info (21061): Implemented 3024 logic cells
+    Info (21064): Implemented 64 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 87 warnings
+    Info: Peak virtual memory: 4821 megabytes
+    Info: Processing ended: Fri Mar 25 15:35:50 2022
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:44
 
 

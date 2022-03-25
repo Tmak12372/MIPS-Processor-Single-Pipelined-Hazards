@@ -56,10 +56,10 @@ END DATA_MEM_IP;
 ARCHITECTURE SYN OF data_mem_ip IS
 
 	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (31 DOWNTO 0);
-
+	SIGNAL CLK : STD_LOGIC;
 BEGIN
 	q    <= sub_wire0(31 DOWNTO 0);
-
+	CLK <= NOT clock;
 	altsyncram_component : altsyncram
 	GENERIC MAP (
 		clock_enable_input_a => "BYPASS",
@@ -80,7 +80,7 @@ BEGIN
 	)
 	PORT MAP (
 		address_a => address,
-		clock0 => clock,
+		clock0 => CLK,
 		data_a => data,
 		rden_a => rden,
 		wren_a => wren,

@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "02/11/2022 21:05:46"
+-- DATE "03/15/2022 12:41:41"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -92,19 +92,19 @@ ENTITY 	MIPS_PROCESSOR IS
     PORT (
 	CLK : IN std_logic;
 	SEL : IN std_logic;
-	INSTRUCTION : OUT std_logic_vector(31 DOWNTO 0);
-	ALU_RES : OUT std_logic_vector(31 DOWNTO 0);
-	DATA1 : OUT std_logic_vector(31 DOWNTO 0);
-	DATA2 : OUT std_logic_vector(31 DOWNTO 0);
-	CONTROL : OUT std_logic_vector(8 DOWNTO 0);
-	dFix : OUT std_logic_vector(5 DOWNTO 0);
-	ledFix : OUT std_logic_vector(9 DOWNTO 0);
-	hex5 : OUT std_logic_vector(6 DOWNTO 0);
-	hex4 : OUT std_logic_vector(6 DOWNTO 0);
-	hex3 : OUT std_logic_vector(6 DOWNTO 0);
-	hex2 : OUT std_logic_vector(6 DOWNTO 0);
-	hex1 : OUT std_logic_vector(6 DOWNTO 0);
-	hex0 : OUT std_logic_vector(6 DOWNTO 0)
+	INSTRUCTION : BUFFER std_logic_vector(31 DOWNTO 0);
+	ALU_RES : BUFFER std_logic_vector(31 DOWNTO 0);
+	DATA1 : BUFFER std_logic_vector(31 DOWNTO 0);
+	DATA2 : BUFFER std_logic_vector(31 DOWNTO 0);
+	CONTROL : BUFFER std_logic_vector(8 DOWNTO 0);
+	dFix : BUFFER std_logic_vector(5 DOWNTO 0);
+	ledFix : BUFFER std_logic_vector(9 DOWNTO 0);
+	hex5 : BUFFER std_logic_vector(6 DOWNTO 0);
+	hex4 : BUFFER std_logic_vector(6 DOWNTO 0);
+	hex3 : BUFFER std_logic_vector(6 DOWNTO 0);
+	hex2 : BUFFER std_logic_vector(6 DOWNTO 0);
+	hex1 : BUFFER std_logic_vector(6 DOWNTO 0);
+	hex0 : BUFFER std_logic_vector(6 DOWNTO 0)
 	);
 END MIPS_PROCESSOR;
 

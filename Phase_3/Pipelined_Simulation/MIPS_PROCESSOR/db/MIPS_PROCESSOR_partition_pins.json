@@ -4,135 +4,427 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "BRANCHH",
+					"name" : "REG_WRITE_TO_TB",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[0]",
+					"name" : "REG_DEST_TO_TB",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[1]",
+					"name" : "MEMTOREG_TO_TB",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[2]",
+					"name" : "ALU_SRC_TO_TB",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[3]",
+					"name" : "ALU_OP_TO_TB[0]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[4]",
+					"name" : "ALU_OP_TO_TB[1]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[5]",
+					"name" : "MEMREAD_TO_TB",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[6]",
+					"name" : "MEMWRITE_TO_TB",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[7]",
+					"name" : "BRANCH_TO_TB",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[8]",
+					"name" : "BRANCH_TAKEN",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[9]",
+					"name" : "ALU_RESULT_TO_TB[0]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[10]",
+					"name" : "ALU_RESULT_TO_TB[1]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[11]",
+					"name" : "ALU_RESULT_TO_TB[2]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[12]",
+					"name" : "ALU_RESULT_TO_TB[3]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[13]",
+					"name" : "ALU_RESULT_TO_TB[4]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[14]",
+					"name" : "ALU_RESULT_TO_TB[5]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[15]",
+					"name" : "ALU_RESULT_TO_TB[6]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[16]",
+					"name" : "ALU_RESULT_TO_TB[7]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[17]",
+					"name" : "ALU_RESULT_TO_TB[8]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[18]",
+					"name" : "ALU_RESULT_TO_TB[9]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[19]",
+					"name" : "ALU_RESULT_TO_TB[10]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[20]",
+					"name" : "ALU_RESULT_TO_TB[11]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[21]",
+					"name" : "ALU_RESULT_TO_TB[12]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[22]",
+					"name" : "ALU_RESULT_TO_TB[13]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[23]",
+					"name" : "ALU_RESULT_TO_TB[14]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[24]",
+					"name" : "ALU_RESULT_TO_TB[15]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[25]",
+					"name" : "ALU_RESULT_TO_TB[16]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[26]",
+					"name" : "ALU_RESULT_TO_TB[17]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[27]",
+					"name" : "ALU_RESULT_TO_TB[18]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[28]",
+					"name" : "ALU_RESULT_TO_TB[19]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[29]",
+					"name" : "ALU_RESULT_TO_TB[20]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[30]",
+					"name" : "ALU_RESULT_TO_TB[21]",
 					"strict" : false
 				},
 				{
-					"name" : "DATA[31]",
+					"name" : "ALU_RESULT_TO_TB[22]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RESULT_TO_TB[23]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RESULT_TO_TB[24]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RESULT_TO_TB[25]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RESULT_TO_TB[26]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RESULT_TO_TB[27]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RESULT_TO_TB[28]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RESULT_TO_TB[29]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RESULT_TO_TB[30]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RESULT_TO_TB[31]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[8]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[9]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[10]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[11]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[12]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[13]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[14]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[15]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[16]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[17]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[18]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[19]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[20]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[21]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[22]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[23]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[24]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[25]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[26]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[27]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[28]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[29]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[30]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA_TO_TB[31]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[8]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[9]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[10]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[11]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[12]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[13]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[14]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[15]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[16]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[17]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[18]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[19]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[20]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[21]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[22]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[23]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[24]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[25]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[26]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[27]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[28]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[29]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[30]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA_DM_TO_TB[31]",
 					"strict" : false
 				},
 				{
