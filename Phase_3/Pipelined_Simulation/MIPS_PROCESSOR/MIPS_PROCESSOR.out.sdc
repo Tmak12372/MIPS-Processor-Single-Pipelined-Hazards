@@ -39,7 +39,7 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name {CLK} -period 12.500 -waveform { 0.000 5.000 } [get_ports {CLK}]
+create_clock -name {CLK} -period 12.50 -waveform { 0.000 5.000 } [get_ports {CLK}]
 
 
 #**************************************************************

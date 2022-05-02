@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:29 on Mar 12,2022
+# Start time: 12:51:52 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/DATA_MEM_IP.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,11 +20,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity DATA_MEM_IP
 # -- Compiling architecture SYN of data_mem_ip
-# End time: 14:10:29 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:52 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:29 on Mar 12,2022
+# Start time: 12:51:53 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/REGISTER_AND.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,11 +32,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity REGISTER_AND
 # -- Compiling architecture RTL of REGISTER_AND
-# End time: 14:10:29 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:53 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/MUX_32_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:29 on Mar 12,2022
+# Start time: 12:51:53 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/MUX_32_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -44,11 +44,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity MUX_32_1
 # -- Compiling architecture RTL of MUX_32_1
-# End time: 14:10:29 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:53 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:29 on Mar 12,2022
+# Start time: 12:51:53 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/Decoder_5_32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -56,11 +56,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Decoder_5_32
 # -- Compiling architecture RTL of Decoder_5_32
-# End time: 14:10:30 on Mar 12,2022, Elapsed time: 0:00:01
+# End time: 12:51:53 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/D_FF.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:30 on Mar 12,2022
+# Start time: 12:51:53 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/D_FF.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -68,11 +68,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity D_FF
 # -- Compiling architecture RTL of D_FF
-# End time: 14:10:30 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:53 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:30 on Mar 12,2022
+# Start time: 12:51:53 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/LEFT_SHIFTER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -80,11 +80,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity LEFT_SHIFTER
 # -- Compiling architecture RTL of LEFT_SHIFTER
-# End time: 14:10:30 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:53 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/CONTROLLER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:30 on Mar 12,2022
+# Start time: 12:51:53 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/CONTROLLER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -94,11 +94,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity CONTROLLER
 # -- Compiling architecture RTL of CONTROLLER
-# End time: 14:10:30 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:54 on Apr 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/AND_GATE.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:30 on Mar 12,2022
+# Start time: 12:51:54 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/AND_GATE.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -108,11 +108,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity AND_GATE
 # -- Compiling architecture RTL of AND_GATE
-# End time: 14:10:30 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:54 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:30 on Mar 12,2022
+# Start time: 12:51:54 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ADDER_ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -122,11 +122,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ADDER_ALU
 # -- Compiling architecture RTL of ADDER_ALU
-# End time: 14:10:30 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:54 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ALU_CONTROLLER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:30 on Mar 12,2022
+# Start time: 12:51:54 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ALU_CONTROLLER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -134,11 +134,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_CONTROLLER
 # -- Compiling architecture RTL of ALU_CONTROLLER
-# End time: 14:10:31 on Mar 12,2022, Elapsed time: 0:00:01
+# End time: 12:51:54 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:31 on Mar 12,2022
+# Start time: 12:51:54 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/PROGRAM_COUNTER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -146,11 +146,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PROGRAM_COUNTER
 # -- Compiling architecture RTL of PROGRAM_COUNTER
-# End time: 14:10:31 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:54 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ADDER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:31 on Mar 12,2022
+# Start time: 12:51:54 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ADDER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -160,11 +160,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ADDER
 # -- Compiling architecture RTL of ADDER
-# End time: 14:10:31 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:55 on Apr 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:31 on Mar 12,2022
+# Start time: 12:51:55 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/IP_MEMORY.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -172,11 +172,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity IP_MEMORY
 # -- Compiling architecture SYN of ip_memory
-# End time: 14:10:31 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:55 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:31 on Mar 12,2022
+# Start time: 12:51:55 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -186,33 +186,33 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture BEHAVIOR of ALU
-# End time: 14:10:31 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:55 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/MUX.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:31 on Mar 12,2022
+# Start time: 12:51:55 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/MUX.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MUX
 # -- Compiling architecture RTL of MUX
-# End time: 14:10:31 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:55 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/SIGN_EXTEND.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:32 on Mar 12,2022
+# Start time: 12:51:55 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/SIGN_EXTEND.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SIGN_EXTEND
 # -- Compiling architecture RTL of SIGN_EXTEND
-# End time: 14:10:32 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:55 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/REGISTERS.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:32 on Mar 12,2022
+# Start time: 12:51:56 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/REGISTERS.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -221,11 +221,11 @@
 # -- Compiling entity REGISTERS
 # -- Compiling architecture RTL of REGISTERS
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/REGISTERS.vhd(123): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-# End time: 14:10:32 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:56 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/IF_ID.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:32 on Mar 12,2022
+# Start time: 12:51:56 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/IF_ID.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -233,11 +233,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity IF_ID
 # -- Compiling architecture RTL of IF_ID
-# End time: 14:10:32 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:56 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ID_EX.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:32 on Mar 12,2022
+# Start time: 12:51:56 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/ID_EX.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -245,11 +245,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ID_EX
 # -- Compiling architecture RTL of ID_EX
-# End time: 14:10:32 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:56 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/EX_MEM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:32 on Mar 12,2022
+# Start time: 12:51:56 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/EX_MEM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -257,11 +257,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity EX_MEM
 # -- Compiling architecture RTL of EX_MEM
-# End time: 14:10:32 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:56 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/MEM_WB.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:32 on Mar 12,2022
+# Start time: 12:51:56 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/MEM_WB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -269,11 +269,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity MEM_WB
 # -- Compiling architecture RTL of MEM_WB
-# End time: 14:10:33 on Mar 12,2022, Elapsed time: 0:00:01
+# End time: 12:51:56 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:33 on Mar 12,2022
+# Start time: 12:51:57 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -301,12 +301,12 @@
 # -- Loading entity EX_MEM
 # -- Loading entity MEM_WB
 # -- Loading entity DATA_MEM_IP
-# End time: 14:10:33 on Mar 12,2022, Elapsed time: 0:00:00
+# End time: 12:51:57 on Apr 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:10:33 on Mar 12,2022
+# Start time: 12:51:57 on Apr 26,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -314,29 +314,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity TESTBENCH
 # -- Compiling architecture RTL of TESTBENCH
-# ** Error: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(28): Signal "INSTRUCTION_OUT_TB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(28): (vcom-1035) Formal port "ALU_SRC" has OPEN or no actual associated with it.
-# ** Error: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(28): (vcom-1035) Formal port "ALU_OP" has OPEN or no actual associated with it.
-# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(47): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Note: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd(56): VHDL Compiler exiting
-# End time: 14:10:33 on Mar 12,2022, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 5
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./MIPS_PROCESSOR_run_msim_rtl_vhdl.do line 31
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 -work work {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/TESTBENCH.vhd}"
-vsim -gui -l msim_transcript work.mips_processor
-# vsim -gui -l msim_transcript work.mips_processor 
-# Start time: 14:11:39 on Mar 12,2022
+# End time: 12:51:57 on Apr 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TESTBENCH
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TESTBENCH 
+# Start time: 12:51:57 on Apr 26,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
+# Loading work.testbench(rtl)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading altera_mf.altera_mf_components
@@ -365,123 +356,104 @@ vsim -gui -l msim_transcript work.mips_processor
 # Loading work.ex_mem(rtl)
 # Loading work.mem_wb(rtl)
 # Loading work.data_mem_ip(syn)
-add wave -position insertpoint  \
-sim:/mips_processor/ZERO_OUT_EXMEM \
-sim:/mips_processor/WRITE_DATA \
-sim:/mips_processor/WRITE_CHOICE \
-sim:/mips_processor/WB_OUT_MEMWB \
-sim:/mips_processor/WB_OUT_IDEX \
-sim:/mips_processor/WB_OUT_EXMEM \
-sim:/mips_processor/WB_IN_IDEX \
-sim:/mips_processor/SIZE \
-sim:/mips_processor/SIGN_EXTENDED_VALUE_OUT_IDEX \
-sim:/mips_processor/SIGN_EXTENDED_VALUE \
-sim:/mips_processor/SHIFT_VALUE \
-sim:/mips_processor/REG_WRITE \
-sim:/mips_processor/REG_DEST \
-sim:/mips_processor/READ_DATA_OUT_MEMWB \
-sim:/mips_processor/READ_DATA_2_OUT_IDEX \
-sim:/mips_processor/READ_DATA_2_OUT_EXMEM \
-sim:/mips_processor/READ_DATA_2 \
-sim:/mips_processor/READ_DATA_1_OUT_IDEX \
-sim:/mips_processor/READ_DATA_1 \
-sim:/mips_processor/READ_DATA \
-sim:/mips_processor/PC_VAL \
-sim:/mips_processor/PC_SEL \
-sim:/mips_processor/PC_OUT_IDEX \
-sim:/mips_processor/PC_ADDR_OUTPUT \
-sim:/mips_processor/PC_ADDR_INPUT \
-sim:/mips_processor/NEW_PC_VAL \
-sim:/mips_processor/MUX_RESULT_OUT_MEMWB \
-sim:/mips_processor/MUX_RESULT_OUT_EXMEM \
-sim:/mips_processor/MUX_OUTPUT \
-sim:/mips_processor/MEMWRITE \
-sim:/mips_processor/MEMTOREG \
-sim:/mips_processor/MEMREAD \
-sim:/mips_processor/M_OUT_IDEX \
-sim:/mips_processor/M_OUT_EXMEM \
-sim:/mips_processor/M_IDEX \
-sim:/mips_processor/INSTRUCTION_OUT \
-sim:/mips_processor/INSTRUCTION \
-sim:/mips_processor/INST_OUT_IFID \
-sim:/mips_processor/INST2016_OUT_IDEX \
-sim:/mips_processor/INST1511_OUT_IDEX \
-sim:/mips_processor/EX_OUT_IDEX \
-sim:/mips_processor/EX_IDEX \
-sim:/mips_processor/DATA \
-sim:/mips_processor/CLOCK \
-sim:/mips_processor/CLK \
-sim:/mips_processor/BUFF \
-sim:/mips_processor/BRANCHH \
-sim:/mips_processor/BRANCH \
-sim:/mips_processor/BNE_IDEX \
-sim:/mips_processor/BNE \
-sim:/mips_processor/ALU_ZERO \
-sim:/mips_processor/ALU_SRC \
-sim:/mips_processor/ALU_RESULT_OUT_MEMWB \
-sim:/mips_processor/ALU_RESULT_OUT_EXMEM \
-sim:/mips_processor/ALU_OUTPUT \
-sim:/mips_processor/ALU_OPERATION \
-sim:/mips_processor/ALU_OP \
-sim:/mips_processor/ADD_RESULT_OUT_EXMEM \
-sim:/mips_processor/ADD_OUT_IFID
-add wave -position insertpoint  \
-sim:/mips_processor/U5/Registers
-force -freeze sim:/mips_processor/CLK 1 0, 0 {50 ps} -r 100
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U8
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 4  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 4  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 3  Instance: /testbench/UUT/U13
+do {C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/simulation/modelsim/wave.do}
+force -freeze sim:/testbench/CLK_TB 1 0, 0 {50 ps} -r 100
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U13
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U13
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U13
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U13
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips_processor/U8
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U8
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U13
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U13
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U13
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U13
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 1  Instance: /mips_processor/U10
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 3  Instance: /mips_processor/U13
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ps  Iteration: 3  Instance: /mips_processor/U13
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 150 ps  Iteration: 2  Instance: /mips_processor/U13
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/UUT/U10
 run
 run
 run
@@ -489,19 +461,76 @@ run
 run
 run
 run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/testbench/CLK_TB 1 0, 0 {50 ps} -r 100
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/UUT/U8
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 1  Instance: /testbench/UUT/U10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 3  Instance: /testbench/UUT/U13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ps  Iteration: 3  Instance: /testbench/UUT/U13
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ps  Iteration: 2  Instance: /testbench/UUT/U13
 run
 run
 run
 run
 run
 run
-add wave -position insertpoint  \
-sim:/mips_processor/U22/wren \
-sim:/mips_processor/U22/sub_wire0 \
-sim:/mips_processor/U22/rden \
-sim:/mips_processor/U22/q \
-sim:/mips_processor/U22/data \
-sim:/mips_processor/U22/clock \
-sim:/mips_processor/U22/address
-# End time: 14:14:59 on Mar 12,2022, Elapsed time: 0:03:20
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 14:55:10 on Apr 26,2022, Elapsed time: 2:03:13
 # Errors: 0, Warnings: 26

@@ -8,6 +8,7 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 ENTITY CONTROLLER IS		
 	PORT (
 	     CLK         : IN STD_LOGIC;
+		  RESET : IN STD_LOGIC;
 		  OPCODE      : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
 		  BNE    : OUT STD_LOGIC;
         REGDST : OUT STD_LOGIC;
@@ -24,7 +25,7 @@ ARCHITECTURE RTL OF CONTROLLER IS
 BEGIN
 	PROC : PROCESS (OPCODE,CLK) 
 	BEGIN
-		IF (OPCODE = "000000") THEN --R INSTRUCTIONS
+		IF (OPCODE = "000000" AND RESET = '0') THEN --R INSTRUCTIONS
 				BNE <= '0';
             REGDST <= '1';
             BRANCH <= '0';
@@ -34,7 +35,7 @@ BEGIN
             MEMREAD <= '0';
             MEMWRITE <= '0';
             REGWRITE <= '1'; 
-        ELSIF (OPCODE = "100011") THEN --LW FROM FIGURE 4.22 IN BOOK
+        ELSIF (OPCODE = "100011" AND RESET = '0') THEN --LW FROM FIGURE 4.22 IN BOOK
 				BNE <= '0';
             REGDST <= '0';
             BRANCH <= '0';
@@ -44,7 +45,7 @@ BEGIN
             MEMREAD <= '1';
             MEMWRITE <= '0';
             REGWRITE <= '1'; 
-        ELSIF (OPCODE = "101011") THEN --SW FROM FIGURE 4.22 IN BOOK
+        ELSIF (OPCODE = "101011" AND RESET = '0') THEN --SW FROM FIGURE 4.22 IN BOOK
 				BNE <= '0';
             REGDST <= '-';
             BRANCH <= '0';
@@ -54,7 +55,7 @@ BEGIN
             MEMREAD <= '0';
             MEMWRITE <= '1';
             REGWRITE <= '0'; 
-        ELSIF (OPCODE = "000100") THEN --BEQ FROM FIGURE 4.22 IN BOOK
+        ELSIF (OPCODE = "000100" AND RESET = '0') THEN --BEQ FROM FIGURE 4.22 IN BOOK
 				BNE <= '0';
             REGDST <= '-';
             BRANCH <= '1';
@@ -64,7 +65,7 @@ BEGIN
             MEMREAD <= '0';
             MEMWRITE <= '0';
             REGWRITE <= '0'; 
-		  ELSIF (OPCODE = "000101") THEN --BNE FROM FIGURE 4.22 IN BOOK
+		  ELSIF (OPCODE = "000101" AND RESET = '0') THEN --BNE FROM FIGURE 4.22 IN BOOK
 				BNE <= '1';
             REGDST <= '-';
             BRANCH <= '1';
@@ -74,7 +75,7 @@ BEGIN
             MEMREAD <= '0';
             MEMWRITE <= '0';
             REGWRITE <= '0'; 
-		  ELSIF (OPCODE = "001000") THEN --ADDI 
+		  ELSIF (OPCODE = "001000" AND RESET = '0') THEN --ADDI 
 				BNE <= '0';
             REGDST <= '0';
             BRANCH <= '0';

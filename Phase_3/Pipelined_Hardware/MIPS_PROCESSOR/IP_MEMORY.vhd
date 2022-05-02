@@ -43,6 +43,7 @@ USE altera_mf.altera_mf_components.all;
 ENTITY IP_MEMORY IS
 	PORT
 	(
+		aclr		: IN STD_LOGIC  := '0';
 		address		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		clock		: IN STD_LOGIC  := '1';
 		data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
@@ -55,10 +56,10 @@ END IP_MEMORY;
 ARCHITECTURE SYN OF ip_memory IS
 
 	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (31 DOWNTO 0);
-	signal clk : std_logic;
+
 BEGIN
 	q    <= sub_wire0(31 DOWNTO 0);
-	clk <= not clock;
+
 	altsyncram_component : altsyncram
 	GENERIC MAP (
 		clock_enable_input_a => "BYPASS",
@@ -69,8 +70,8 @@ BEGIN
 		lpm_type => "altsyncram",
 		numwords_a => 256,
 		operation_mode => "SINGLE_PORT",
-		outdata_aclr_a => "NONE",
-		outdata_reg_a => "CLOCK0",
+		outdata_aclr_a => "CLEAR0",
+		outdata_reg_a => "UNREGISTERED",
 		power_up_uninitialized => "FALSE",
 		read_during_write_mode_port_a => "NEW_DATA_NO_NBE_READ",
 		widthad_a => 8,
@@ -78,8 +79,9 @@ BEGIN
 		width_byteena_a => 1
 	)
 	PORT MAP (
+		aclr0 => aclr,
 		address_a => address,
-		clock0 => clk,
+		clock0 => clock,
 		data_a => data,
 		wren_a => wren,
 		q_a => sub_wire0
@@ -96,7 +98,7 @@ END SYN;
 -- Retrieval info: PRIVATE: AclrAddr NUMERIC "0"
 -- Retrieval info: PRIVATE: AclrByte NUMERIC "0"
 -- Retrieval info: PRIVATE: AclrData NUMERIC "0"
--- Retrieval info: PRIVATE: AclrOutput NUMERIC "0"
+-- Retrieval info: PRIVATE: AclrOutput NUMERIC "1"
 -- Retrieval info: PRIVATE: BYTE_ENABLE NUMERIC "0"
 -- Retrieval info: PRIVATE: BYTE_SIZE NUMERIC "8"
 -- Retrieval info: PRIVATE: BlankMemory NUMERIC "0"
@@ -117,7 +119,7 @@ END SYN;
 -- Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_A NUMERIC "3"
 -- Retrieval info: PRIVATE: RegAddr NUMERIC "1"
 -- Retrieval info: PRIVATE: RegData NUMERIC "1"
--- Retrieval info: PRIVATE: RegOutput NUMERIC "1"
+-- Retrieval info: PRIVATE: RegOutput NUMERIC "0"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "1"
 -- Retrieval info: PRIVATE: SingleClock NUMERIC "1"
 -- Retrieval info: PRIVATE: UseDQRAM NUMERIC "1"
@@ -134,18 +136,20 @@ END SYN;
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
 -- Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "256"
 -- Retrieval info: CONSTANT: OPERATION_MODE STRING "SINGLE_PORT"
--- Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "NONE"
--- Retrieval info: CONSTANT: OUTDATA_REG_A STRING "CLOCK0"
+-- Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "CLEAR0"
+-- Retrieval info: CONSTANT: OUTDATA_REG_A STRING "UNREGISTERED"
 -- Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
 -- Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_PORT_A STRING "NEW_DATA_NO_NBE_READ"
 -- Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "8"
 -- Retrieval info: CONSTANT: WIDTH_A NUMERIC "32"
 -- Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
+-- Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT GND "aclr"
 -- Retrieval info: USED_PORT: address 0 0 8 0 INPUT NODEFVAL "address[7..0]"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
 -- Retrieval info: USED_PORT: data 0 0 32 0 INPUT NODEFVAL "data[31..0]"
 -- Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL "q[31..0]"
 -- Retrieval info: USED_PORT: wren 0 0 0 0 INPUT NODEFVAL "wren"
+-- Retrieval info: CONNECT: @aclr0 0 0 0 0 aclr 0 0 0 0
 -- Retrieval info: CONNECT: @address_a 0 0 8 0 address 0 0 8 0
 -- Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: @data_a 0 0 32 0 data 0 0 32 0

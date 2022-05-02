@@ -39,8 +39,8 @@ BEGIN
 
 	CLK_1 : PROCESS
 		BEGIN
-			CLK_TB <= '0'; WAIT FOR 10NS;
 			CLK_TB <= '1'; WAIT FOR 10NS;
+			CLK_TB <= '0'; WAIT FOR 10NS;
 			IF (STOP_BIT = '1') THEN
 				WAIT;
 			END IF;

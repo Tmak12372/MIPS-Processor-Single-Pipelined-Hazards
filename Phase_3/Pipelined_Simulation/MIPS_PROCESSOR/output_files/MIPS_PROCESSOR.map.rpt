@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_PROCESSOR
-Fri Mar 25 15:31:49 2022
+Fri Apr 01 16:21:06 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -20,7 +20,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  12. General Register Statistics
  13. Inverted Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated
+ 15. Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1kr3:auto_generated
  16. Source assignments for DATA_MEM_IP:U22|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated
  17. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_PROCESSOR
  18. Parameter Settings for User Entity Instance: PROGRAM_COUNTER:U1
@@ -103,7 +103,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 25 15:31:49 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 01 16:21:06 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_PROCESSOR                              ;
 ; Top-level Entity Name              ; MIPS_PROCESSOR                              ;
@@ -221,7 +221,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -262,7 +262,7 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                                    ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                    ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                  ;         ;
-; db/altsyncram_ctq3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf ;         ;
+; db/altsyncram_1kr3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/db/altsyncram_1kr3.tdf ;         ;
 ; assembly.mif                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/assembly.mif           ;         ;
 ; db/altsyncram_32s3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/db/altsyncram_32s3.tdf ;         ;
 +----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+---------+
@@ -320,7 +320,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |IF_ID:U18|                            ; 0 (0)               ; 38 (38)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IF_ID:U18                                                                      ; IF_ID           ; work         ;
 ;    |IP_MEMORY:U4|                         ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4                                                                   ; IP_MEMORY       ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component                                   ; altsyncram      ; work         ;
-;          |altsyncram_ctq3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated    ; altsyncram_ctq3 ; work         ;
+;          |altsyncram_1kr3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1kr3:auto_generated    ; altsyncram_1kr3 ; work         ;
 ;    |MEM_WB:U21|                           ; 0 (0)               ; 71 (71)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MEM_WB:U21                                                                     ; MEM_WB          ; work         ;
 ;    |MUX:U11|                              ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U11                                                                        ; MUX             ; work         ;
 ;    |MUX:U14|                              ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MIPS_PROCESSOR|MUX:U14                                                                        ; MUX             ; work         ;
@@ -380,7 +380,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                      ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF          ;
 +-------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
 ; DATA_MEM_IP:U22|altsyncram:altsyncram_component|altsyncram_32s3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; MEMORY.mif   ;
-; IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated|ALTSYNCRAM    ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; Assembly.mif ;
+; IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1kr3:auto_generated|ALTSYNCRAM    ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; Assembly.mif ;
 +-------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
 
 
@@ -535,7 +535,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated ;
+; Source assignments for IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1kr3:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -597,7 +597,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_A                            ; 32                   ; Signed Integer                ;
 ; WIDTHAD_A                          ; 8                    ; Signed Integer                ;
 ; NUMWORDS_A                         ; 256                  ; Signed Integer                ;
-; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                       ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                       ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                       ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                       ;
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                       ;
@@ -638,7 +638,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                ;
 ; DEVICE_FAMILY                      ; MAX 10               ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_ctq3      ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_1kr3      ; Untyped                       ;
 +------------------------------------+----------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -844,7 +844,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                     ;
 ;     -- WIDTH_A                            ; 32                                              ;
 ;     -- NUMWORDS_A                         ; 256                                             ;
-;     -- OUTDATA_REG_A                      ; CLOCK0                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                    ;
 ;     -- WIDTH_B                            ; 1                                               ;
 ;     -- NUMWORDS_B                         ; 0                                               ;
 ;     -- ADDRESS_REG_B                      ; CLOCK1                                          ;
@@ -984,35 +984,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:18:U90" ;
-+-------------+-------+----------+---------------------------+
-; Port        ; Type  ; Severity ; Details                   ;
-+-------------+-------+----------+---------------------------+
-; load[31..4] ; Input ; Info     ; Stuck at GND              ;
-; load[2..0]  ; Input ; Info     ; Stuck at GND              ;
-; load[3]     ; Input ; Info     ; Stuck at VCC              ;
-+-------------+-------+----------+---------------------------+
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; load ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
 
 
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:17:U90" ;
-+-------------+-------+----------+---------------------------+
-; Port        ; Type  ; Severity ; Details                   ;
-+-------------+-------+----------+---------------------------+
-; load[31..4] ; Input ; Info     ; Stuck at GND              ;
-; load[2..0]  ; Input ; Info     ; Stuck at GND              ;
-; load[3]     ; Input ; Info     ; Stuck at VCC              ;
-+-------------+-------+----------+---------------------------+
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; load ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
 
 
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:16:U90" ;
-+-------------+-------+----------+---------------------------+
-; Port        ; Type  ; Severity ; Details                   ;
-+-------------+-------+----------+---------------------------+
-; load[3..2]  ; Input ; Info     ; Stuck at VCC              ;
-; load[31..4] ; Input ; Info     ; Stuck at GND              ;
-; load[1..0]  ; Input ; Info     ; Stuck at GND              ;
-+-------------+-------+----------+---------------------------+
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; load ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
 
 
 +------------------------------------------------------------+
@@ -1053,44 +1047,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:11:U90" ;
-+-------------+-------+----------+---------------------------+
-; Port        ; Type  ; Severity ; Details                   ;
-+-------------+-------+----------+---------------------------+
-; load[2..0]  ; Input ; Info     ; Stuck at VCC              ;
-; load[31..3] ; Input ; Info     ; Stuck at GND              ;
-+-------------+-------+----------+---------------------------+
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; load ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
 
 
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:10:U90" ;
-+-------------+-------+----------+---------------------------+
-; Port        ; Type  ; Severity ; Details                   ;
-+-------------+-------+----------+---------------------------+
-; load[31..2] ; Input ; Info     ; Stuck at GND              ;
-; load[1]     ; Input ; Info     ; Stuck at VCC              ;
-; load[0]     ; Input ; Info     ; Stuck at GND              ;
-+-------------+-------+----------+---------------------------+
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; load ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
 
 
 +-----------------------------------------------------------+
 ; Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:9:U90" ;
-+-------------+-------+----------+--------------------------+
-; Port        ; Type  ; Severity ; Details                  ;
-+-------------+-------+----------+--------------------------+
-; load[31..2] ; Input ; Info     ; Stuck at GND             ;
-; load[1]     ; Input ; Info     ; Stuck at VCC             ;
-; load[0]     ; Input ; Info     ; Stuck at GND             ;
-+-------------+-------+----------+--------------------------+
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; load ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
 
 
 +-----------------------------------------------------------+
 ; Port Connectivity Checks: "REGISTERS:U5|D_FF:\GEN2:8:U90" ;
-+-------------+-------+----------+--------------------------+
-; Port        ; Type  ; Severity ; Details                  ;
-+-------------+-------+----------+--------------------------+
-; load[1..0]  ; Input ; Info     ; Stuck at VCC             ;
-; load[31..2] ; Input ; Info     ; Stuck at GND             ;
-+-------------+-------+----------+--------------------------+
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; load ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
 
 
 +-----------------------------------------------------------+
@@ -1206,7 +1194,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -1216,7 +1204,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Mar 25 15:31:20 2022
+    Info: Processing started: Fri Apr 01 16:20:45 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR -c MIPS_PROCESSOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1332,7 +1320,7 @@ Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_comp
     Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
     Info (12134): Parameter "outdata_aclr_a" = "NONE"
     Info (12134): Parameter "outdata_aclr_b" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
     Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
     Info (12134): Parameter "power_up_uninitialized" = "FALSE"
     Info (12134): Parameter "ram_block_type" = "AUTO"
@@ -1354,9 +1342,9 @@ Info (12133): Instantiated megafunction "IP_MEMORY:U4|altsyncram:altsyncram_comp
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ctq3.tdf
-    Info (12023): Found entity 1: altsyncram_ctq3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/db/altsyncram_ctq3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_ctq3" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_ctq3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1kr3.tdf
+    Info (12023): Found entity 1: altsyncram_1kr3 File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/db/altsyncram_1kr3.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_1kr3" for hierarchy "IP_MEMORY:U4|altsyncram:altsyncram_component|altsyncram_1kr3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:U5" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/MIPS_PROCESSOR.vhd Line: 96
 Warning (10540): VHDL Signal Declaration warning at REGISTERS.vhd(90): used explicit default value for signal "Registers1" because signal was never assigned a value File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/REGISTERS.vhd Line: 90
 Info (12128): Elaborating entity "Decoder_5_32" for hierarchy "REGISTERS:U5|Decoder_5_32:U50" File: C:/Users/Tyler McCormick/Desktop/ECE 4120/ECE-4210-MIPS-PROCESSOR/Phase_3/Pipelined_Simulation/MIPS_PROCESSOR/REGISTERS.vhd Line: 146
@@ -1443,9 +1431,9 @@ Info (21057): Implemented 3092 device resources after synthesis - the final reso
     Info (21061): Implemented 2889 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Fri Mar 25 15:31:49 2022
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:46
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Fri Apr 01 16:21:06 2022
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:38
 
 

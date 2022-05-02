@@ -34,7 +34,7 @@
 //https://fpgasoftware.intel.com/eula.
 
 
-//altsyncram CLOCK_ENABLE_INPUT_A="BYPASS" CLOCK_ENABLE_OUTPUT_A="BYPASS" DEVICE_FAMILY="MAX 10" ENABLE_RUNTIME_MOD="NO" INIT_FILE="Assembly.mif" NUMWORDS_A=256 OPERATION_MODE="SINGLE_PORT" OUTDATA_ACLR_A="NONE" OUTDATA_REG_A="CLOCK0" POWER_UP_UNINITIALIZED="FALSE" read_during_write_mode_port_a="NEW_DATA_NO_NBE_READ" WIDTH_A=32 WIDTH_BYTEENA_A=1 WIDTHAD_A=8 address_a clock0 data_a q_a wren_a
+//altsyncram CLOCK_ENABLE_INPUT_A="BYPASS" CLOCK_ENABLE_OUTPUT_A="BYPASS" DEVICE_FAMILY="MAX 10" ENABLE_RUNTIME_MOD="NO" INIT_FILE="Assembly.mif" NUMWORDS_A=256 OPERATION_MODE="SINGLE_PORT" OUTDATA_ACLR_A="CLEAR0" OUTDATA_REG_A="UNREGISTERED" POWER_UP_UNINITIALIZED="FALSE" read_during_write_mode_port_a="NEW_DATA_NO_NBE_READ" WIDTH_A=32 WIDTH_BYTEENA_A=1 WIDTHAD_A=8 aclr0 address_a clock0 data_a q_a wren_a
 //VERSION_BEGIN 20.1 cbx_altera_syncram_nd_impl 2020:11:11:17:06:45:SJ cbx_altsyncram 2020:11:11:17:06:45:SJ cbx_cycloneii 2020:11:11:17:06:45:SJ cbx_lpm_add_sub 2020:11:11:17:06:45:SJ cbx_lpm_compare 2020:11:11:17:06:45:SJ cbx_lpm_decode 2020:11:11:17:06:45:SJ cbx_lpm_mux 2020:11:11:17:06:45:SJ cbx_mgl 2020:11:11:17:08:38:SJ cbx_nadder 2020:11:11:17:06:46:SJ cbx_stratix 2020:11:11:17:06:46:SJ cbx_stratixii 2020:11:11:17:06:46:SJ cbx_stratixiii 2020:11:11:17:06:46:SJ cbx_stratixv 2020:11:11:17:06:46:SJ cbx_util_mgl 2020:11:11:17:06:46:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
@@ -47,11 +47,13 @@
 (* ALTERA_ATTRIBUTE = {"OPTIMIZE_POWER_DURING_SYNTHESIS=NORMAL_COMPILATION"} *)
 module  IP_MEMORY_altsyncram
 	( 
+	aclr0,
 	address_a,
 	clock0,
 	data_a,
 	q_a,
 	wren_a) /* synthesis synthesis_clearbox=1 */;
+	input   aclr0;
 	input   [7:0]  address_a;
 	input   clock0;
 	input   [31:0]  data_a;
@@ -60,6 +62,7 @@ module  IP_MEMORY_altsyncram
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
+	tri0   aclr0;
 	tri1   clock0;
 	tri1   [31:0]  data_a;
 	tri0   wren_a;
@@ -104,6 +107,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_0
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[0]}),
 	.portadataout(wire_ram_block1a_0portadataout[0:0]),
@@ -115,7 +119,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -141,18 +144,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_0.clk0_core_clock_enable = "none",
 		ram_block1a_0.clk0_input_clock_enable = "none",
-		ram_block1a_0.clk0_output_clock_enable = "none",
 		ram_block1a_0.connectivity_checking = "OFF",
 		ram_block1a_0.init_file = "Assembly.mif",
 		ram_block1a_0.init_file_layout = "port_a",
 		ram_block1a_0.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_0.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001000,
+		ram_block1a_0.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000001000001,
 		ram_block1a_0.operation_mode = "single_port",
 		ram_block1a_0.port_a_address_width = 8,
 		ram_block1a_0.port_a_byte_enable_mask_width = 1,
 		ram_block1a_0.port_a_byte_size = 1,
-		ram_block1a_0.port_a_data_out_clear = "none",
-		ram_block1a_0.port_a_data_out_clock = "clock0",
+		ram_block1a_0.port_a_data_out_clear = "clear0",
+		ram_block1a_0.port_a_data_out_clock = "none",
 		ram_block1a_0.port_a_data_width = 1,
 		ram_block1a_0.port_a_first_address = 0,
 		ram_block1a_0.port_a_first_bit_number = 0,
@@ -166,6 +168,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_1
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[1]}),
 	.portadataout(wire_ram_block1a_1portadataout[0:0]),
@@ -177,7 +180,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -203,18 +205,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_1.clk0_core_clock_enable = "none",
 		ram_block1a_1.clk0_input_clock_enable = "none",
-		ram_block1a_1.clk0_output_clock_enable = "none",
 		ram_block1a_1.connectivity_checking = "OFF",
 		ram_block1a_1.init_file = "Assembly.mif",
 		ram_block1a_1.init_file_layout = "port_a",
 		ram_block1a_1.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_1.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000001,
+		ram_block1a_1.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001101,
 		ram_block1a_1.operation_mode = "single_port",
 		ram_block1a_1.port_a_address_width = 8,
 		ram_block1a_1.port_a_byte_enable_mask_width = 1,
 		ram_block1a_1.port_a_byte_size = 1,
-		ram_block1a_1.port_a_data_out_clear = "none",
-		ram_block1a_1.port_a_data_out_clock = "clock0",
+		ram_block1a_1.port_a_data_out_clear = "clear0",
+		ram_block1a_1.port_a_data_out_clock = "none",
 		ram_block1a_1.port_a_data_width = 1,
 		ram_block1a_1.port_a_first_address = 0,
 		ram_block1a_1.port_a_first_bit_number = 1,
@@ -228,6 +229,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_2
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[2]}),
 	.portadataout(wire_ram_block1a_2portadataout[0:0]),
@@ -239,7 +241,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -265,18 +266,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_2.clk0_core_clock_enable = "none",
 		ram_block1a_2.clk0_input_clock_enable = "none",
-		ram_block1a_2.clk0_output_clock_enable = "none",
 		ram_block1a_2.connectivity_checking = "OFF",
 		ram_block1a_2.init_file = "Assembly.mif",
 		ram_block1a_2.init_file_layout = "port_a",
 		ram_block1a_2.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_2.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001100,
+		ram_block1a_2.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000001100010,
 		ram_block1a_2.operation_mode = "single_port",
 		ram_block1a_2.port_a_address_width = 8,
 		ram_block1a_2.port_a_byte_enable_mask_width = 1,
 		ram_block1a_2.port_a_byte_size = 1,
-		ram_block1a_2.port_a_data_out_clear = "none",
-		ram_block1a_2.port_a_data_out_clock = "clock0",
+		ram_block1a_2.port_a_data_out_clear = "clear0",
+		ram_block1a_2.port_a_data_out_clock = "none",
 		ram_block1a_2.port_a_data_width = 1,
 		ram_block1a_2.port_a_first_address = 0,
 		ram_block1a_2.port_a_first_bit_number = 2,
@@ -290,6 +290,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_3
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[3]}),
 	.portadataout(wire_ram_block1a_3portadataout[0:0]),
@@ -301,7 +302,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -327,7 +327,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_3.clk0_core_clock_enable = "none",
 		ram_block1a_3.clk0_input_clock_enable = "none",
-		ram_block1a_3.clk0_output_clock_enable = "none",
 		ram_block1a_3.connectivity_checking = "OFF",
 		ram_block1a_3.init_file = "Assembly.mif",
 		ram_block1a_3.init_file_layout = "port_a",
@@ -337,8 +336,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_3.port_a_address_width = 8,
 		ram_block1a_3.port_a_byte_enable_mask_width = 1,
 		ram_block1a_3.port_a_byte_size = 1,
-		ram_block1a_3.port_a_data_out_clear = "none",
-		ram_block1a_3.port_a_data_out_clock = "clock0",
+		ram_block1a_3.port_a_data_out_clear = "clear0",
+		ram_block1a_3.port_a_data_out_clock = "none",
 		ram_block1a_3.port_a_data_width = 1,
 		ram_block1a_3.port_a_first_address = 0,
 		ram_block1a_3.port_a_first_bit_number = 3,
@@ -352,6 +351,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_4
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[4]}),
 	.portadataout(wire_ram_block1a_4portadataout[0:0]),
@@ -363,7 +363,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -389,7 +388,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_4.clk0_core_clock_enable = "none",
 		ram_block1a_4.clk0_input_clock_enable = "none",
-		ram_block1a_4.clk0_output_clock_enable = "none",
 		ram_block1a_4.connectivity_checking = "OFF",
 		ram_block1a_4.init_file = "Assembly.mif",
 		ram_block1a_4.init_file_layout = "port_a",
@@ -399,8 +397,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_4.port_a_address_width = 8,
 		ram_block1a_4.port_a_byte_enable_mask_width = 1,
 		ram_block1a_4.port_a_byte_size = 1,
-		ram_block1a_4.port_a_data_out_clear = "none",
-		ram_block1a_4.port_a_data_out_clock = "clock0",
+		ram_block1a_4.port_a_data_out_clear = "clear0",
+		ram_block1a_4.port_a_data_out_clock = "none",
 		ram_block1a_4.port_a_data_width = 1,
 		ram_block1a_4.port_a_first_address = 0,
 		ram_block1a_4.port_a_first_bit_number = 4,
@@ -414,6 +412,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_5
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[5]}),
 	.portadataout(wire_ram_block1a_5portadataout[0:0]),
@@ -425,7 +424,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -451,18 +449,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_5.clk0_core_clock_enable = "none",
 		ram_block1a_5.clk0_input_clock_enable = "none",
-		ram_block1a_5.clk0_output_clock_enable = "none",
 		ram_block1a_5.connectivity_checking = "OFF",
 		ram_block1a_5.init_file = "Assembly.mif",
 		ram_block1a_5.init_file_layout = "port_a",
 		ram_block1a_5.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_5.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001110,
+		ram_block1a_5.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000011110000,
 		ram_block1a_5.operation_mode = "single_port",
 		ram_block1a_5.port_a_address_width = 8,
 		ram_block1a_5.port_a_byte_enable_mask_width = 1,
 		ram_block1a_5.port_a_byte_size = 1,
-		ram_block1a_5.port_a_data_out_clear = "none",
-		ram_block1a_5.port_a_data_out_clock = "clock0",
+		ram_block1a_5.port_a_data_out_clear = "clear0",
+		ram_block1a_5.port_a_data_out_clock = "none",
 		ram_block1a_5.port_a_data_width = 1,
 		ram_block1a_5.port_a_first_address = 0,
 		ram_block1a_5.port_a_first_bit_number = 5,
@@ -476,6 +473,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_6
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[6]}),
 	.portadataout(wire_ram_block1a_6portadataout[0:0]),
@@ -487,7 +485,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -513,18 +510,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_6.clk0_core_clock_enable = "none",
 		ram_block1a_6.clk0_input_clock_enable = "none",
-		ram_block1a_6.clk0_output_clock_enable = "none",
 		ram_block1a_6.connectivity_checking = "OFF",
 		ram_block1a_6.init_file = "Assembly.mif",
 		ram_block1a_6.init_file_layout = "port_a",
 		ram_block1a_6.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_6.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000100,
+		ram_block1a_6.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000100000,
 		ram_block1a_6.operation_mode = "single_port",
 		ram_block1a_6.port_a_address_width = 8,
 		ram_block1a_6.port_a_byte_enable_mask_width = 1,
 		ram_block1a_6.port_a_byte_size = 1,
-		ram_block1a_6.port_a_data_out_clear = "none",
-		ram_block1a_6.port_a_data_out_clock = "clock0",
+		ram_block1a_6.port_a_data_out_clear = "clear0",
+		ram_block1a_6.port_a_data_out_clock = "none",
 		ram_block1a_6.port_a_data_width = 1,
 		ram_block1a_6.port_a_first_address = 0,
 		ram_block1a_6.port_a_first_bit_number = 6,
@@ -538,6 +534,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_7
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[7]}),
 	.portadataout(wire_ram_block1a_7portadataout[0:0]),
@@ -549,7 +546,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -575,7 +571,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_7.clk0_core_clock_enable = "none",
 		ram_block1a_7.clk0_input_clock_enable = "none",
-		ram_block1a_7.clk0_output_clock_enable = "none",
 		ram_block1a_7.connectivity_checking = "OFF",
 		ram_block1a_7.init_file = "Assembly.mif",
 		ram_block1a_7.init_file_layout = "port_a",
@@ -585,8 +580,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_7.port_a_address_width = 8,
 		ram_block1a_7.port_a_byte_enable_mask_width = 1,
 		ram_block1a_7.port_a_byte_size = 1,
-		ram_block1a_7.port_a_data_out_clear = "none",
-		ram_block1a_7.port_a_data_out_clock = "clock0",
+		ram_block1a_7.port_a_data_out_clear = "clear0",
+		ram_block1a_7.port_a_data_out_clock = "none",
 		ram_block1a_7.port_a_data_width = 1,
 		ram_block1a_7.port_a_first_address = 0,
 		ram_block1a_7.port_a_first_bit_number = 7,
@@ -600,6 +595,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_8
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[8]}),
 	.portadataout(wire_ram_block1a_8portadataout[0:0]),
@@ -611,7 +607,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -637,7 +632,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_8.clk0_core_clock_enable = "none",
 		ram_block1a_8.clk0_input_clock_enable = "none",
-		ram_block1a_8.clk0_output_clock_enable = "none",
 		ram_block1a_8.connectivity_checking = "OFF",
 		ram_block1a_8.init_file = "Assembly.mif",
 		ram_block1a_8.init_file_layout = "port_a",
@@ -647,8 +641,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_8.port_a_address_width = 8,
 		ram_block1a_8.port_a_byte_enable_mask_width = 1,
 		ram_block1a_8.port_a_byte_size = 1,
-		ram_block1a_8.port_a_data_out_clear = "none",
-		ram_block1a_8.port_a_data_out_clock = "clock0",
+		ram_block1a_8.port_a_data_out_clear = "clear0",
+		ram_block1a_8.port_a_data_out_clock = "none",
 		ram_block1a_8.port_a_data_width = 1,
 		ram_block1a_8.port_a_first_address = 0,
 		ram_block1a_8.port_a_first_bit_number = 8,
@@ -662,6 +656,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_9
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[9]}),
 	.portadataout(wire_ram_block1a_9portadataout[0:0]),
@@ -673,7 +668,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -699,7 +693,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_9.clk0_core_clock_enable = "none",
 		ram_block1a_9.clk0_input_clock_enable = "none",
-		ram_block1a_9.clk0_output_clock_enable = "none",
 		ram_block1a_9.connectivity_checking = "OFF",
 		ram_block1a_9.init_file = "Assembly.mif",
 		ram_block1a_9.init_file_layout = "port_a",
@@ -709,8 +702,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_9.port_a_address_width = 8,
 		ram_block1a_9.port_a_byte_enable_mask_width = 1,
 		ram_block1a_9.port_a_byte_size = 1,
-		ram_block1a_9.port_a_data_out_clear = "none",
-		ram_block1a_9.port_a_data_out_clock = "clock0",
+		ram_block1a_9.port_a_data_out_clear = "clear0",
+		ram_block1a_9.port_a_data_out_clock = "none",
 		ram_block1a_9.port_a_data_width = 1,
 		ram_block1a_9.port_a_first_address = 0,
 		ram_block1a_9.port_a_first_bit_number = 9,
@@ -724,6 +717,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_10
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[10]}),
 	.portadataout(wire_ram_block1a_10portadataout[0:0]),
@@ -735,7 +729,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -761,7 +754,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_10.clk0_core_clock_enable = "none",
 		ram_block1a_10.clk0_input_clock_enable = "none",
-		ram_block1a_10.clk0_output_clock_enable = "none",
 		ram_block1a_10.connectivity_checking = "OFF",
 		ram_block1a_10.init_file = "Assembly.mif",
 		ram_block1a_10.init_file_layout = "port_a",
@@ -771,8 +763,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_10.port_a_address_width = 8,
 		ram_block1a_10.port_a_byte_enable_mask_width = 1,
 		ram_block1a_10.port_a_byte_size = 1,
-		ram_block1a_10.port_a_data_out_clear = "none",
-		ram_block1a_10.port_a_data_out_clock = "clock0",
+		ram_block1a_10.port_a_data_out_clear = "clear0",
+		ram_block1a_10.port_a_data_out_clock = "none",
 		ram_block1a_10.port_a_data_width = 1,
 		ram_block1a_10.port_a_first_address = 0,
 		ram_block1a_10.port_a_first_bit_number = 10,
@@ -786,6 +778,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_11
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[11]}),
 	.portadataout(wire_ram_block1a_11portadataout[0:0]),
@@ -797,7 +790,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -823,18 +815,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_11.clk0_core_clock_enable = "none",
 		ram_block1a_11.clk0_input_clock_enable = "none",
-		ram_block1a_11.clk0_output_clock_enable = "none",
 		ram_block1a_11.connectivity_checking = "OFF",
 		ram_block1a_11.init_file = "Assembly.mif",
 		ram_block1a_11.init_file_layout = "port_a",
 		ram_block1a_11.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_11.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000010,
+		ram_block1a_11.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000011010000,
 		ram_block1a_11.operation_mode = "single_port",
 		ram_block1a_11.port_a_address_width = 8,
 		ram_block1a_11.port_a_byte_enable_mask_width = 1,
 		ram_block1a_11.port_a_byte_size = 1,
-		ram_block1a_11.port_a_data_out_clear = "none",
-		ram_block1a_11.port_a_data_out_clock = "clock0",
+		ram_block1a_11.port_a_data_out_clear = "clear0",
+		ram_block1a_11.port_a_data_out_clock = "none",
 		ram_block1a_11.port_a_data_width = 1,
 		ram_block1a_11.port_a_first_address = 0,
 		ram_block1a_11.port_a_first_bit_number = 11,
@@ -848,6 +839,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_12
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[12]}),
 	.portadataout(wire_ram_block1a_12portadataout[0:0]),
@@ -859,7 +851,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -885,18 +876,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_12.clk0_core_clock_enable = "none",
 		ram_block1a_12.clk0_input_clock_enable = "none",
-		ram_block1a_12.clk0_output_clock_enable = "none",
 		ram_block1a_12.connectivity_checking = "OFF",
 		ram_block1a_12.init_file = "Assembly.mif",
 		ram_block1a_12.init_file_layout = "port_a",
 		ram_block1a_12.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_12.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001000,
+		ram_block1a_12.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block1a_12.operation_mode = "single_port",
 		ram_block1a_12.port_a_address_width = 8,
 		ram_block1a_12.port_a_byte_enable_mask_width = 1,
 		ram_block1a_12.port_a_byte_size = 1,
-		ram_block1a_12.port_a_data_out_clear = "none",
-		ram_block1a_12.port_a_data_out_clock = "clock0",
+		ram_block1a_12.port_a_data_out_clear = "clear0",
+		ram_block1a_12.port_a_data_out_clock = "none",
 		ram_block1a_12.port_a_data_width = 1,
 		ram_block1a_12.port_a_first_address = 0,
 		ram_block1a_12.port_a_first_bit_number = 12,
@@ -910,6 +900,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_13
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[13]}),
 	.portadataout(wire_ram_block1a_13portadataout[0:0]),
@@ -921,7 +912,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -947,7 +937,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_13.clk0_core_clock_enable = "none",
 		ram_block1a_13.clk0_input_clock_enable = "none",
-		ram_block1a_13.clk0_output_clock_enable = "none",
 		ram_block1a_13.connectivity_checking = "OFF",
 		ram_block1a_13.init_file = "Assembly.mif",
 		ram_block1a_13.init_file_layout = "port_a",
@@ -957,8 +946,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_13.port_a_address_width = 8,
 		ram_block1a_13.port_a_byte_enable_mask_width = 1,
 		ram_block1a_13.port_a_byte_size = 1,
-		ram_block1a_13.port_a_data_out_clear = "none",
-		ram_block1a_13.port_a_data_out_clock = "clock0",
+		ram_block1a_13.port_a_data_out_clear = "clear0",
+		ram_block1a_13.port_a_data_out_clock = "none",
 		ram_block1a_13.port_a_data_width = 1,
 		ram_block1a_13.port_a_first_address = 0,
 		ram_block1a_13.port_a_first_bit_number = 13,
@@ -972,6 +961,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_14
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[14]}),
 	.portadataout(wire_ram_block1a_14portadataout[0:0]),
@@ -983,7 +973,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1009,18 +998,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_14.clk0_core_clock_enable = "none",
 		ram_block1a_14.clk0_input_clock_enable = "none",
-		ram_block1a_14.clk0_output_clock_enable = "none",
 		ram_block1a_14.connectivity_checking = "OFF",
 		ram_block1a_14.init_file = "Assembly.mif",
 		ram_block1a_14.init_file_layout = "port_a",
 		ram_block1a_14.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_14.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001010,
+		ram_block1a_14.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000011010000,
 		ram_block1a_14.operation_mode = "single_port",
 		ram_block1a_14.port_a_address_width = 8,
 		ram_block1a_14.port_a_byte_enable_mask_width = 1,
 		ram_block1a_14.port_a_byte_size = 1,
-		ram_block1a_14.port_a_data_out_clear = "none",
-		ram_block1a_14.port_a_data_out_clock = "clock0",
+		ram_block1a_14.port_a_data_out_clear = "clear0",
+		ram_block1a_14.port_a_data_out_clock = "none",
 		ram_block1a_14.port_a_data_width = 1,
 		ram_block1a_14.port_a_first_address = 0,
 		ram_block1a_14.port_a_first_bit_number = 14,
@@ -1034,6 +1022,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_15
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[15]}),
 	.portadataout(wire_ram_block1a_15portadataout[0:0]),
@@ -1045,7 +1034,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1071,7 +1059,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_15.clk0_core_clock_enable = "none",
 		ram_block1a_15.clk0_input_clock_enable = "none",
-		ram_block1a_15.clk0_output_clock_enable = "none",
 		ram_block1a_15.connectivity_checking = "OFF",
 		ram_block1a_15.init_file = "Assembly.mif",
 		ram_block1a_15.init_file_layout = "port_a",
@@ -1081,8 +1068,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_15.port_a_address_width = 8,
 		ram_block1a_15.port_a_byte_enable_mask_width = 1,
 		ram_block1a_15.port_a_byte_size = 1,
-		ram_block1a_15.port_a_data_out_clear = "none",
-		ram_block1a_15.port_a_data_out_clock = "clock0",
+		ram_block1a_15.port_a_data_out_clear = "clear0",
+		ram_block1a_15.port_a_data_out_clock = "none",
 		ram_block1a_15.port_a_data_width = 1,
 		ram_block1a_15.port_a_first_address = 0,
 		ram_block1a_15.port_a_first_bit_number = 15,
@@ -1096,6 +1083,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_16
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[16]}),
 	.portadataout(wire_ram_block1a_16portadataout[0:0]),
@@ -1107,7 +1095,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1133,18 +1120,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_16.clk0_core_clock_enable = "none",
 		ram_block1a_16.clk0_input_clock_enable = "none",
-		ram_block1a_16.clk0_output_clock_enable = "none",
 		ram_block1a_16.connectivity_checking = "OFF",
 		ram_block1a_16.init_file = "Assembly.mif",
 		ram_block1a_16.init_file_layout = "port_a",
 		ram_block1a_16.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_16.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000110,
+		ram_block1a_16.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000100110,
 		ram_block1a_16.operation_mode = "single_port",
 		ram_block1a_16.port_a_address_width = 8,
 		ram_block1a_16.port_a_byte_enable_mask_width = 1,
 		ram_block1a_16.port_a_byte_size = 1,
-		ram_block1a_16.port_a_data_out_clear = "none",
-		ram_block1a_16.port_a_data_out_clock = "clock0",
+		ram_block1a_16.port_a_data_out_clear = "clear0",
+		ram_block1a_16.port_a_data_out_clock = "none",
 		ram_block1a_16.port_a_data_width = 1,
 		ram_block1a_16.port_a_first_address = 0,
 		ram_block1a_16.port_a_first_bit_number = 16,
@@ -1158,6 +1144,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_17
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[17]}),
 	.portadataout(wire_ram_block1a_17portadataout[0:0]),
@@ -1169,7 +1156,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1195,18 +1181,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_17.clk0_core_clock_enable = "none",
 		ram_block1a_17.clk0_input_clock_enable = "none",
-		ram_block1a_17.clk0_output_clock_enable = "none",
 		ram_block1a_17.connectivity_checking = "OFF",
 		ram_block1a_17.init_file = "Assembly.mif",
 		ram_block1a_17.init_file_layout = "port_a",
 		ram_block1a_17.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_17.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001001,
+		ram_block1a_17.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000011111011,
 		ram_block1a_17.operation_mode = "single_port",
 		ram_block1a_17.port_a_address_width = 8,
 		ram_block1a_17.port_a_byte_enable_mask_width = 1,
 		ram_block1a_17.port_a_byte_size = 1,
-		ram_block1a_17.port_a_data_out_clear = "none",
-		ram_block1a_17.port_a_data_out_clock = "clock0",
+		ram_block1a_17.port_a_data_out_clear = "clear0",
+		ram_block1a_17.port_a_data_out_clock = "none",
 		ram_block1a_17.port_a_data_width = 1,
 		ram_block1a_17.port_a_first_address = 0,
 		ram_block1a_17.port_a_first_bit_number = 17,
@@ -1220,6 +1205,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_18
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[18]}),
 	.portadataout(wire_ram_block1a_18portadataout[0:0]),
@@ -1231,7 +1217,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1257,7 +1242,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_18.clk0_core_clock_enable = "none",
 		ram_block1a_18.clk0_input_clock_enable = "none",
-		ram_block1a_18.clk0_output_clock_enable = "none",
 		ram_block1a_18.connectivity_checking = "OFF",
 		ram_block1a_18.init_file = "Assembly.mif",
 		ram_block1a_18.init_file_layout = "port_a",
@@ -1267,8 +1251,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_18.port_a_address_width = 8,
 		ram_block1a_18.port_a_byte_enable_mask_width = 1,
 		ram_block1a_18.port_a_byte_size = 1,
-		ram_block1a_18.port_a_data_out_clear = "none",
-		ram_block1a_18.port_a_data_out_clock = "clock0",
+		ram_block1a_18.port_a_data_out_clear = "clear0",
+		ram_block1a_18.port_a_data_out_clock = "none",
 		ram_block1a_18.port_a_data_width = 1,
 		ram_block1a_18.port_a_first_address = 0,
 		ram_block1a_18.port_a_first_bit_number = 18,
@@ -1282,6 +1266,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_19
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[19]}),
 	.portadataout(wire_ram_block1a_19portadataout[0:0]),
@@ -1293,7 +1278,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1319,18 +1303,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_19.clk0_core_clock_enable = "none",
 		ram_block1a_19.clk0_input_clock_enable = "none",
-		ram_block1a_19.clk0_output_clock_enable = "none",
 		ram_block1a_19.connectivity_checking = "OFF",
 		ram_block1a_19.init_file = "Assembly.mif",
 		ram_block1a_19.init_file_layout = "port_a",
 		ram_block1a_19.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_19.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001111,
+		ram_block1a_19.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000011111111,
 		ram_block1a_19.operation_mode = "single_port",
 		ram_block1a_19.port_a_address_width = 8,
 		ram_block1a_19.port_a_byte_enable_mask_width = 1,
 		ram_block1a_19.port_a_byte_size = 1,
-		ram_block1a_19.port_a_data_out_clear = "none",
-		ram_block1a_19.port_a_data_out_clock = "clock0",
+		ram_block1a_19.port_a_data_out_clear = "clear0",
+		ram_block1a_19.port_a_data_out_clock = "none",
 		ram_block1a_19.port_a_data_width = 1,
 		ram_block1a_19.port_a_first_address = 0,
 		ram_block1a_19.port_a_first_bit_number = 19,
@@ -1344,6 +1327,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_20
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[20]}),
 	.portadataout(wire_ram_block1a_20portadataout[0:0]),
@@ -1355,7 +1339,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1381,7 +1364,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_20.clk0_core_clock_enable = "none",
 		ram_block1a_20.clk0_input_clock_enable = "none",
-		ram_block1a_20.clk0_output_clock_enable = "none",
 		ram_block1a_20.connectivity_checking = "OFF",
 		ram_block1a_20.init_file = "Assembly.mif",
 		ram_block1a_20.init_file_layout = "port_a",
@@ -1391,8 +1373,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_20.port_a_address_width = 8,
 		ram_block1a_20.port_a_byte_enable_mask_width = 1,
 		ram_block1a_20.port_a_byte_size = 1,
-		ram_block1a_20.port_a_data_out_clear = "none",
-		ram_block1a_20.port_a_data_out_clock = "clock0",
+		ram_block1a_20.port_a_data_out_clear = "clear0",
+		ram_block1a_20.port_a_data_out_clock = "none",
 		ram_block1a_20.port_a_data_width = 1,
 		ram_block1a_20.port_a_first_address = 0,
 		ram_block1a_20.port_a_first_bit_number = 20,
@@ -1406,6 +1388,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_21
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[21]}),
 	.portadataout(wire_ram_block1a_21portadataout[0:0]),
@@ -1417,7 +1400,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1443,18 +1425,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_21.clk0_core_clock_enable = "none",
 		ram_block1a_21.clk0_input_clock_enable = "none",
-		ram_block1a_21.clk0_output_clock_enable = "none",
 		ram_block1a_21.connectivity_checking = "OFF",
 		ram_block1a_21.init_file = "Assembly.mif",
 		ram_block1a_21.init_file_layout = "port_a",
 		ram_block1a_21.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_21.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001011,
+		ram_block1a_21.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000011111000,
 		ram_block1a_21.operation_mode = "single_port",
 		ram_block1a_21.port_a_address_width = 8,
 		ram_block1a_21.port_a_byte_enable_mask_width = 1,
 		ram_block1a_21.port_a_byte_size = 1,
-		ram_block1a_21.port_a_data_out_clear = "none",
-		ram_block1a_21.port_a_data_out_clock = "clock0",
+		ram_block1a_21.port_a_data_out_clear = "clear0",
+		ram_block1a_21.port_a_data_out_clock = "none",
 		ram_block1a_21.port_a_data_width = 1,
 		ram_block1a_21.port_a_first_address = 0,
 		ram_block1a_21.port_a_first_bit_number = 21,
@@ -1468,6 +1449,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_22
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[22]}),
 	.portadataout(wire_ram_block1a_22portadataout[0:0]),
@@ -1479,7 +1461,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1505,18 +1486,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_22.clk0_core_clock_enable = "none",
 		ram_block1a_22.clk0_input_clock_enable = "none",
-		ram_block1a_22.clk0_output_clock_enable = "none",
 		ram_block1a_22.connectivity_checking = "OFF",
 		ram_block1a_22.init_file = "Assembly.mif",
 		ram_block1a_22.init_file_layout = "port_a",
 		ram_block1a_22.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_22.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001100,
+		ram_block1a_22.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000,
 		ram_block1a_22.operation_mode = "single_port",
 		ram_block1a_22.port_a_address_width = 8,
 		ram_block1a_22.port_a_byte_enable_mask_width = 1,
 		ram_block1a_22.port_a_byte_size = 1,
-		ram_block1a_22.port_a_data_out_clear = "none",
-		ram_block1a_22.port_a_data_out_clock = "clock0",
+		ram_block1a_22.port_a_data_out_clear = "clear0",
+		ram_block1a_22.port_a_data_out_clock = "none",
 		ram_block1a_22.port_a_data_width = 1,
 		ram_block1a_22.port_a_first_address = 0,
 		ram_block1a_22.port_a_first_bit_number = 22,
@@ -1530,6 +1510,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_23
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[23]}),
 	.portadataout(wire_ram_block1a_23portadataout[0:0]),
@@ -1541,7 +1522,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1567,7 +1547,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_23.clk0_core_clock_enable = "none",
 		ram_block1a_23.clk0_input_clock_enable = "none",
-		ram_block1a_23.clk0_output_clock_enable = "none",
 		ram_block1a_23.connectivity_checking = "OFF",
 		ram_block1a_23.init_file = "Assembly.mif",
 		ram_block1a_23.init_file_layout = "port_a",
@@ -1577,8 +1556,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_23.port_a_address_width = 8,
 		ram_block1a_23.port_a_byte_enable_mask_width = 1,
 		ram_block1a_23.port_a_byte_size = 1,
-		ram_block1a_23.port_a_data_out_clear = "none",
-		ram_block1a_23.port_a_data_out_clock = "clock0",
+		ram_block1a_23.port_a_data_out_clear = "clear0",
+		ram_block1a_23.port_a_data_out_clock = "none",
 		ram_block1a_23.port_a_data_width = 1,
 		ram_block1a_23.port_a_first_address = 0,
 		ram_block1a_23.port_a_first_bit_number = 23,
@@ -1592,6 +1571,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_24
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[24]}),
 	.portadataout(wire_ram_block1a_24portadataout[0:0]),
@@ -1603,7 +1583,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1629,18 +1608,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_24.clk0_core_clock_enable = "none",
 		ram_block1a_24.clk0_input_clock_enable = "none",
-		ram_block1a_24.clk0_output_clock_enable = "none",
 		ram_block1a_24.connectivity_checking = "OFF",
 		ram_block1a_24.init_file = "Assembly.mif",
 		ram_block1a_24.init_file_layout = "port_a",
 		ram_block1a_24.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_24.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001111,
+		ram_block1a_24.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000011111000,
 		ram_block1a_24.operation_mode = "single_port",
 		ram_block1a_24.port_a_address_width = 8,
 		ram_block1a_24.port_a_byte_enable_mask_width = 1,
 		ram_block1a_24.port_a_byte_size = 1,
-		ram_block1a_24.port_a_data_out_clear = "none",
-		ram_block1a_24.port_a_data_out_clock = "clock0",
+		ram_block1a_24.port_a_data_out_clear = "clear0",
+		ram_block1a_24.port_a_data_out_clock = "none",
 		ram_block1a_24.port_a_data_width = 1,
 		ram_block1a_24.port_a_first_address = 0,
 		ram_block1a_24.port_a_first_bit_number = 24,
@@ -1654,6 +1632,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_25
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[25]}),
 	.portadataout(wire_ram_block1a_25portadataout[0:0]),
@@ -1665,7 +1644,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1691,7 +1669,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_25.clk0_core_clock_enable = "none",
 		ram_block1a_25.clk0_input_clock_enable = "none",
-		ram_block1a_25.clk0_output_clock_enable = "none",
 		ram_block1a_25.connectivity_checking = "OFF",
 		ram_block1a_25.init_file = "Assembly.mif",
 		ram_block1a_25.init_file_layout = "port_a",
@@ -1701,8 +1678,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_25.port_a_address_width = 8,
 		ram_block1a_25.port_a_byte_enable_mask_width = 1,
 		ram_block1a_25.port_a_byte_size = 1,
-		ram_block1a_25.port_a_data_out_clear = "none",
-		ram_block1a_25.port_a_data_out_clock = "clock0",
+		ram_block1a_25.port_a_data_out_clear = "clear0",
+		ram_block1a_25.port_a_data_out_clock = "none",
 		ram_block1a_25.port_a_data_width = 1,
 		ram_block1a_25.port_a_first_address = 0,
 		ram_block1a_25.port_a_first_bit_number = 25,
@@ -1716,6 +1693,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_26
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[26]}),
 	.portadataout(wire_ram_block1a_26portadataout[0:0]),
@@ -1727,7 +1705,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1753,18 +1730,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_26.clk0_core_clock_enable = "none",
 		ram_block1a_26.clk0_input_clock_enable = "none",
-		ram_block1a_26.clk0_output_clock_enable = "none",
 		ram_block1a_26.connectivity_checking = "OFF",
 		ram_block1a_26.init_file = "Assembly.mif",
 		ram_block1a_26.init_file_layout = "port_a",
 		ram_block1a_26.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_26.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000100,
+		ram_block1a_26.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000100000,
 		ram_block1a_26.operation_mode = "single_port",
 		ram_block1a_26.port_a_address_width = 8,
 		ram_block1a_26.port_a_byte_enable_mask_width = 1,
 		ram_block1a_26.port_a_byte_size = 1,
-		ram_block1a_26.port_a_data_out_clear = "none",
-		ram_block1a_26.port_a_data_out_clock = "clock0",
+		ram_block1a_26.port_a_data_out_clear = "clear0",
+		ram_block1a_26.port_a_data_out_clock = "none",
 		ram_block1a_26.port_a_data_width = 1,
 		ram_block1a_26.port_a_first_address = 0,
 		ram_block1a_26.port_a_first_bit_number = 26,
@@ -1778,6 +1754,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_27
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[27]}),
 	.portadataout(wire_ram_block1a_27portadataout[0:0]),
@@ -1789,7 +1766,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1815,18 +1791,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_27.clk0_core_clock_enable = "none",
 		ram_block1a_27.clk0_input_clock_enable = "none",
-		ram_block1a_27.clk0_output_clock_enable = "none",
 		ram_block1a_27.connectivity_checking = "OFF",
 		ram_block1a_27.init_file = "Assembly.mif",
 		ram_block1a_27.init_file_layout = "port_a",
 		ram_block1a_27.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_27.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000100,
+		ram_block1a_27.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000100000,
 		ram_block1a_27.operation_mode = "single_port",
 		ram_block1a_27.port_a_address_width = 8,
 		ram_block1a_27.port_a_byte_enable_mask_width = 1,
 		ram_block1a_27.port_a_byte_size = 1,
-		ram_block1a_27.port_a_data_out_clear = "none",
-		ram_block1a_27.port_a_data_out_clock = "clock0",
+		ram_block1a_27.port_a_data_out_clear = "clear0",
+		ram_block1a_27.port_a_data_out_clock = "none",
 		ram_block1a_27.port_a_data_width = 1,
 		ram_block1a_27.port_a_first_address = 0,
 		ram_block1a_27.port_a_first_bit_number = 27,
@@ -1840,6 +1815,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_28
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[28]}),
 	.portadataout(wire_ram_block1a_28portadataout[0:0]),
@@ -1851,7 +1827,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1877,18 +1852,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_28.clk0_core_clock_enable = "none",
 		ram_block1a_28.clk0_input_clock_enable = "none",
-		ram_block1a_28.clk0_output_clock_enable = "none",
 		ram_block1a_28.connectivity_checking = "OFF",
 		ram_block1a_28.init_file = "Assembly.mif",
 		ram_block1a_28.init_file_layout = "port_a",
 		ram_block1a_28.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_28.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000001,
+		ram_block1a_28.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000001000,
 		ram_block1a_28.operation_mode = "single_port",
 		ram_block1a_28.port_a_address_width = 8,
 		ram_block1a_28.port_a_byte_enable_mask_width = 1,
 		ram_block1a_28.port_a_byte_size = 1,
-		ram_block1a_28.port_a_data_out_clear = "none",
-		ram_block1a_28.port_a_data_out_clock = "clock0",
+		ram_block1a_28.port_a_data_out_clear = "clear0",
+		ram_block1a_28.port_a_data_out_clock = "none",
 		ram_block1a_28.port_a_data_width = 1,
 		ram_block1a_28.port_a_first_address = 0,
 		ram_block1a_28.port_a_first_bit_number = 28,
@@ -1902,6 +1876,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_29
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[29]}),
 	.portadataout(wire_ram_block1a_29portadataout[0:0]),
@@ -1913,7 +1888,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -1939,18 +1913,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_29.clk0_core_clock_enable = "none",
 		ram_block1a_29.clk0_input_clock_enable = "none",
-		ram_block1a_29.clk0_output_clock_enable = "none",
 		ram_block1a_29.connectivity_checking = "OFF",
 		ram_block1a_29.init_file = "Assembly.mif",
 		ram_block1a_29.init_file_layout = "port_a",
 		ram_block1a_29.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_29.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000100,
+		ram_block1a_29.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000100111,
 		ram_block1a_29.operation_mode = "single_port",
 		ram_block1a_29.port_a_address_width = 8,
 		ram_block1a_29.port_a_byte_enable_mask_width = 1,
 		ram_block1a_29.port_a_byte_size = 1,
-		ram_block1a_29.port_a_data_out_clear = "none",
-		ram_block1a_29.port_a_data_out_clock = "clock0",
+		ram_block1a_29.port_a_data_out_clear = "clear0",
+		ram_block1a_29.port_a_data_out_clock = "none",
 		ram_block1a_29.port_a_data_width = 1,
 		ram_block1a_29.port_a_first_address = 0,
 		ram_block1a_29.port_a_first_bit_number = 29,
@@ -1964,6 +1937,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_30
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[30]}),
 	.portadataout(wire_ram_block1a_30portadataout[0:0]),
@@ -1975,7 +1949,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -2001,7 +1974,6 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_30.clk0_core_clock_enable = "none",
 		ram_block1a_30.clk0_input_clock_enable = "none",
-		ram_block1a_30.clk0_output_clock_enable = "none",
 		ram_block1a_30.connectivity_checking = "OFF",
 		ram_block1a_30.init_file = "Assembly.mif",
 		ram_block1a_30.init_file_layout = "port_a",
@@ -2011,8 +1983,8 @@ module  IP_MEMORY_altsyncram
 		ram_block1a_30.port_a_address_width = 8,
 		ram_block1a_30.port_a_byte_enable_mask_width = 1,
 		ram_block1a_30.port_a_byte_size = 1,
-		ram_block1a_30.port_a_data_out_clear = "none",
-		ram_block1a_30.port_a_data_out_clock = "clock0",
+		ram_block1a_30.port_a_data_out_clear = "clear0",
+		ram_block1a_30.port_a_data_out_clock = "none",
 		ram_block1a_30.port_a_data_width = 1,
 		ram_block1a_30.port_a_first_address = 0,
 		ram_block1a_30.port_a_first_bit_number = 30,
@@ -2026,6 +1998,7 @@ module  IP_MEMORY_altsyncram
 	fiftyfivenm_ram_block   ram_block1a_31
 	( 
 	.clk0(clock0),
+	.clr0(aclr0),
 	.portaaddr({address_a_wire[7:0]}),
 	.portadatain({data_a[31]}),
 	.portadataout(wire_ram_block1a_31portadataout[0:0]),
@@ -2037,7 +2010,6 @@ module  IP_MEMORY_altsyncram
 	`endif
 	,
 	.clk1(1'b0),
-	.clr0(1'b0),
 	.clr1(1'b0),
 	.ena0(1'b1),
 	.ena1(1'b1),
@@ -2063,18 +2035,17 @@ module  IP_MEMORY_altsyncram
 	defparam
 		ram_block1a_31.clk0_core_clock_enable = "none",
 		ram_block1a_31.clk0_input_clock_enable = "none",
-		ram_block1a_31.clk0_output_clock_enable = "none",
 		ram_block1a_31.connectivity_checking = "OFF",
 		ram_block1a_31.init_file = "Assembly.mif",
 		ram_block1a_31.init_file_layout = "port_a",
 		ram_block1a_31.logical_ram_name = "ALTSYNCRAM",
-		ram_block1a_31.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000100,
+		ram_block1a_31.mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000100000,
 		ram_block1a_31.operation_mode = "single_port",
 		ram_block1a_31.port_a_address_width = 8,
 		ram_block1a_31.port_a_byte_enable_mask_width = 1,
 		ram_block1a_31.port_a_byte_size = 1,
-		ram_block1a_31.port_a_data_out_clear = "none",
-		ram_block1a_31.port_a_data_out_clock = "clock0",
+		ram_block1a_31.port_a_data_out_clear = "clear0",
+		ram_block1a_31.port_a_data_out_clock = "none",
 		ram_block1a_31.port_a_data_width = 1,
 		ram_block1a_31.port_a_first_address = 0,
 		ram_block1a_31.port_a_first_bit_number = 31,
@@ -2096,12 +2067,14 @@ endmodule //IP_MEMORY_altsyncram
 `timescale 1 ps / 1 ps
 // synopsys translate_on
 module IP_MEMORY (
+	aclr,
 	address,
 	clock,
 	data,
 	wren,
 	q)/* synthesis synthesis_clearbox = 1 */;
 
+	input	  aclr;
 	input	[7:0]  address;
 	input	  clock;
 	input	[31:0]  data;
@@ -2110,6 +2083,7 @@ module IP_MEMORY (
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
+	tri0	  aclr;
 	tri1	  clock;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
@@ -2119,6 +2093,7 @@ module IP_MEMORY (
 	wire [31:0] q = sub_wire0[31:0];
 
 	IP_MEMORY_altsyncram	IP_MEMORY_altsyncram_component (
+				.aclr0 (aclr),
 				.address_a (address),
 				.clock0 (clock),
 				.data_a (data),
@@ -2134,7 +2109,7 @@ endmodule
 // Retrieval info: PRIVATE: AclrAddr NUMERIC "0"
 // Retrieval info: PRIVATE: AclrByte NUMERIC "0"
 // Retrieval info: PRIVATE: AclrData NUMERIC "0"
-// Retrieval info: PRIVATE: AclrOutput NUMERIC "0"
+// Retrieval info: PRIVATE: AclrOutput NUMERIC "1"
 // Retrieval info: PRIVATE: BYTE_ENABLE NUMERIC "0"
 // Retrieval info: PRIVATE: BYTE_SIZE NUMERIC "8"
 // Retrieval info: PRIVATE: BlankMemory NUMERIC "0"
@@ -2155,7 +2130,7 @@ endmodule
 // Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_A NUMERIC "3"
 // Retrieval info: PRIVATE: RegAddr NUMERIC "1"
 // Retrieval info: PRIVATE: RegData NUMERIC "1"
-// Retrieval info: PRIVATE: RegOutput NUMERIC "1"
+// Retrieval info: PRIVATE: RegOutput NUMERIC "0"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "1"
 // Retrieval info: PRIVATE: SingleClock NUMERIC "1"
 // Retrieval info: PRIVATE: UseDQRAM NUMERIC "1"
@@ -2172,18 +2147,20 @@ endmodule
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
 // Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "256"
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "SINGLE_PORT"
-// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "NONE"
-// Retrieval info: CONSTANT: OUTDATA_REG_A STRING "CLOCK0"
+// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "CLEAR0"
+// Retrieval info: CONSTANT: OUTDATA_REG_A STRING "UNREGISTERED"
 // Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
 // Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_PORT_A STRING "NEW_DATA_NO_NBE_READ"
 // Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "8"
 // Retrieval info: CONSTANT: WIDTH_A NUMERIC "32"
 // Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
+// Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT GND "aclr"
 // Retrieval info: USED_PORT: address 0 0 8 0 INPUT NODEFVAL "address[7..0]"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
 // Retrieval info: USED_PORT: data 0 0 32 0 INPUT NODEFVAL "data[31..0]"
 // Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL "q[31..0]"
 // Retrieval info: USED_PORT: wren 0 0 0 0 INPUT NODEFVAL "wren"
+// Retrieval info: CONNECT: @aclr0 0 0 0 0 aclr 0 0 0 0
 // Retrieval info: CONNECT: @address_a 0 0 8 0 address 0 0 8 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: @data_a 0 0 32 0 data 0 0 32 0
